@@ -10,8 +10,8 @@ add_image_size( "slider-noticias2", 580, 400, array( 'center', 'top' ) );
 // add_image_size( "slider-noticias", 380, 200, array( 'center', 'top' ) );
 add_image_size( "slider-post", 1200, 600, array( 'center', 'top' ) );
 // add_image_size( "destaque1", 580, 400, true );
-add_image_size( "destaque2", 500, 500, true );
-add_image_size( "agenda-cultural", 275, 320, true );
+//add_image_size( "destaque2", 500, 500, true );
+//add_image_size( "agenda-cultural", 275, 320, true );
 
 
 //shortcode para comparar duas imagens
@@ -54,19 +54,17 @@ function aspas_images( $atts ) {
 		$atts
 	));
 return
-' <div >
-					 <div>
-							 <div class="card amber lighten-5">
+'
+
+							 <div>
 									 <i class="fa fa-quote-left fa-3x deep-orange-text" aria-hidden="true" style="margin-left:20px;"></i>
 									 <h2>'.$fala.'</h2>
 									 <i class="fa fa-quote-right fa-1x orange-text right" aria-hidden="true"style="margin-right:20px;"></i>
 									 <br>
 										 <div class="card-action">
-											 <p class="chip deep-orange white-text nocanto4">'.$autor.'</p><br>
+											 <p class="deep-orange white-text nocanto4">'.$autor.'</p><br>
 									 </div>
-							 </div>
-					 </div>
-			 </div>'
+							 </div>'
  ;
 
 }

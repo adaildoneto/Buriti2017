@@ -21,7 +21,7 @@ get_header();
   <div class="row">
    <div class="slider-noticias-container">
     <div class="col s12 m12 l6">
-    <?php query_posts('showposts=1&tag=slider');?>
+    <?php query_posts('showposts=1');?>
     <?php if (have_posts()): while (have_posts()) : the_post();?>
 	<a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
 	<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'slider-noticias2' ); ?>
@@ -35,7 +35,7 @@ get_header();
 <div class="clearfix"></div>
     </div>
     <div class="col s12 m12 l6">
-    <?php query_posts('showposts=1&tag=slider&offset=1');?>
+    <?php query_posts('showposts=1&offset=1');?>
     <?php if (have_posts()): while (have_posts()) : the_post();?>
 	<a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
 	<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'slider-noticias2' ); ?>
@@ -49,7 +49,7 @@ get_header();
 <div class="clearfix"></div>
     </div>
     <div class="col s12 m12 l6">
-    <?php query_posts('showposts=1&tag=slider&offset=2');?>
+    <?php query_posts('showposts=1&offset=2');?>
     <?php if (have_posts()): while (have_posts()) : the_post();?>
 	<a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
 	<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'slider-noticias2' ); ?>
@@ -63,7 +63,7 @@ get_header();
 <div class="clearfix"></div>
     </div>
     <div class="col s12 m12 l6">
-    <?php query_posts('showposts=1&tag=slider&offset=3');?>
+    <?php query_posts('showposts=1&offset=3');?>
     <?php if (have_posts()): while (have_posts()) : the_post();?>
 	<a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
 	<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'slider-noticias2' ); ?>
@@ -92,13 +92,13 @@ get_header();
 
 <!-- INICIO - Módulo - Notícias -->
 <div class="container">
-	<?php include(TEMPLATEPATH.'/mod-destaque-noticias.php');?>
+	<?php include(TEMPLATEPATH.'/mod-destaque-noticias-teste.php');?>
 </div>
 <!-- FIM - Módulo - Notícias -->
 
 <!-- INICIO - Módulo - Mais Notícias e Sidebar -->
 <div class="container">
-	<?php include(TEMPLATEPATH.'/mod-noticias.php');?>
+	<?php include(TEMPLATEPATH.'/mod-noticias-teste.php');?>
 </div>
 <!-- FIM - Módulo - Mais Notícias e Sidebar -->
 <!-- INICIO - Módulo - Especiais -->
