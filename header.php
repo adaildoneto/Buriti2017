@@ -27,7 +27,7 @@
         <nav class="orange darken-2" style="" role="navigation">
             <div class="nav-wrapper container">
                 <div class="brand-logo">
-                    <a id="logo-container" href="<?php bloginfo('home')?>" title="<?php bloginfo('name');?>"><span class="icon-logo-agencia2017-02 logo-icone"></span><span class="hide-on-small-only logo-nome">Notícias do Acre</span></a>
+                    <a id="logo-container" href="<?php echo site_url(); ?>" title="<?php bloginfo('name');?>"><span class="icon-logo-agencia2017-02 logo-icone"></span><span class="hide-on-small-only logo-nome">Notícias do Acre</span></a>
                 </div>
                 <ul class="right">
                   <form id="search" action="/" method="get">

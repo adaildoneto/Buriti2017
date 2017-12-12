@@ -1,4 +1,4 @@
-<?php get_header(single);?>
+<?php get_header();?>
 
 <div class="container">
 
@@ -88,7 +88,7 @@ else {
 
                     <p><?php the_content(__('Leia mais'));?></p>
 
-                
+
 
 
   <?php include(TEMPLATEPATH.'/mod-btncurtiu.php');?>
@@ -115,4 +115,4 @@ else {
 </div>
 <!-- FIM - Módulo - Mais Notícias e Sidebar -->
 
-<?php get_footer(single);?>
+<?php get_footer();?>
