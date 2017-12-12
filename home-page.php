@@ -1,6 +1,12 @@
 <?php
-/* Template Name: Home Page
+/*
+Template Name: Teste novaHome
 */
+?>
+
+
+<?php
+
 get_header();
 
 ?>
