@@ -50,21 +50,31 @@ function aspas_images( $atts ) {
 			'fala' => '',
 			'imagem' => '',
 			'autor' => '',
+			'cargo' => '',
 		),
 		$atts
 	));
 return
 '
 
-							 <div>
+
 									 <i class="fa fa-quote-left fa-3x deep-orange-text" aria-hidden="true" style="margin-left:20px;"></i>
+									 	<div>
 									 <h2>'.$fala.'</h2>
 									 <i class="fa fa-quote-right fa-1x orange-text right" aria-hidden="true"style="margin-right:20px;"></i>
 									 <br>
-										 <div class="card-action">
-											 <p class="deep-orange white-text nocanto4">'.$autor.'</p><br>
 									 </div>
-							 </div>'
+										 <div class="right">
+
+    						 			<div class="collection-item avatar">
+      									<img src="'.$imagem.'" alt="" class="circle" width="100px" height="100px">
+      								<span class="title">'.$autor.'</span>
+      								<p>'.$cargo.'</p>
+
+    </div>
+
+									 </div>
+				'
  ;
 
 }
