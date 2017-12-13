@@ -1354,11 +1354,11 @@ body.login {
   width: 300px!important;
 }
 /* Aspas via shortcodes */
-span {
+#quotes span {
   font-size:15px;
   line-height: normal;
 }
-span.title {
+#quotes span.title {
   font-size:18px;
   font-weight: bold;
 }

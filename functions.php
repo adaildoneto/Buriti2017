@@ -56,7 +56,7 @@ function aspas_images( $atts ) {
 	));
 return
 '
-<div class="row">
+<div id="quotes" class="row">
 
 									 <i class="fa fa-quote-left fa-3x deep-orange-text left" aria-hidden="true" style="margin-left:20px;"></i>
 
@@ -95,7 +95,7 @@ function aspas_images2( $atts ) {
 	));
 return
 '
-<div class="row orange darken-3"><div class="col" style="padding:10px">
+<div id="quotes" class="row orange darken-3"><div class="col" style="padding:10px">
 
 									 <i class="fa fa-quote-left fa-3x white-text left" aria-hidden="true" style="margin-left:20px;"></i>
 
