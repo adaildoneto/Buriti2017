@@ -67,7 +67,7 @@ return
 										 <div class="alignright">
 
 
-      									<img src="'.$imagem.'" alt="" class="left" width="100px" style="margin-top:-20px;margin-bottom:10px;">
+      									<img src="'.$imagem.'" alt="" class="left" width="100px" style="margin-top:-20px;margin-bottom:10px;margin-right:20px;">
       								<span class="title">'.$autor.'</br></span><span>'.$cargo.'</span>
 
 
