@@ -1356,6 +1356,7 @@ body.login {
 /* Aspas via shortcodes */
 span {
   font-size:15px;
+  line-height: normal;
 }
 span.title {
   font-size:18px;
