@@ -1354,28 +1354,10 @@ body.login {
   width: 300px!important;
 }
 /* Aspas via shortcodes */
-.quotation::after {
-    border-color: #ecb200 transparent transparent;
-    border-width: 11px 12px 0 0;
-    bottom: -11px;
-    left: 12px;
+span {
+  font-size:15px;
 }
-
-.quotation::before {
-    border-color: #fff transparent transparent;
-}
-.quotation::before {
-    border-width: 10px 10px 0 0;
-    bottom: -9px;
-    left: 13px;
-    z-index: 1;
-}
-.quotation::after, .quotation::before {
-    border-style: solid;
-    content: "";
-    height: 0;
-    line-height: 0;
-    position: absolute;
-    visibility: visible;
-    width: 0;
+span.title {
+  font-size:18px;
+  font-weight: bold;
 }
