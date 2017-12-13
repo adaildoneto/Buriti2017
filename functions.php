@@ -67,7 +67,7 @@ return
 										 <div class="alignright">
 
 
-      									<img src="'.$imagem.'" alt="" class="circle left" width="100px" height="100px" style="margin-top:-20px;margin-bottom:10px;">
+      									<img src="'.$imagem.'" alt="" class="left" width="100px" style="margin-top:-20px;margin-bottom:10px;">
       								<span class="title">'.$autor.'</br></span><span>'.$cargo.'</span>
 
 
@@ -95,7 +95,7 @@ function aspas_images2( $atts ) {
 	));
 return
 '
-<div class="row orange darken-3"><div class="col" style="padding:20px">
+<div class="row orange darken-3"><div class="col" style="padding:10px">
 
 									 <i class="fa fa-quote-left fa-3x white-text left" aria-hidden="true" style="margin-left:20px;"></i>
 
@@ -106,7 +106,7 @@ return
 										 <div class="alignright">
 
 
-      									<img src="'.$imagem.'" alt="" class="circle left" width="100px" height="100px" style="margin-top:-20px;margin-bottom:10px;margin-right:20px;">
+      									<img src="'.$imagem.'" alt="" class="left" width="100px" style="margin-top:-20px;margin-bottom:10px;margin-right:20px;">
       								<span class="title white-text">'.$autor.'</br></span><span class="white-text">'.$cargo.'</span>
 
 
