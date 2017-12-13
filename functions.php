@@ -64,10 +64,10 @@ return
 									 <i class="fa fa-quote-right fa-2x orange-text right" aria-hidden="true"style="margin-right:20px;"></i>
 									 <br>
 
-										 <div class="alignright">
+										 <div class="right">
 
+										 		<div class="circle left aspasimg" style="background-image:url('.$imagem.');background-size: cover;"></div>
 
-      									<img src="'.$imagem.'" alt="" class="left" width="100px" style="margin-top:-20px;margin-bottom:10px;margin-right:20px;">
       								<span class="title">'.$autor.'</br></span><span>'.$cargo.'</span>
 
 
@@ -106,7 +106,7 @@ return
 										 <div class="alignright">
 
 
-      									<img src="'.$imagem.'" alt="" class="left" width="100px" style="margin-top:-20px;margin-bottom:10px;margin-right:20px;">
+      									<div class="circle left aspasimg" style="background-image:url('.$imagem.');background-size: cover;"></div>
       								<span class="title white-text">'.$autor.'</br></span><span class="white-text">'.$cargo.'</span>
 
 
