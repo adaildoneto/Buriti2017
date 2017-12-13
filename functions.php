@@ -56,29 +56,72 @@ function aspas_images( $atts ) {
 	));
 return
 '
+<div class="row">
 
+									 <i class="fa fa-quote-left fa-3x deep-orange-text left" aria-hidden="true" style="margin-left:20px;"></i>
 
-									 <i class="fa fa-quote-left fa-3x deep-orange-text" aria-hidden="true" style="margin-left:20px;"></i>
-									 	<div>
-									 <h2>'.$fala.'</h2>
-									 <i class="fa fa-quote-right fa-1x orange-text right" aria-hidden="true"style="margin-right:20px;"></i>
+									 <h2 >'.$fala.'</h2>
+									 <i class="fa fa-quote-right fa-2x orange-text right" aria-hidden="true"style="margin-right:20px;"></i>
 									 <br>
-									 </div>
-										 <div class="right">
 
-    						 			<div class="collection-item avatar">
-      									<img src="'.$imagem.'" alt="" class="circle" width="100px" height="100px">
-      								<span class="title">'.$autor.'</span>
-      								<p>'.$cargo.'</p>
+										 <div class="alignright">
 
-    </div>
 
-									 </div>
+      									<img src="'.$imagem.'" alt="" class="circle left" width="100px" height="100px" style="margin-top:-20px;margin-bottom:10px;">
+      								<span class="title">'.$autor.'</br></span><span>'.$cargo.'</span>
+
+
+
+
+									 </div> </div>
 				'
  ;
 
 }
 add_shortcode( 'aspas', 'aspas_images' );
+
+// Add Shortcode
+function aspas_images2( $atts ) {
+	extract(
+	// Attributes
+	shortcode_atts(
+		array(
+			'fala' => '',
+			'imagem' => '',
+			'autor' => '',
+			'cargo' => '',
+		),
+		$atts
+	));
+return
+'
+<div class="row orange darken-3"><div class="col" style="padding:20px">
+
+									 <i class="fa fa-quote-left fa-3x white-text left" aria-hidden="true" style="margin-left:20px;"></i>
+
+									 <h2 class="white-text">'.$fala.'</h2>
+									 <i class="fa fa-quote-right fa-2x white-text right" aria-hidden="true"style="margin-right:20px;"></i>
+									 <br>
+
+										 <div class="alignright">
+
+
+      									<img src="'.$imagem.'" alt="" class="circle left" width="100px" height="100px" style="margin-top:-20px;margin-bottom:10px;margin-right:20px;">
+      								<span class="title white-text">'.$autor.'</br></span><span class="white-text">'.$cargo.'</span>
+
+
+
+
+									 </div> </div></div>
+				'
+ ;
+
+}
+add_shortcode( 'aspas2', 'aspas_images2' );
+
+
+
+
 
 
 // Pagination
