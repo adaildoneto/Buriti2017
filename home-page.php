@@ -108,7 +108,7 @@ get_header();
 <!-- FIM - Módulo - Especiais -->
 <!-- INICIO - Módulo - Vídeos -->
 <div id="especiais" class="container" style="padding: 0px 10px;">
-  <?php include(TEMPLATEPATH.'/mod-videos.php');?>
+  <?php include(TEMPLATEPATH.'/mod-videos2.php');?>
 </div>
 <!-- FIM - Módulo - Vídeos -->
 <!-- INICIO - Módulo - Agenda Cultural -->

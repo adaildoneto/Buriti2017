@@ -767,6 +767,8 @@ a.button-collapse{
   left: 20px;
   bottom: 10px;
   padding-right: 15px;
+  text-shadow: 0 1px 3px rgba(0,0,0,.8);
+  font-weight: bolder;
 }
 .especiais-img{
   background-position: 50% !important;
