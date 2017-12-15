@@ -2,7 +2,7 @@
 
 <!-- pop up que abre uma vez por dia -->
 
-<div id="modal1" class="modal" style="width:600px; height: auto;">
+<div id="modal1" class="modal" style="width:600px; height:auto">
     <div class="modal-content">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Natal.png" class="img-responsive sem-margem">
     </div>

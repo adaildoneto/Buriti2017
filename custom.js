@@ -408,9 +408,8 @@ jQuery(window).load(function() {
       });
       });
 
-    jQuery(document).ready(function ($) {
-      $(document).ready(function()
-      {
+
+  jQuery(document).ready(function ($) {
       // Obtém todos os cookies do documento
       var cookies = document.cookie;
 
@@ -431,8 +430,7 @@ jQuery(window).load(function() {
       document.cookie = 'usuarioVisualizouModal=SIM; expires=' + expiracao+'; path=/';
 
       // Exibo o modal
-        $('#modal1').modal();
-        $('#modal1').modal('open');
+      $('#modal1').modal();
+    $('#modal1').modal('open');
       }
-      });
       });

@@ -11,18 +11,7 @@ get_header();
 
 ?>
 
-<!-- pop up que abre uma vez por dia -->
 
-<div id="modal1" class="modal" style="width:400px; height: auto;">
-    <div class="modal-content">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Natal.png" class="img-responsive sem-margem">
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Fechar</a>
-    </div>
-  </div>
-
-  <!-- fim do pop up -->
 
 <div class="container header">
 <!-- INICIO - Módulo - Chips -->
