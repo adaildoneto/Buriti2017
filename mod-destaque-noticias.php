@@ -6,8 +6,8 @@
 
 
           <a href="<?php the_Permalink()?>" title="<?php the_title();?>">
-		<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'destaque1' ); ?>
-		<div class="bloco-img-noticias especiais-img" style="background: url('<?php echo $image[0]; ?>');">
+
+		<div class="bloco-img-noticias especiais-img" style="background: url('<?php the_post_thumbnail_url('slider-noticias');; ?>');">
 
           </div></a>
           <div class="categoria nocanto1">
@@ -51,8 +51,8 @@
 
         <?php if (have_posts()): while (have_posts()) : the_post();?>
             <a href="<?php the_Permalink()?>" title="<?php the_title();?>">
-              <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'destaque2' ); ?>
-          <div class="bloco-img-noticias2 especiais-img img-slider efeito" style="background: url('<?php echo $image[0]; ?>');">
+
+          <div class="bloco-img-noticias2 especiais-img img-slider efeito" style="background: url('<?php the_post_thumbnail_url('slider-noticias');; ?>');">
 
           </div>  </a>
      <div class="categoria nocanto1">
@@ -97,8 +97,8 @@
 
         <?php if (have_posts()): while (have_posts()) : the_post();?>
           <a href="<?php the_Permalink()?>" title="<?php the_title();?>">
-            <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'slider-noticias' ); ?>
-          <div class="bloco-img-noticias3 especiais-img" style="background: url('<?php echo $image[0]; ?>');">
+
+          <div class="bloco-img-noticias3 especiais-img" style="background: url('<?php the_post_thumbnail_url('slider-noticias');; ?>');">
           </div></a>
           <div class="categoria nocanto1">
               <?php $categories = get_the_category();
@@ -190,8 +190,8 @@
 
         <?php if (have_posts()): while (have_posts()) : the_post();?>
           <a href="<?php the_Permalink()?>" title="<?php the_title();?>">
-            <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'slider-noticias' ); ?>
-          <div class="bloco-img-noticias3 especiais-img" style="background: url('<?php echo $image[0]; ?>');">
+            
+          <div class="bloco-img-noticias3 especiais-img" style="background: url('<?php the_post_thumbnail_url('slider-noticias');; ?>');">
           </div></a>
           <div class="categoria nocanto1">
               <?php $categories = get_the_category();
