@@ -26,8 +26,8 @@
     <?php query_posts('showposts=1&tag=slider');?>
     <?php if (have_posts()): while (have_posts()) : the_post();?>
 	<a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
-	<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'slider-noticias2' ); ?>
-      <div class="slider-noticias img-slider" style="background: url('<?php echo $image[0]; ?>');">
+
+      <div class="slider-noticias img-slider" style="background: url('<?php the_post_thumbnail_url('slider-noticias');; ?>');">
         <div class="bloco-slider-noticias">
           <h2><span class="line-text orange darken-2"></span><?php the_title();?></h2>
         </div>
@@ -40,8 +40,8 @@
     <?php query_posts('showposts=1&tag=slider&offset=1');?>
     <?php if (have_posts()): while (have_posts()) : the_post();?>
 	<a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
-	<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'slider-noticias2' ); ?>
-      <div class="slider-noticias img-slider" style="background: url('<?php echo $image[0]; ?>');">
+
+      <div class="slider-noticias img-slider" style="background: url('<?php the_post_thumbnail_url('slider-noticias');; ?>');">
         <div class="bloco-slider-noticias">
           <h2><span class="line-text orange darken-2"></span><?php the_title();?></h2>
         </div>
@@ -54,8 +54,8 @@
     <?php query_posts('showposts=1&tag=slider&offset=2');?>
     <?php if (have_posts()): while (have_posts()) : the_post();?>
 	<a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
-	<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'slider-noticias2' ); ?>
-      <div class="slider-noticias img-slider" style="background: url('<?php echo $image[0]; ?>');">
+
+      <div class="slider-noticias img-slider" style="background: url('<?php the_post_thumbnail_url('slider-noticias');; ?>');">
         <div class="bloco-slider-noticias">
           <h2><span class="line-text orange darken-2"></span><?php the_title();?></h2>
         </div>
@@ -68,8 +68,8 @@
     <?php query_posts('showposts=1&tag=slider&offset=3');?>
     <?php if (have_posts()): while (have_posts()) : the_post();?>
 	<a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
-	<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'slider-noticias2' ); ?>
-      <div class="slider-noticias img-slider" style="background: url('<?php echo $image[0]; ?>');">
+
+      <div class="slider-noticias img-slider" style="background: url('<?php the_post_thumbnail_url('slider-noticias');; ?>');">
         <div class="bloco-slider-noticias">
           <h2><span class="line-text orange darken-2"></span><?php the_title();?></h2>
         </div>
