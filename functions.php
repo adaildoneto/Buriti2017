@@ -6,11 +6,9 @@
 
 add_theme_support( 'post-thumbnails' );
 //set_post_thumbnail_size( 100, 100, true );
-add_image_size( "slider-noticias2", 580, 400, array( 'center', 'top' ) );
-add_image_size( "slider-noticias", 380, 200, array( 'center', 'top' ) );
-add_image_size( "slider-post", 1200, 600, array( 'center', 'top' ) );
-add_image_size( "thumbnews", 375, 200, true );
-//add_image_size( "destaque2", 500, 500, true );
+add_image_size( "slider-noticias2", 580, 400, array ( 'center', 'top' ) );
+add_image_size( "slider-post", 1200, 400, array ( 'center', 'top' ) );
+add_image_size( "thumbnews", 375, 200, array ( 'center', 'top' ) );
 add_image_size( "agenda-cultural", 275, 320, true );
 
 
