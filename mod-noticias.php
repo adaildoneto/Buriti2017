@@ -34,7 +34,7 @@ query_posts($args);
     <div class="col s12 m6 l6">
       <div class="card painel-noticias">
         <a href="<?php the_Permalink();ß?>" title="<?php the_title();?>">
-          <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'slider-noticias' ); ?>
+          <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'thumbnews' ); ?>
             <div class="bloco-img-noticias3 especiais-img" style="background: url('<?php echo $image[0]; ?>');">
 
           </div></a>
