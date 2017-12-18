@@ -98,7 +98,7 @@
         <?php if (have_posts()): while (have_posts()) : the_post();?>
           <a href="<?php the_Permalink()?>" title="<?php the_title();?>">
 
-          <div class="bloco-img-noticias3 especiais-img" style="background: url('<?php the_post_thumbnail_url('slider-noticias');; ?>');">
+          <div class="bloco-img-noticias3 especiais-img" style="background: url('<?php the_post_thumbnail_url('thumbnews');; ?>');">
           </div></a>
           <div class="categoria nocanto1">
               <?php $categories = get_the_category();
@@ -190,8 +190,8 @@
 
         <?php if (have_posts()): while (have_posts()) : the_post();?>
           <a href="<?php the_Permalink()?>" title="<?php the_title();?>">
-            
-          <div class="bloco-img-noticias3 especiais-img" style="background: url('<?php the_post_thumbnail_url('slider-noticias');; ?>');">
+
+          <div class="bloco-img-noticias3 especiais-img" style="background: url('<?php the_post_thumbnail_url('thumbnews');; ?>');">
           </div></a>
           <div class="categoria nocanto1">
               <?php $categories = get_the_category();
