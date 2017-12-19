@@ -66,7 +66,7 @@ return
 
 										 		<div class="circle left aspasimg" style="background-image:url('.$imagem.');background-size: cover;"></div>
 
-      								<span class="title">'.$autor.'</br></span><span>'.$cargo.'</span>
+      								<span class="title pequeno">'.$autor.'</br></span><span class="pequeno">'.$cargo.'</span>
 
 
 
