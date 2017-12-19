@@ -22,11 +22,8 @@ else {
 }
 ?>
 
-    <div class="row no-padding">
-		<div class="header-post"></div>
 
-    </div>
-    <div class="container">
+
     <div class="row">
         <div class="col s12 m12 l8 offset-l2 no-padding post ">
             <div id="post" class="card-content flow-text" style="">
@@ -34,10 +31,10 @@ else {
               <h1><?php the_title();?></h1>
               <?php  if (has_excerpt() ) { ?>
               <h2><?php the_excerpt(); ?></h2>
-              <?php } ?>
+              <?php  ?>
                     <p><?php the_content(__('Leia mais'));?></p>
 
-                 
+
   <?php include(TEMPLATEPATH.'/mod-btncurtiu.php');?>
 
 
@@ -46,7 +43,6 @@ else {
     </div>
 
   <?php endwhile;?>
-</div>
 
 
 

@@ -20,8 +20,8 @@
     <div class="col s12 m4 l4">
       <div class="card painel-noticias">
         <a href="<?php the_Permalink()?>" title="<?php the_title();?>" class="">
-          <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'slider-noticias' ); ?>
-            <div class="bloco-img-noticias3 especiais-img" style="background: url('<?php echo $image[0]; ?>');">
+
+            <div class="bloco-img-noticias3 especiais-img" style="background: url('<?php the_post_thumbnail_url( 'thumbnews' ); ?>');">
           </div></a>
 
           <div class="bloco-des-noticias3">

@@ -10,8 +10,8 @@
     <div class="col s12 m4 l4">
       <div class="card painel-noticias2" style="margin-bottom: 23px;">
         <a href="<?php the_Permalink()?>" title="<?php the_title();?>">
-          <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'slider-noticias' ); ?>
-            <div class="bloco-img-noticias3 especiais-img linha-nogabinete" style="background: url('<?php echo $image[0]; ?>');">
+
+            <div class="bloco-img-noticias3 especiais-img linha-nogabinete" style="background: url('<?php the_post_thumbnail_url( 'thumbnews' ); ?>');">
               <span class="chip z-depth-1-half nocanto1 espaco1"><span class="chip green darken-4 left " style=" position: absolute;  left: 0px; "><i class="fa fa-camera-retro white-text" aria-hidden="true"></i></span><?php the_time('d.m.Y');?></span>
           </div></a>
           <div class="bloco-des-nogabinete">
