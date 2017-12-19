@@ -17,9 +17,9 @@
    <?php query_posts('showposts=2&cat=22');?>
    <?php if (have_posts()): while (have_posts()) : the_post();?>
      <a href="<?php the_Permalink()?>" title="<?php the_title();?>">
-       <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'slider-noticias' ); ?>
+
         <div class="col s12 m6 no-padding">
-          <div class="box-especiais-g especiais-img2 b1" style="background: url('<?php echo $image[0]; ?>');">
+          <div class="box-especiais-g especiais-img2 b1" style="background: url('<?php the_post_thumbnail_url( 'thumbnews' ); ?>');">
             <span class="titulo-especiais white-text"><?php the_title();?></span>
           </div>
         </div>
@@ -30,9 +30,9 @@
     <?php query_posts('showposts=3&cat=22&offset=2');?>
     <?php if (have_posts()): while (have_posts()) : the_post();?>
       <a href="<?php the_Permalink()?>" title="<?php the_title();?>">
-        <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'slider-noticias' ); ?>
+
    <div class="col s12 m4 no-padding">
-     <div class="box-especiais-p especiais-img2 b3" style="background: url('<?php echo $image[0]; ?>');">
+     <div class="box-especiais-p especiais-img2 b3" style="background: url('<?php the_post_thumbnail_url( 'thumbnews' ); ?>');">
        <span class="titulo-especiais white-text"><?php the_title();?></span>
      </div>
    </div>
