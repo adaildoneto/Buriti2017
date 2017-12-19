@@ -2,9 +2,9 @@
 
 <!-- pop up que abre uma vez por dia -->
 
-<div id="modal1" class="modal" style="width:600px; height:auto">
+<div id="modal1" class="modal">
     <div class="modal-content">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Natal.png" class="img-responsive sem-margem">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/novoatal.png" class="img-responsive sem-margem">
     </div>
     <div class="modal-footer">
       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Fechar</a>
