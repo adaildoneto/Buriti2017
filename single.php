@@ -26,7 +26,7 @@ else {
             <?php
                     $imagepost = get_post_meta( $post->ID,'destaquepost', true );
                     $imageP = wp_get_attachment_image_src( $imagepost, 'slider-post' );
-                    $imageD = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'slider-post' );
+                    $imageD = the_post_thumbnail_url('slider-post' );
                     if(empty($imageP)){
                        $image = $imageD;
                     }else{
