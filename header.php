@@ -48,8 +48,8 @@
            <div class="background">
              <?php
              $imgID = get_option ('odin_general');
-             $imgMENU = wp_get_attachment_image_src( $imgID['imagemmenu'], 'artigo');
-             ?>
+             $imgMENU = wp_get_attachment_image_src( $imgID['imagemmenu'], 'slider-noticias');
+                        ?>
              <img width="300" src="<?php echo $imgMENU[0]?>">
 
            </div>
