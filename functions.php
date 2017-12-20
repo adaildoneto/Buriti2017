@@ -2,7 +2,7 @@
 
 @ini_set( 'upload_max_size' , '2048K' );
 @ini_set( 'post_max_size', '2048K');
-@ini_set( 'max_execution_time', '400' );
+@ini_set( 'max_execution_time', '800' );
 
 add_theme_support( 'post-thumbnails' );
 //set_post_thumbnail_size( 100, 100, true );
