@@ -4,8 +4,10 @@
 <!-- Noticias 1 // Inicio do Loop -->
 
 
+
 <?php $args = array(
     'showposts' => 12,
+    
 );
 query_posts($args);
 ?>
@@ -32,7 +34,7 @@ query_posts($args);
     <div class="col s12 m6 l6">
       <div class="card painel-noticias">
         <a href="<?php the_Permalink();ß?>" title="<?php the_title();?>">
-        
+
             <div class="bloco-img-noticias3 especiais-img" style="background: url('<?php the_post_thumbnail_url('thumbnews'); ?>');">
 
           </div></a>

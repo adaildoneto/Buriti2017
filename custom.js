@@ -434,3 +434,15 @@ jQuery(window).load(function() {
     $('#modal1').modal('open');
       }
       });
+
+
+    jQuery(document).ready(function ($) {
+      $('#gabinetes').slick({
+        dots: false,
+        infinite: true,
+        vertical: true,
+        verticalSwiping: true,
+        speed: 900,
+        slidesToShow: 3,
+      });
+    });
