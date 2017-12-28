@@ -5,85 +5,21 @@ Template Name: Página do Resultados 2017
 ?>
 <?php get_header(); ?>
 <div class="row header">
-  <
+
 
   <div class="container"  style="padding: 0 10px; margin-top: 20px;">
 
         <div class="col s12 no-padding valign-wrapper center-align background">
-          <?php the_post_thumbnail_url( '' ); ?>
+          <?php the_post_thumbnail( 'slider-post' ); ?>
 
             </div>
 
 
 </div>
-     <!-- <div id="RedeAldeia" class="col s12  redealdeia no-padding">
-         <div class="btn-aldeia">
-					<div class="col s12 m3 l3"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfTfNzMxVTSNj60tvT6nEOuBVaWoSq1L0vV8DLIkUHO27fh8A/viewform?usp=sf_link" class="waves-effect waves-teal btn-flat lighten-1 white-text" style="">
-                 <span class="fa fa-check-square-o"></span> Credenciamento</a></div>
-					<div class="col s12 m3 l3"> <a href="#modal4" class="waves-effect waves-teal btn-flat lighten-1 white-text modal-trigger">
-                 <span class="fa fa-file"></span> Programação</a></div>
-					<div class="col s12 m3 l3"><a href='#' data-activates='encontro' class="dropdown-button waves-effect waves-teal btn-flat lighten-1 white-text">
-                 <span class="fa fa-plus-square"></span> Mais informações</a></div>
-            		<div class="col s12 m3 l3"><a href="#!" data-activates='imprensa' class="dropdown-button waves-effect waves-teal btn-flat lighten-1 white-text">
-                 <span class="fa fa-newspaper-o"></span> Imprensa</a></div>
-
-         </div>
-
-     </div> -->
 
    </div>
 
-</div>
 
-<div id="modal4" class="modal" style="width: 400px;">
-   <div class="modal-content orange darken-4">
-    <img src="http://www.agencia.ac.gov.br/wp-content/uploads/2017/10/22690395_1688953817801587_1713758859_o-1.jpg" class="responsive-img">
-   </div>
-   <div class="modal-footer">
-     <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Fechar</a>
-   </div>
- </div>
-
-  <ul  id='imprensa' class="collection dropdown-content tamanho">
-      <li class="collection-item avatar">
-    <img src="http://www.agencia.ac.gov.br/wp-content/uploads/2017/10/avatar-julie.png" width="150" height="150" alt="" class="circle">
-        <span class="title">Julie Messias</span>
-        <p><i>Coordenadora da Assessoria de Comunicação</i> <br>
-          +55 (68) 99226-0812 <br>
-          juliemessias@hotmail.com
-        </p>
-      </li>
-      <li class="divider"></li>
-      <li class="collection-item avatar">
-      <img src="http://www.agencia.ac.gov.br/wp-content/uploads/2017/10/avatar-01.png" width="150" height="150" alt="" class="circle">
-        <span class="title">Vássia Silveira</span>
-        <p><i>Jornalista</i> <br>
-          +55 (68) 99907 - 2515
-        </p>
-      </li>
-      <li class="collection-item avatar">
-        <img src="http://www.agencia.ac.gov.br/wp-content/uploads/2017/10/avatar-02.png" width="150" height="150" alt="" class="circle">
-        <span class="title">Caio Fulgêncio </span>
-        <p><i>Jornalista</i> <br>
-          +55 (68) 98115 - 4923
-        </p>
-      </li>
-      <li class="collection-item avatar">
-        <img src="http://www.agencia.ac.gov.br/wp-content/uploads/2017/10/avatar-03.png" width="150" height="150" alt="" class="circle">
-        <span class="title">Melissa B. Jares </span>
-        <p><i>Jornalista</i> <br>
-          +55 (68) 99988 - 7373
-        </p>
-      </li>
-
-
-    </ul>
-
-<ul id='encontro' class='dropdown-content'>
-    <li><a href="http://www.agencia.ac.gov.br/acre-sedia-encontro-de-governadores-do-brasil-pela-seguranca-e-controle-das-fronteiras/" target="_blank">Release do Evento</a></li>
-    <li><a href="http://www.agencia.ac.gov.br/encontro-de-governadores-do-brasil-abre-credenciamento2017/" target="_blank">Nota do Credenciamento Imprensa</a></li>
-    <li class="divider"></li>
-  </ul>
 
 
 <!-- INICIO - Módulo - Slider -->
@@ -95,12 +31,12 @@ Template Name: Página do Resultados 2017
 <div class="container">
   <div class="row">
    <div class="slider-noticias-container">
-    <div class="col s12 m12 l6">
-    <?php query_posts('showposts=1&tag=acrenacop23');?>
+    <div class="col s12 m12 l12">
+    <?php query_posts('showposts=1&tag=resultados2017');?>
     <?php if (have_posts()): while (have_posts()) : the_post();?>
 	<a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
-	<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'slider-noticias2' ); ?>
-      <div class="slider-noticias img-slider" style="background: url('<?php echo $image[0]; ?>');">
+
+      <div class="slider-noticias img-slider" style="background: url('<?php the_post_thumbnail_url( 'slider-post' ); ?>');">
         <div class="bloco-slider-noticias">
           <h2><span class="line-text orange darken-2"></span><?php the_title();?></h2>
         </div>
@@ -109,12 +45,12 @@ Template Name: Página do Resultados 2017
 <?php endwhile;endif;?>
 <div class="clearfix"></div>
     </div>
-    <div class="col s12 m12 l6">
-    <?php query_posts('showposts=1&tag=acrenacop23&offset=1');?>
+    <div class="col s12 m12 l12">
+    <?php query_posts('showposts=1&tag=resultados2017&offset=1');?>
     <?php if (have_posts()): while (have_posts()) : the_post();?>
 	<a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
-	<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'slider-noticias2' ); ?>
-      <div class="slider-noticias img-slider" style="background: url('<?php echo $image[0]; ?>');">
+
+      <div class="slider-noticias img-slider" style="background: url('<?php the_post_thumbnail_url( 'slider-post' ); ?>');">
         <div class="bloco-slider-noticias">
           <h2><span class="line-text orange darken-2"></span><?php the_title();?></h2>
         </div>
@@ -123,34 +59,8 @@ Template Name: Página do Resultados 2017
 <?php endwhile;endif;?>
 <div class="clearfix"></div>
     </div>
-    <div class="col s12 m12 l6">
-    <?php query_posts('showposts=1&tag=acrenacop23&offset=2');?>
-    <?php if (have_posts()): while (have_posts()) : the_post();?>
-	<a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
-	<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'slider-noticias2' ); ?>
-      <div class="slider-noticias img-slider" style="background: url('<?php echo $image[0]; ?>');">
-        <div class="bloco-slider-noticias">
-          <h2><span class="line-text orange darken-2"></span><?php the_title();?></h2>
-        </div>
-      </div>
-	</a>
-<?php endwhile;endif;?>
-<div class="clearfix"></div>
-    </div>
-    <div class="col s12 m12 l6">
-    <?php query_posts('showposts=1&tag=acrenacop23&offset=3');?>
-    <?php if (have_posts()): while (have_posts()) : the_post();?>
-	<a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
-	<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'slider-noticias2' ); ?>
-      <div class="slider-noticias img-slider" style="background: url('<?php echo $image[0]; ?>');">
-        <div class="bloco-slider-noticias">
-          <h2><span class="line-text orange darken-2"></span><?php the_title();?></h2>
-        </div>
-      </div>
-	</a>
-<?php endwhile;endif;?>
-<div class="clearfix"></div>
-    </div>
+
+
   </div>
   </div>
 </div>
@@ -176,7 +86,7 @@ Template Name: Página do Resultados 2017
   <div class="no-padding">
 
 <!-- Noticias 1 // Inicio do Loop -->
-<?php query_posts('showposts=3&tag=acrenacop23&offset=4');?>
+<?php query_posts('showposts=12&tag=resultados2017');?>
 <?php if (have_posts()): while (have_posts()) : the_post();?>
 
 
