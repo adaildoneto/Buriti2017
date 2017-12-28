@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Página do Resultas do 2017
+Template Name: Página do Resultados 2017
 */
 ?>
 <?php get_header(); ?>
@@ -9,8 +9,8 @@ Template Name: Página do Resultas do 2017
 
   <div class="container"  style="padding: 0 10px; margin-top: 20px;">
 
-        <div class="col s12 no-padding valign-wrapper center-align">
-            <img src="http://www.agencia.ac.gov.br/wp-content/uploads/2017/11/banner-cop23-agencia54.png" alt="">
+        <div class="col s12 no-padding valign-wrapper center-align background">
+          <?php the_post_thumbnail_url( '' ); ?>
 
             </div>
 
