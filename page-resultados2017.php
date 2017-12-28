@@ -7,10 +7,10 @@ Template Name: Página do Resultados 2017
 <div class="row header">
 
 
-  <div class="container"  style="padding: 0 10px; margin-top: 20px;">
+  <div class=""  style="padding: 0 10px; margin-top: 20px;">
 
-        <div class="col s12 no-padding valign-wrapper center-align background">
-          <?php the_post_thumbnail( 'slider-post' ); ?>
+        <div class="no-padding valign-wrapper center-align background">
+          <?php the_post_thumbnail( '' ); ?>
 
             </div>
 
