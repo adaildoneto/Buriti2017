@@ -4,7 +4,7 @@ Template Name: Página do Resultados 2017
 */
 ?>
 <?php get_header(); ?>
-<div class="row header img-slider" style="width:100%; height: 720px; background: url('<?php the_post_thumbnail_url( 'slider-post' ); ?>');">
+<div class="row header img-slider" style="width:100%; height: 720px; background: url('<?php the_post_thumbnail_url( '' ); ?>'):  background-repeat: no-repeat; background-attachment: fixed; background-position: bottom;">
 
 
 
