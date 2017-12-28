@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Página dE TESTES
+Template Name: Página do Resultas do 2017
 */
 ?>
 <?php get_header(); ?>
