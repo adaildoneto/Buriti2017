@@ -7,7 +7,7 @@ Template Name: Página do Resultados 2017
 <div class="row header">
 
 
-  <div class=""  style="padding: 0 10px; margin-top: 20px;">
+  <div class=""  style="padding: 0 10px; margin-top: 20px; height: 720px;">
 
         <div class="no-padding valign-wrapper center-align background">
           <?php the_post_thumbnail( '' ); ?>
@@ -32,7 +32,7 @@ Template Name: Página do Resultados 2017
   <div class="row">
    <div class="slider-noticias-container">
     <div class="col s12 m12 l12">
-    <?php query_posts('showposts=1&tag=resultados2017');?>
+    <?php query_posts('showposts=1&');?>
     <?php if (have_posts()): while (have_posts()) : the_post();?>
 	<a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
 
@@ -46,7 +46,7 @@ Template Name: Página do Resultados 2017
 <div class="clearfix"></div>
     </div>
     <div class="col s12 m12 l12">
-    <?php query_posts('showposts=1&tag=resultados2017&offset=1');?>
+    <?php query_posts('showposts=1&offset=1');?>
     <?php if (have_posts()): while (have_posts()) : the_post();?>
 	<a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
 
@@ -86,7 +86,7 @@ Template Name: Página do Resultados 2017
   <div class="no-padding">
 
 <!-- Noticias 1 // Inicio do Loop -->
-<?php query_posts('showposts=12&tag=resultados2017');?>
+<?php query_posts('showposts=12');?>
 <?php if (have_posts()): while (have_posts()) : the_post();?>
 
 
