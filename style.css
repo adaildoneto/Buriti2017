@@ -1394,9 +1394,10 @@ height: 120px;
 .grande {
   font-size: 80px;
   font-weight: 700;
-  font-family: Roboto;
+  font-style: capitalize;
+  font-family: Roboto Sans;
 }
 
 .postex {
-  margin-top:75px; 
+  margin-top:75px;
 }

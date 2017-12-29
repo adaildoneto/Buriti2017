@@ -62,7 +62,7 @@ Template Name: Página do Resultados 2017
 <div class="row">
 
 <!-- Noticias 1 // Inicio do Loop -->
-<?php query_posts('showposts=9');?>
+<?php query_posts('showposts=9&tag=resultados2017');?>
 <?php if (have_posts()): while (have_posts()) : the_post();?>
 
 
