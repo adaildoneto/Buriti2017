@@ -4,14 +4,53 @@ Template Name: Página do Resultados 2017
 */
 ?>
 <?php get_header(); ?>
-<div class="row header img-slider" style="width:100%; height: 720px; background: url('<?php the_post_thumbnail_url( 'slider-noticias' ); ?>'); background-repeat: no-repeat; background-position: bottom;">
+<div class="row header img-slider" style="width:100%; height: 720px; background: url('<?php the_post_thumbnail_url( 'slider-noticias' ); ?>'); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+    <?php while (have_posts()) : the_post();?>
+<div class="container">
+  <div class="col s12 m12 l8 offset-l2">
+    <div class="aligncenter" style="margin-top:400px;margin-botom:50px;">
+        <h1 class="tituloefeito3d grande white-text"><?php the_title(); ?></h1>
+    </div>
+
+  </div>
+
+  <div class="col s12 m12 l10 no-padding post offset-l1">
+      <div id="post" class="card postex" style="">
 
 
+
+
+          <div class="card-action info-post">
+            <div class="right flow-text">
+            <?php include(TEMPLATEPATH.'/mod-social.php');?>
+          </div>
+            <div class="left">
+              <span class="data-post"> <?php the_time('d.m.Y');?> </span>
+              <span class="hora-post"> <?php the_time('G:i');?></span>
+
+            </div>
+
+
+                        </div>
+          <div class="card-content">
+
+              <?php the_content();?>
+
+
+
+
+<?php include(TEMPLATEPATH.'/mod-btncurtiu.php');?>
+
+          </div>
+      </div>
+  </div>
+
+</div>
 
 
    </div>
 
-
+<?php endwhile; ?>
 
 
 <!-- INICIO - Módulo - Slider -->
@@ -19,70 +58,16 @@ Template Name: Página do Resultados 2017
     <div class="header-espaco">
 <h1>RESULTADOS 2017</h1>
   </div>
-</div>
-<div class="container">
-  <div class="row">
-   <div class="slider-noticias-container">
-    <div class="col s12 m12 l6">
-    <?php query_posts('showposts=1');?>
-    <?php if (have_posts()): while (have_posts()) : the_post();?>
-	<a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
 
-      <div class="slider-noticias img-slider" style="background: url('<?php the_post_thumbnail_url( 'slider-post' ); ?>');">
-        <div class="bloco-slider-noticias">
-          <h2><span class="line-text orange darken-2"></span><?php the_title();?></h2>
-        </div>
-      </div>
-	</a>
-<?php endwhile;endif;?>
-<div class="clearfix"></div>
-    </div>
-    <div class="col s12 m12 l6">
-    <?php query_posts('showposts=1&offset=1');?>
-    <?php if (have_posts()): while (have_posts()) : the_post();?>
-	<a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
-
-      <div class="slider-noticias img-slider" style="background: url('<?php the_post_thumbnail_url( 'slider-post' ); ?>');">
-        <div class="bloco-slider-noticias">
-          <h2><span class="line-text orange darken-2"></span><?php the_title();?></h2>
-        </div>
-      </div>
-	</a>
-<?php endwhile;endif;?>
-<div class="clearfix"></div>
-    </div>
-
-
-  </div>
-  </div>
-</div>
-
-<!-- Encontro Segurança -->
-
-<div class="row" style="">
-  <div class="container">
-<div class="col s12 no-padding">
-
-          <div class="col s6">
-
-         <h5><i class="icon-logo-agencia2017-01"></i> Sobre o Acre na #COP23</h5>
-          </div>
-          <div class="col s6" style="padding-top: 30px;">
-          <a class="right grey-text text-darken-3" href="http://www.agencia.ac.gov.br/tag/acrenacop23/">Ver todos <i class="fa fa-long-arrow-right" style="font-size: 12px;" aria-hidden="true"></i>
-      </a>
-          </div>
-
-
-   </div>
-
-  <div class="no-padding">
+<div class="row">
 
 <!-- Noticias 1 // Inicio do Loop -->
-<?php query_posts('showposts=12');?>
+<?php query_posts('showposts=9');?>
 <?php if (have_posts()): while (have_posts()) : the_post();?>
 
 
 <!-- Noticias 2 -->
+
 <div class="col s12 m4 l4">
     <div class="card painel-noticias">
 
@@ -123,24 +108,22 @@ Template Name: Página do Resultados 2017
 
 <?php endwhile;endif;?>
 <div class="clearfix"></div>
+<div class="col s12">
+<a href="http://www.agencia.ac.gov.br/categoria/noticias" class="btn orange btn-mais">Mais notícias</a>
+</div>
 
 <!-- BoTão de mais notícias -->
 
 
 </div>
 </div>
-</div>
+
 
 
 
 <!-- BoTão de mais notícias -->
-    <div class="col s12">
-    <a href="http://www.agencia.ac.gov.br/categoria/noticias" class="btn orange btn-mais">Mais notícias</a>
-  </div>
 
-</div>
-</div>
-</div>
+
 
 
 <?php get_footer(); ?>
