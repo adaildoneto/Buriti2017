@@ -54,7 +54,7 @@ Template Name: Página do Resultados 2017
 
 
 <!-- INICIO - Módulo - Slider -->
-<div class="container">
+<div class="container" style="display: grid;">
     <div class="col s12">
 <h4>Veja aqui:</h4>
   </div>
