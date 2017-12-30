@@ -9,7 +9,7 @@ Template Name: Página do Resultados 2017
 <div class="container">
   <div class="col s12 m12 l8 offset-l2">
     <div class="aligncenter" style="margin-top:400px;margin-botom:50px;">
-        <h1 class="tituloefeito3d grande white-text"><?php the_title(); ?></h1>
+        <h1 class="tituloefeito3d grande white-text flow-text"><?php the_title(); ?></h1>
     </div>
 
   </div>
