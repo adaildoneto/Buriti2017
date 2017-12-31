@@ -4,7 +4,8 @@
 
 <div id="modal1" class="modal">
     <div class="modal-content">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/novonatal.png" class="responsive-img sem-margem">
+      <a href="http://www.agencia.ac.gov.br/resultados2017">  <img src="http://www.agencia.ac.gov.br/wp-content/uploads/2017/12/banner-resultados2017.png" class="responsive-img sem-margem"></a>
+
     </div>
     <div class="modal-footer">
       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Fechar</a>

@@ -2,7 +2,7 @@
   <?php while (have_posts()) : the_post();?>
     <div class="row no-padding">
 
-        <div class="especiais-img img-post2" style="background: url('<?php the_post_thumbnail_url('large'); ?>') no-repeat;">
+        <div class="especiais-img img-post2" style="background: url('<?php the_post_thumbnail_url('photoswipe_full'); ?>') no-repeat;">
         </div>
     </div>
 
