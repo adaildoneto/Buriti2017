@@ -4,7 +4,7 @@
 
 <div id="modal1" class="modal">
     <div class="modal-content">
-      <a href="http://www.agencia.ac.gov.br/resultados2017">  <img src="http://www.agencia.ac.gov.br/wp-content/uploads/2017/12/banner-resultados2017.png" class="responsive-img sem-margem"></a>
+      <a href="http://www.agencia.ac.gov.br/resultados-2017/">  <img src="http://www.agencia.ac.gov.br/wp-content/uploads/2017/12/banner-resultados2017.png" class="responsive-img sem-margem"></a>
 
     </div>
     <div class="modal-footer">
