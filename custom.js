@@ -419,7 +419,7 @@ jQuery(window).load(function() {
       // Entra aqui caso o cookie não exista no  navegador do usuário
 
       // Crio um objeto Date do Javascript pegando a data de hoje e incrementando + 7 dias nessa data
-      var diasparaexpirar = 1/2;
+      var diasparaexpirar = 0.01;
       var expiracao = new Date();
       expiracao.setTime(expiracao.getTime() + (diasparaexpirar * 24*60*60*1000));
 
