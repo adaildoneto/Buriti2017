@@ -22,62 +22,37 @@ get_header();
 <!-- INICIO - Módulo - Slider -->
   <div class="row">
    <div class="slider-noticias-container">
-    <div class="col s12 m12 l6">
-    <?php query_posts('showposts=1');?>
-    <?php if (have_posts()): while (have_posts()) : the_post();?>
-	<a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
-	<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'slider-noticias2' ); ?>
-      <div class="slider-noticias img-slider" style="background: url('<?php echo $image[0]; ?>');">
-        <div class="bloco-slider-noticias">
-          <h2><span class="line-text orange darken-2"></span><?php the_title();?></h2>
-        </div>
-      </div>
-	</a>
-<?php endwhile;endif;?>
-<div class="clearfix"></div>
-    </div>
-    <div class="col s12 m12 l6">
-    <?php query_posts('showposts=1&offset=1');?>
-    <?php if (have_posts()): while (have_posts()) : the_post();?>
-	<a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
-	<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'slider-noticias2' ); ?>
-      <div class="slider-noticias img-slider" style="background: url('<?php echo $image[0]; ?>');">
-        <div class="bloco-slider-noticias">
-          <h2><span class="line-text orange darken-2"></span><?php the_title();?></h2>
-        </div>
-      </div>
-	</a>
-<?php endwhile;endif;?>
-<div class="clearfix"></div>
-    </div>
-    <div class="col s12 m12 l6">
-    <?php query_posts('showposts=1&offset=2');?>
-    <?php if (have_posts()): while (have_posts()) : the_post();?>
-	<a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
-	<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'slider-noticias2' ); ?>
-      <div class="slider-noticias img-slider" style="background: url('<?php echo $image[0]; ?>');">
-        <div class="bloco-slider-noticias">
-          <h2><span class="line-text orange darken-2"></span><?php the_title();?></h2>
-        </div>
-      </div>
-	</a>
-<?php endwhile;endif;?>
-<div class="clearfix"></div>
-    </div>
-    <div class="col s12 m12 l6">
-    <?php query_posts('showposts=1&offset=3');?>
-    <?php if (have_posts()): while (have_posts()) : the_post();?>
-	<a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
-	<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'slider-noticias2' ); ?>
-      <div class="slider-noticias img-slider" style="background: url('<?php echo $image[0]; ?>');">
-        <div class="bloco-slider-noticias">
-          <h2><span class="line-text orange darken-2"></span><?php the_title();?></h2>
-        </div>
-      </div>
-	</a>
-<?php endwhile;endif;?>
-<div class="clearfix"></div>
-    </div>
+     <?php
+ 		
+ 			$args = array (
+ 			  'pagination'             => true,
+ 				'tag'										 => array ('slider'),
+ 			  'posts_per_page'         => 4,
+ 			  'ignore_sticky_posts'    => true,
+
+ 			);
+ 			// The Query
+ 			$query = new WP_Query( $args );
+
+ 			// The Loop
+ 			while ( $query->have_posts() ) {
+
+ 		      $query->the_post();
+
+ 		 {  // Destaque Retangular
+
+
+ 						get_template_part( 'slider', '' );
+
+ 				}
+
+
+ 		    wp_reset_postdata();
+
+ }
+ 			?>
+
+
   </div>
   </div>
   <!-- FIM - Módulo - Slider -->
