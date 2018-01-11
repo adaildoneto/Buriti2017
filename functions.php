@@ -737,7 +737,38 @@ add_action( 'wp_print_scripts', 'remover_js', 100 );
 add_action( 'wp_print_styles', 'remover_css', 100 );
 }
 
+//criando a metabox para receber a tag
 
+$etags_metabox = new Odin_Metabox(
+    'etags', // Slug/ID do Metabox (obrigatório)
+    'Página Especial Buriti 2018', // Nome do Metabox  (obrigatório)
+    'page', // Slug do Post Type, sendo possível enviar apenas um valor ou um array com vários (opcional)
+    'normal', // Contexto (opções: normal, advanced, ou side) (opcional)
+    'high' // Prioridade (opções: high, core, default ou low) (opcional)
+);
+
+$etags_metabox->set_fields(
+    array(
+        array(
+            'id'          => 'etags',
+            'label'       => __( 'Qual tag será utilizada?', 'odin' ),
+            'type'        => 'text',
+            'description' => __( 'Separe as tags por virgulas, caso seja mais de uma.', 'odin' )
+        ),
+				array(
+                'id'          => 'numerodematerias', // Required
+                'label'       => __( 'Quantas matérias vao aparecer?', 'odin' ), // Required
+                'type'        => 'input', // Required
+                // 'default'  => 'Default text', // Optional
+                'description' => __( 'O minimo é 3 e o máximo de 18 matérias, o ideal é utilizar 9', 'odin' ), // Optional
+                'attributes'  => array( // Optional (html input elements)
+                    'type' => 'number',
+                    'max'  => 18,
+                    'min'  => 3
+                )
+            ),
+    )
+);
 
 
 
