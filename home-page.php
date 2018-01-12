@@ -73,6 +73,7 @@ get_header();
 	<?php include(TEMPLATEPATH.'/mod-destaque-noticias-teste.php');?>
 </div>
 
+<?php include(TEMPLATEPATH.'/mod-bannerfull.php');?>
 
 <!-- FIM - Módulo - Notícias -->
 
