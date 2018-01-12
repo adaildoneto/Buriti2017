@@ -586,14 +586,23 @@ $artigo_metabox->set_fields(
 					 wp_enqueue_script( 'materialize-script', get_template_directory_uri() . '/materialize/js/materialize.min.js');
 					 wp_enqueue_script( 'slick-script', get_template_directory_uri() . '/assets/slick/slick.min.js');
 					 wp_enqueue_script( 'YT', get_template_directory_uri() . '/assets/js/scriptyt.js');
- 				 	 wp_enqueue_script( 'custom', get_template_directory_uri() . '/custom.js');
+
 					 wp_enqueue_script( 'search', get_template_directory_uri() . '/assets/js/search.js');
 					 wp_enqueue_script( 'classie', get_template_directory_uri() . '/assets/js/classie.js');
 					 wp_enqueue_script( 'simpleWeather', get_template_directory_uri() . '/tempo3/jquery.simpleWeather.js');
 					  wp_enqueue_script( 'tempo', get_template_directory_uri() . '/tempo3/tempo-ok.js');
 
+						 if(is_page_template('home-page.php')) {
+							  wp_enqueue_script( 'custom-teste', get_template_directory_uri() . '/custom-teste.js');
+							} else {
+							 wp_enqueue_script( 'custom', get_template_directory_uri() . '/custom.js');
+							}
+
 				}
 				add_action( 'wp_enqueue_scripts', 'add_estilos_e_scripts' );
+
+
+
 
   //Final das orações do odin
 
@@ -770,10 +779,4 @@ $etags_metabox->set_fields(
     )
 );
 
-
-
-function my_myme_types($mime_types){
-    $mime_types['kml'] = 'application/vnd.google-earth.kml+xml'; //Adding svg extension
-    return $mime_types;
-}
-add_filter('upload_mimes', 'my_myme_types', 1, 1);
+?>

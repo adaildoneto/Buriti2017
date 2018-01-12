@@ -23,7 +23,7 @@ get_header();
   <div class="row">
    <div class="slider-noticias-container">
      <?php
- 		
+
  			$args = array (
  			  'pagination'             => true,
  				'tag'										 => array ('slider'),
@@ -64,12 +64,28 @@ get_header();
   <?php dynamic_sidebar( 'publicidade-topo' ); ?>
 
 </div>
+
 </div>
 <!-- FIM - Módulo - Notícias -->
 
 <!-- INICIO - Módulo - Notícias -->
 <div class="container">
 	<?php include(TEMPLATEPATH.'/mod-destaque-noticias-teste.php');?>
+</div>
+
+<div class="row">
+  <div class="parallax-container">
+      <div class="parallax"><img src="http://www.agencia.ac.gov.br/wp-content/uploads/2018/01/DJI_0014.jpg"></div>
+<div style="margin-top:100px">
+  <h1 class="tituloefeito3d grande white-text flow-text center-align">Monitoramento</br> dos Rios 2018</h1>
+  <div class="center-align">
+    <a class="waves-effect waves-light btn orange darken-5 " href="#http://www.agencia.ac.gov.br/monitoramento-dos-rios/"><i class="material-icons left">arrow_drop_down_circle</i>Acesse agora!</a>
+
+  </div>
+</div>
+
+    </div>
+
 </div>
 <!-- FIM - Módulo - Notícias -->
 
