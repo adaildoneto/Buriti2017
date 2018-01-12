@@ -1417,3 +1417,7 @@ height: 120px;
 .postex {
   margin-top:75px;
 }
+
+.shadowcss {
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.91);
+}
