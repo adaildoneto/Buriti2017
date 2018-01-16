@@ -199,7 +199,7 @@ function arphabet_widgets_init() {
 		array(
 		'name'          => 'Publicidade Lateral',
 		'id'            => 'publicidade-lateral',
-		'before_widget' => '<div>',
+		'before_widget' => '<div class="grid-item">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<p class="rounded white-text">',
 		'after_title'   => '</p>',
