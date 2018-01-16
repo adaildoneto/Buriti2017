@@ -32,6 +32,13 @@ while ( $query->have_posts() ) {
 
      }
 
+     else if ( in_category( '15' ) ) {  // Destaque GRande
+
+
+          get_template_part( 'destaque', 'grande' );
+
+        }
+
   else if (  has_tag( 'destaque4' ) ) {  // destaque foto
 
            get_template_part( 'destaque', 'colorido' );
