@@ -1,9 +1,9 @@
-<div class="col s12 m4 grid-item">
+<div class="col s12 m4">
       <div class="card painel-noticias">
 
           <a href="<?php the_Permalink()?>" title="<?php the_title();?>">
-            <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'slider-noticias' ); ?>
-          <div class="bloco-img-noticias3 especiais-img" style="background: url('<?php echo $image[0]; ?>');">
+
+          <div class="bloco-img-noticias3 especiais-img" style="background: url('<?php the_post_thumbnail_url('thumbnews'); ?>');">
           </div></a>
           <div class="categoria nocanto1">
               <?php $categories = get_the_category();
@@ -30,6 +30,6 @@
                 <?php include(TEMPLATEPATH.'/mod-social.php');?>
           </div>
       </div>
-
+    <?php endwhile;endif;?>
     <div class="clearfix"></div>
   </div>

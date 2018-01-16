@@ -3,7 +3,7 @@
 
           <a href="<?php the_Permalink()?>" title="<?php the_title();?>">
 
-		<div class="bloco-img-noticias especiais-img" style="background: url('<?php the_post_thumbnail_url('slider-noticias');; ?>');">
+		<div class="bloco-img-noticias especiais-img" style="background: url('<?php the_post_thumbnail_url('slider-noticias'); ?>');">
 
           </div></a>
           <div class="categoria nocanto1">

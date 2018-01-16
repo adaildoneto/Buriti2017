@@ -1,8 +1,8 @@
-<div class="col s12 m4 l4 grid-item">
+<div class="col s12 m4 l4">
     <div class="card painel-noticias">
-      <a href="<?php the_Permalink()?>" title="<?php the_title();?>">
-            <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'destaque2' ); ?>
-        <div class="bloco-img-noticias2 especiais-img img-slider efeito" style="background: url('<?php echo $image[0]; ?>');">
+            <a href="<?php the_Permalink()?>" title="<?php the_title();?>">
+
+        <div class="bloco-img-noticias2 especiais-img img-slider efeito" style="background: url('<?php the_post_thumbnail_url('slider-noticias'); ?>');">
 
         </div>  </a>
    <div class="categoria nocanto1">
@@ -31,6 +31,6 @@
             <?php include(TEMPLATEPATH.'/mod-social-white.php');?>
         </div>
     </div>
-
+  <?php endwhile;endif;?>
   <div class="clearfix"></div>
 </div>
