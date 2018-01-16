@@ -2,8 +2,8 @@
 jQuery(document).ready(function ($) {
   $('.slider-noticias-container').slick({
   dots: true,
-  slidesToShow: 2,
-  slidesToScroll: 2,
+  slidesToShow: 1,
+  slidesToScroll: 1,
   speed: 1800,
   autoplay: true,
   autoplaySpeed: 10000,

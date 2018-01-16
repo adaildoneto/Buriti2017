@@ -26,8 +26,8 @@ get_header();
 
  			$args = array (
  			  'pagination'             => true,
- 				'tag'										 => array ('slider'),
- 			  'posts_per_page'         => 4,
+ 				'is_tag'										 => array ('slider'),
+ 			  'posts_per_page'         => 5,
  			  'ignore_sticky_posts'    => true,
 
  			);
@@ -39,17 +39,19 @@ get_header();
 
  		      $query->the_post();
 
- 		 {  // Destaque Retangular
+          if ( in_category( 'especiais' ) ) {  // destaque foto
+
+        		 						 get_template_part( 'slider', 'grande' );
 
 
- 						get_template_part( 'slider', '' );
+        			 } else {
 
- 				}
+        					get_template_part( 'slider', '' );
+        				}
 
+        		    wp_reset_postdata();
 
- 		    wp_reset_postdata();
-
- }
+        }
  			?>
 
 
