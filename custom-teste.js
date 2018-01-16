@@ -2,8 +2,8 @@
 jQuery(document).ready(function ($) {
   $('.slider-noticias-container').slick({
   dots: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
+  slidesToShow: 2,
+  slidesToScroll: 2,
   speed: 1800,
   autoplay: true,
   autoplaySpeed: 10000,
@@ -385,6 +385,15 @@ jQuery(window).load(function() {
     });
 
       });
+
+      jQuery(window).load(function() {
+          var container = document.querySelector('#grid-post');
+          var msnry = new Masonry( container, {
+            itemSelector: '.grid-item',
+            columnHeight: '.grid-item',
+          });
+
+            });
 
       // INICIO Modal video
       jQuery(document).ready(function ($) {

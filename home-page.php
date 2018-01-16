@@ -26,8 +26,8 @@ get_header();
 
  			$args = array (
  			  'pagination'             => true,
- 				'is_tag'										 => array ('slider'),
- 			  'posts_per_page'         => 5,
+ 				'tag'										 => array ('slider'),
+ 			  'posts_per_page'         => 4,
  			  'ignore_sticky_posts'    => true,
 
  			);
@@ -39,7 +39,7 @@ get_header();
 
  		      $query->the_post();
 
-          if ( in_category( 'especiais' ) ) {  // destaque foto
+          if ( in_category( 'esp' ) ) {  // destaque foto
 
         		 						 get_template_part( 'slider', 'grande' );
 
