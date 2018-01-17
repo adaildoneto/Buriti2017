@@ -388,8 +388,10 @@ jQuery(window).load(function() {
 
       jQuery(window).load(function($) {
         $('.grid').masonry({
-          columnWidth: 380,
-          itemSelector: '.grid-item'
+          percentPosition: true,
+    itemSelector: 'grid-item',
+    columnWidth: '.grid-item',
+    columnHeight: '.bloco-img-noticias2'
           });
 
             });
