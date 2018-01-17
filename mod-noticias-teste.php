@@ -1,5 +1,5 @@
 <div class="row">
-  <div id="grid-post" class="container">
+  <div id="" class="container grid">
 
 <!-- Noticias 1 // Inicio do Loop -->
 
@@ -62,7 +62,7 @@ while ( $query->have_posts() ) {
     get_template_part( 'normal', '' );
   }
 
-  
+
 
   wp_reset_postdata();
 

@@ -386,11 +386,10 @@ jQuery(window).load(function() {
 
       });
 
-      jQuery(window).load(function() {
-          var container = document.querySelector('#grid-post');
-          var msnry = new Masonry( container, {
-            itemSelector: '.grid-item',
-            columnHeight: '.grid-height',
+      jQuery(window).load(function($) {
+        $('.grid').masonry({
+          columnWidth: '.grid-height',
+          itemSelector: '.grid-item'
           });
 
             });
