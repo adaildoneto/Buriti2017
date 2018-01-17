@@ -386,12 +386,13 @@ jQuery(window).load(function() {
 
       });
 
-      jQuery(window).load(function($) {
-        $('.grid').masonry({
+      jQuery(window).load(function() {
+        var container = document.querySelector('.grid');
+        var msnry = new Masonry( container, {
           percentPosition: true,
     itemSelector: 'grid-item',
-    columnWidth: '.grid-item',
-    columnHeight: '.bloco-img-noticias2'
+    columnWidth: '.grid-widht',
+    columnHeight: 'grid-height'
           });
 
             });
