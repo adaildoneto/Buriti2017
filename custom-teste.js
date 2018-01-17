@@ -390,10 +390,8 @@ jQuery(window).load(function() {
         var container = document.querySelector('.grid');
         var msnry = new Masonry( container, {
           percentPosition: true,
-    itemSelector: '.grid-item',
-    columnWidth: '.painel-noticias',
-    columnHeight: '.painel-noticias'
-          });
+          itemSelector: '.grid-item',
+            });
 
             });
 
