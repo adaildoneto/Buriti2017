@@ -1425,5 +1425,3 @@ height: 120px;
 /* fluid 5 columns */
 .grid-sizer,
 .grid-item { width: 33%; }
-/* 2 columns wide */
-.grid-width { width: 66%; }
