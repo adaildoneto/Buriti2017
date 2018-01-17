@@ -390,7 +390,7 @@ jQuery(window).load(function() {
           var container = document.querySelector('#grid-post');
           var msnry = new Masonry( container, {
             itemSelector: '.grid-item',
-            columnHeight: '.grid-item',
+            columnHeight: '.grid-height',
           });
 
             });
