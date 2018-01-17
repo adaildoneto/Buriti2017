@@ -582,7 +582,7 @@ $artigo_metabox->set_fields(
 					 wp_enqueue_style( 'slicktheme', get_template_directory_uri() . '/assets/slick/slick-theme.css');
 					  wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/css/font-awesome.min.css');
 					 wp_enqueue_script( 'jquery');
-					wp_enqueue_script( 'masonry', get_template_directory_uri().'/js/masonry.pkgd.min.js');
+					wp_enqueue_script( 'masonry');
 					 wp_enqueue_script( 'materialize-script', get_template_directory_uri() . '/materialize/js/materialize.min.js');
 					 wp_enqueue_script( 'slick-script', get_template_directory_uri() . '/assets/slick/slick.min.js');
 					 wp_enqueue_script( 'YT', get_template_directory_uri() . '/assets/js/scriptyt.js');
