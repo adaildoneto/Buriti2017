@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<!-- pop up que abre uma vez por dia -->
+<!-- pop up que abre uma vez por dia
 
 <div id="modal1" class="modal">
     <div class="modal-content">
@@ -12,7 +12,7 @@
     </div>
   </div>
 
-  <!-- fim do pop up -->
+   fim do pop up -->
 
 <div class="container header">
 <!-- INICIO - Módulo - Chips -->
