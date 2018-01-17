@@ -1,7 +1,7 @@
 <div class="row">
 
 
-  <div class="containner no-padding">
+  <div class="container no-padding">
 
          <div class="col s6">
 
@@ -15,8 +15,9 @@
 
   </div>
 
+</div>
 
-
+<div class="row">
    <?php query_posts('showposts=4');?>
    <?php if (have_posts()): while (have_posts()) : the_post();?>
      <a href="<?php the_Permalink()?>" title="<?php the_title();?>">
@@ -29,8 +30,5 @@
       </a>
     <?php endwhile;endif;?>
     <div class="clearfix"></div>
-
-
-
 
 </div>
