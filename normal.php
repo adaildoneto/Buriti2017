@@ -1,4 +1,4 @@
-<div class="col s12 m4 grid-item grid-height">
+<div class="col s12 m4 grid-item">
       <div class="card painel-noticias">
 
           <a href="<?php the_Permalink()?>" title="<?php the_title();?>">
