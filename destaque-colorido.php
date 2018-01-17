@@ -1,4 +1,4 @@
-<div class="col s12 m4">
+<div class="col s12 m4 grid-item">
     <div class="card painel-noticias">
             <div class="bloco-img-noticias2 especiais-img orange darken-2">
           <div class="categoria nocanto1">

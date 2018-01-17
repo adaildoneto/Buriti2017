@@ -389,8 +389,12 @@ jQuery(window).load(function() {
       jQuery(window).load(function() {
         var container = document.querySelector('#grid');
           var msnry = new Masonry( container, {
-          columnHeight: '.grid-item',
-          itemSelector: '.grid-item',
+            // use outer width of grid-sizer for columnWidth
+    columnWidth: '.grid-sizer',
+    // do not use .grid-sizer in layout
+    itemSelector: '.grid-item',
+    percentPosition: true
+
             });
 
             });
