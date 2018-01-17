@@ -17,7 +17,7 @@ while ( $query->have_posts() ) {
 
     $query->the_post();
 
-   if  ( has_tag( 'destaque1, rios2018' ) ) {  // Destaque Retangular
+   if  ( has_tag( 'rios2018' ) ) {  // Destaque Retangular
 
 
       get_template_part( 'destaque', 'grande' );
