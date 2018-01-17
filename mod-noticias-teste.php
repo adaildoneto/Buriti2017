@@ -1,5 +1,5 @@
 <div class="row">
-  <div id="" class="container grid">
+  <div id="grid" class="container">
 
 <!-- Noticias 1 // Inicio do Loop -->
 
