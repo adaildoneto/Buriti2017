@@ -44,6 +44,13 @@ while ( $query->have_posts() ) {
              get_template_part( 'destaque', 'quadrado' );
 
            }
+           else if ( in_category( '55' ) ) {  // Destaque GRande
+
+
+                get_template_part( 'destaque', 'colorido' );
+
+              }
+
 
   else if (  has_tag( 'destaque4' ) ) {  // destaque foto
 
@@ -55,7 +62,7 @@ while ( $query->have_posts() ) {
     get_template_part( 'normal', '' );
   }
 
-  if ( is_dynamic_sidebar('publicidade-lateral') ) {
+  if ( is_dynamic_sidebar('publicidade-lateral@') ) {
     if ( $query->current_post == 6 ) {  // first post
 
         dynamic_sidebar('publicidade-lateral');
