@@ -388,7 +388,7 @@ jQuery(window).load(function() {
 
       jQuery(window).load(function($) {
         $('.grid').masonry({
-          columnWidth: '.grid-height',
+          columnWidth: 380,
           itemSelector: '.grid-item'
           });
 
