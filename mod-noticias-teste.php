@@ -1,6 +1,8 @@
 <div class="row">
   <div id="grid" class="container">
+<div class="grid-sizer col s12 m6 l4">
 
+</div>
 <!-- Noticias 1 // Inicio do Loop -->
 
 
