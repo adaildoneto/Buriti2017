@@ -31,6 +31,6 @@
             <?php include(TEMPLATEPATH.'/mod-social-white.php');?>
         </div>
     </div>
-  <?php endwhile;endif;?>
+
   <div class="clearfix"></div>
 </div>
