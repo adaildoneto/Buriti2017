@@ -388,8 +388,8 @@ jQuery(window).load(function() {
 
       jQuery(window).load(function() {
         var container = document.querySelector('.grid');
-        var msnry = new Masonry( container, {
-          percentPosition: true,
+          var msnry = new Masonry( container, {
+          columnHeight: '.grid-item',
           itemSelector: '.grid-item',
             });
 
