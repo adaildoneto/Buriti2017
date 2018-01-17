@@ -85,7 +85,7 @@ get_header();
 </div>
 <!-- FIM - Módulo - Mais Notícias e Sidebar -->
 <!-- INICIO - Módulo - Especiais -->
-<div id="especiais" class="container" style="padding: 0px 10px;">
+<div id="especiais" class="" style="padding: 0px 10px;">
  	<?php include(TEMPLATEPATH.'/mod-especiais-teste.php');?>
 </div>
 <!-- FIM - Módulo - Especiais -->

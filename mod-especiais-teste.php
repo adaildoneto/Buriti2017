@@ -1,7 +1,7 @@
 <div class="row">
 
 
-  <div class="col s12 no-padding">
+  <div class="containner no-padding">
 
          <div class="col s6">
 

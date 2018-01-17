@@ -1422,5 +1422,8 @@ height: 120px;
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.91);
 }
 
+/* fluid 5 columns */
 .grid-sizer,
 .grid-item { width: 33%; }
+/* 2 columns wide */
+.grid-width { width: 66%; }
