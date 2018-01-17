@@ -7,7 +7,7 @@
 
 <?php $args = array(
     'showposts' => 24,
-    'cat' => array (-20452,-15968,-15966,-167,-61,-38,-9,-178,-5,-1,-35,-18910,-18911,-18912,-18913,-18918,-18907),
+    'cat' => array (-20452,-15968,-15966,-167,-61,-38,-9,-178,-5,-1,-35,),
 
 );
 $query = new WP_Query( $args );
@@ -32,12 +32,18 @@ while ( $query->have_posts() ) {
 
      }
 
-     else if ( in_category( '15' ) ) {  // Destaque GRande
+     else if ( in_category( 'seguranca' ) ) {  // Destaque GRande
 
 
-          get_template_part( 'destaque', 'grande' );
+          get_template_part( 'destaque', 'quadrado' );
 
         }
+        else if ( in_category( 'seguranca' ) ) {  // Destaque GRande
+
+
+             get_template_part( 'destaque', 'quadrado' );
+
+           }
 
   else if (  has_tag( 'destaque4' ) ) {  // destaque foto
 
