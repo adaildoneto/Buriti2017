@@ -17,14 +17,14 @@
 
 	 <?php wp_head()?>
     </head>
-    <body class="" style="background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);">
+    <body class="gradiente2018">
 	<!-- Modulo Facebook -->
 	<div id="fb-root"></div>
 
 
       <!-- INICIO - Módulo - Navegação -->
         <div class="navbar-fixed">
-        <nav class="" role="navigation" style="background-image: linear-gradient( 90deg, #FEC163 10%, #DE4313 100%);">
+        <nav class="gradiente-logo" role="navigation">
             <div class="nav-wrapper container">
                 <div class="brand-logo">
                     <a id="logo-container" href="<?php echo site_url(); ?>" title="<?php bloginfo('name');?>"><span class="icon-logo-agencia2017-02 logo-icone"></span><span class="hide-on-small-only logo-nome">Notícias do Acre</span></a>

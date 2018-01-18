@@ -16,7 +16,7 @@ get_header(teste);
 <div class="container header">
 <!-- INICIO - Módulo - Chips -->
   <div class="row"  style="padding: 0 10px;">
-     <?php include(TEMPLATEPATH.'/menu-integracao.php');?>
+     <?php include(TEMPLATEPATH.'/menu-integracao-teste.php');?>
   </div>
 <!-- FIM - Módulo - Chips -->
 <!-- INICIO - Módulo - Slider -->

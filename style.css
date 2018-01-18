@@ -374,6 +374,7 @@ a.button-collapse{
 
   .mod-chips a{
     margin-right: 10px;
+    background-color: #ffcc80;
   }
 
   .mod-chips a:hover{
@@ -1009,9 +1010,21 @@ a.button-collapse{
     font-variant: normal;
     color: #afafaf;
 }
+.menu-topo2018 a
+{
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: lighter;
+    margin-right: 20px;
+    line-height: 40px;
+    text-transform: none;
+    font-variant: normal;
+    color:#dd2c00;
+}
 
 .ul-menu-categorias{
   display: inline-flex;
+
 }
 
 nav .button-collapse {
@@ -1425,3 +1438,17 @@ height: 120px;
 /* fluid 5 columns */
 .grid-sizer,
 .grid-item { width: 33%; }
+
+.gradiente-logo{
+    background-image: linear-gradient( 90deg, #FEC163 10%, #DE4313 100%);
+
+}
+
+.gradiente2018 {
+  background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  }
