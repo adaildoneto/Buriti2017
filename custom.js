@@ -149,8 +149,8 @@ jQuery(document).ready(function ($) {
   var scre = $("body").width();
   if (scre > 480) {
   $('.sidebar').pushpin({
-    top: 1540,
-    bottom: $('.testesidebar').height() + 1540 - $('.sidebar').height(),
+    top: 1840,
+    bottom: $('.testesidebar').height() + 1840 - $('.sidebar').height(),
     offset: 60
   });
   }
