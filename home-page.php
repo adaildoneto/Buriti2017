@@ -41,13 +41,8 @@ get_header(teste);
 
           if ( in_category( 'esp' ) ) {  // destaque foto
 
-<<<<<<< current
         		 						 get_template_part( 'slider', 'grande' );
 
-=======
-      
- 						get_template_part( 'slider', '' );
->>>>>>> before discard
 
         			 } else {
 

@@ -605,7 +605,7 @@ $artigo_metabox->set_fields(
 						 if(is_page_template('home-page.php')) {
 							  wp_enqueue_script( 'custom-teste', get_template_directory_uri() . '/custom-teste.js');
 							} else {
-							 wp_enqueue_script( 'custom', get_template_directory_uri() . '/custom-teste.js');
+							 wp_enqueue_script( 'custom', get_template_directory_uri() . '/custom.js');
 							}
 
 				}
