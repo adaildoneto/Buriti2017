@@ -219,8 +219,8 @@ function arphabet_widgets_init() {
 		array(
 		'name'          => 'Banners',
 		'id'            => 'publicidade-banner',
-		'before_widget' => '<div class="col s12 m6 l4 grid-item"><div class="card">',
-		'after_widget'  => '</div></div>',
+		'before_widget' => '<div class="col s12 m6 l4 grid-item">',
+		'after_widget'  => '</div>',
 		'before_title'  => '<p class="rounded white-text">',
 		'after_title'   => '</p>',
 	));
