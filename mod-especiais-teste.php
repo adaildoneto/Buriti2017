@@ -18,12 +18,25 @@
 </div>
 
 <div class="row">
-   <?php query_posts('showposts=4');?>
+   <?php query_posts('showposts=2');?>
    <?php if (have_posts()): while (have_posts()) : the_post();?>
      <a href="<?php the_Permalink()?>" title="<?php the_title();?>">
 
-        <div class="col s12 m6 l3 no-padding">
+        <div class="col s12 m6 l6 no-padding">
           <div class="box-especiais-g especiais-img2 b1" style="background: url('<?php the_post_thumbnail_url( 'slider-noticias' ); ?>'); height:400px;">
+            <span class="titulo-especiais white-text"><?php the_title();?></span>
+          </div>
+        </div>
+      </a>
+    <?php endwhile;endif;?>
+    <div class="clearfix"></div>
+
+   <?php query_posts('showposts=3');?>
+   <?php if (have_posts()): while (have_posts()) : the_post();?>
+     <a href="<?php the_Permalink()?>" title="<?php the_title();?>">
+
+        <div class="col s12 m4 l4 no-padding">
+          <div class="box-especiais-g especiais-img2 b3" style="background: url('<?php the_post_thumbnail_url( 'slider-noticias' ); ?>'); height:400px;">
             <span class="titulo-especiais white-text"><?php the_title();?></span>
           </div>
         </div>

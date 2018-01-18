@@ -207,9 +207,19 @@ function arphabet_widgets_init() {
 
 	register_sidebar(
 		array(
-		'name'          => 'Publicidade Lateral Teste',
+		'name'          => 'Video',
 		'id'            => 'publicidade-teste',
-		'before_widget' => '<div class="col s12 m12 l8 grid-item"> <div class="card">',
+		'before_widget' => '<div class="col s12 m12 l8 grid-item"><div class="card">',
+		'after_widget'  => '</div></div>',
+		'before_title'  => '<p class="rounded white-text">',
+		'after_title'   => '</p>',
+	));
+
+	register_sidebar(
+		array(
+		'name'          => 'Banners',
+		'id'            => 'publicidade-banner',
+		'before_widget' => '<div class="col s12 m6 l4 grid-item"><div class="card">',
 		'after_widget'  => '</div></div>',
 		'before_title'  => '<p class="rounded white-text">',
 		'after_title'   => '</p>',
