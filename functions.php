@@ -208,7 +208,7 @@ function arphabet_widgets_init() {
 	register_sidebar(
 		array(
 		'name'          => 'Publicidade Lateral Teste',
-		'id'            => 'publicidade-lateral',
+		'id'            => 'publicidade-teste',
 		'before_widget' => '<div class="">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<p class="rounded white-text">',

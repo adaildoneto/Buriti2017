@@ -64,7 +64,7 @@ while ( $query->have_posts() ) {
     get_template_part( 'normal', '' );
   }
 
-  if ( is_dynamic_sidebar('publicidade-lateral-teste') ) {
+  if ( is_dynamic_sidebar('publicidade-teste') ) {
 					if ( $query->current_post == 6 ) {  // first post
 
 							dynamic_sidebar('publicidade-lateral-teste');
