@@ -22,7 +22,7 @@ while ( $query->have_posts() ) {
    if  ( has_tag( 'rios2018' ) ) {  // Destaque Retangular
 
 
-      get_template_part( 'destaque', 'grande' );
+      get_template_part( 'destaque', 'quadrado' );
 
   }
 
@@ -34,10 +34,10 @@ while ( $query->have_posts() ) {
 
      }
 
-     else if ( in_category( 'seguranca' ) ) {  // Destaque GRande
+     else if ( in_category( 'governo' ) ) {  // Destaque GRande
 
 
-          get_template_part( 'destaque', 'quadrado' );
+          get_template_part( 'destaque', 'grande' );
 
         }
         else if ( in_category( 'seguranca' ) ) {  // Destaque GRande

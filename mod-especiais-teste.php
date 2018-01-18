@@ -36,7 +36,7 @@
      <a href="<?php the_Permalink()?>" title="<?php the_title();?>">
 
         <div class="col s12 m4 l4 no-padding">
-          <div class="box-especiais-g especiais-img2 b3" style="background: url('<?php the_post_thumbnail_url( 'slider-noticias' ); ?>'); height:400px;">
+          <div class="box-especiais-g especiais-img2 b3" style="background: url('<?php the_post_thumbnail_url( 'slider-noticias' ); ?>'); height:250px;">
             <span class="titulo-especiais white-text"><?php the_title();?></span>
           </div>
         </div>
