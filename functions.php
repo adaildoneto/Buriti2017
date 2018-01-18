@@ -209,8 +209,8 @@ function arphabet_widgets_init() {
 		array(
 		'name'          => 'Publicidade Lateral Teste',
 		'id'            => 'publicidade-teste',
-		'before_widget' => '<div class="col s12 m12 l8 grid-item">',
-		'after_widget'  => '</div>',
+		'before_widget' => '<div class="col s12 m12 l8 grid-item"> <div class="card">',
+		'after_widget'  => '</div></div>',
 		'before_title'  => '<p class="rounded white-text">',
 		'after_title'   => '</p>',
 	));
