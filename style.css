@@ -998,6 +998,11 @@ a.button-collapse{
     height: 55px;
     overflow: hidden;
 }
+.menu-topo2018 {
+    height: 55px;
+    overflow: hidden;
+}
+
 
 .menu-topo a
 {
@@ -1019,7 +1024,7 @@ a.button-collapse{
     line-height: 40px;
     text-transform: none;
     font-variant: normal;
-    color:#dd2c00;
+    color: #dd2c00;
 }
 
 .ul-menu-categorias{

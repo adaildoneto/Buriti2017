@@ -1,4 +1,4 @@
-    <div id="menu-topo2018" class="col s10 hide-on-med-and-down menu-topo valign no-padding">
+    <div id="menu-topo" class="col s10 hide-on-med-and-down menu-topo2018 valign no-padding">
         <?php wp_nav_menu( array( 'menu'=>'menu-categorias', 'theme-location'=>'menu-categorias', 'container'=>'div', 'container-class'=>'menu-categorias', 'menu_class'=>'ul-menu-categorias' )); ?>
     </div>
 
