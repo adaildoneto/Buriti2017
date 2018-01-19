@@ -1,5 +1,5 @@
 <?php get_header(single);?>
-
+<?php while (have_posts()) : the_post();?>
     <div class="container">
     <div class="row">
         <div class="col m1 l1 push-l1"  >
