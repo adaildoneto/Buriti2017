@@ -72,7 +72,7 @@ get_header(teste);
 
 <!-- INICIO - Módulo - Notícias -->
 <div class="container">
-	<?php include(TEMPLATEPATH.'/mod-destaque-noticias-teste.php');?>
+	<?php include(TEMPLATEPATH.'/mod-destaque-noticias.php');?>
 </div>
 
 <?php include(TEMPLATEPATH.'/mod-bannerfull.php');?>

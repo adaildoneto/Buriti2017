@@ -18,7 +18,13 @@
 </div>
 
 <div class="row">
-   <?php query_posts('showposts=2');?>
+   <?php
+   $args = array(
+       'showposts' => 2,
+       'category' => array ('especiais'),
+       'tag__not_in'  => array(),
+   );
+        query_posts($args);?>
    <?php if (have_posts()): while (have_posts()) : the_post();?>
      <a href="<?php the_Permalink()?>" title="<?php the_title();?>">
 
@@ -31,7 +37,14 @@
     <?php endwhile;endif;?>
     <div class="clearfix"></div>
 
-   <?php query_posts('showposts=3');?>
+   <?php
+        $args = array(
+          'showposts' => 3,
+          'category' => array ('especiais'),
+          'offset'  => 2,
+          'tag__not_in'  => array(),
+      );
+        query_posts('showposts=3');?>
    <?php if (have_posts()): while (have_posts()) : the_post();?>
      <a href="<?php the_Permalink()?>" title="<?php the_title();?>">
 
