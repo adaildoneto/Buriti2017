@@ -7,7 +7,7 @@
 <?php $args = array(
     'showposts' => 12,
     'cat' => array (-20452,-15968,-15966,-167,-61,-38,-9,-178,-5,-1,-35,-18910,-18911,-18912,-18913,-18918,-18907),
-    'tag__not_in'  => array( 18910,18911,18912,18913,18918,18907,19572,20142),
+    'tag__not_in'  => array( 18910,18911,18912,18913,18918,18907,19572,20142,20949,),
 );
 query_posts($args);
 ?>
@@ -34,7 +34,7 @@ query_posts($args);
     <div class="col s12 m6 l6">
       <div class="card painel-noticias">
         <a href="<?php the_Permalink();?>" title="<?php the_title();?>">
-        
+
             <div class="bloco-img-noticias3 especiais-img" style="background: url('<?php the_post_thumbnail_url( 'thumbnews' ); ?>');">
 
           </div></a>
