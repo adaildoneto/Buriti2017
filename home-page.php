@@ -82,26 +82,15 @@ get_header(teste);
 	<?php include(TEMPLATEPATH.'/mod-noticias-teste.php');?>
 </div>
 
-<!-- INICIO - Módulo - Agenda Cultural -->
+
+
+	<?php include(TEMPLATEPATH.'/mod-especiais-teste.php');?>
 
   <?php include(TEMPLATEPATH.'/mod-eventos-teste.php');?>
 
-<!-- FIM - Módulo - Agenda Cultural -->
-
-<!-- INICIO - Módulo - Vídeos -->
 
   <?php include(TEMPLATEPATH.'/mod-videos2-teste.php');?>
 
-<!-- FIM - Módulo - Vídeos -->
-
-<!-- INICIO - Módulo - Mais Notícias e Sidebar -->
-
-<!-- FIM - Módulo - Mais Notícias e Sidebar -->
-<!-- INICIO - Módulo - Especiais -->
-<div id="especiais" class="" style="padding: 0px 10px;">
- 	<?php include(TEMPLATEPATH.'/mod-especiais-teste.php');?>
-</div>
-<!-- FIM - Módulo - Especiais -->
 
 
 <?php get_footer(); ?>
