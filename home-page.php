@@ -79,6 +79,18 @@ get_header(teste);
 
 <!-- FIM - Módulo - Notícias -->
 
+<!-- INICIO - Módulo - Agenda Cultural -->
+
+  <?php include(TEMPLATEPATH.'/mod-eventos-teste.php');?>
+
+<!-- FIM - Módulo - Agenda Cultural -->
+
+<!-- INICIO - Módulo - Vídeos -->
+<div id="especiais" class="container" style="padding: 0px 10px;">
+  <?php include(TEMPLATEPATH.'/mod-videos2.php');?>
+</div>
+<!-- FIM - Módulo - Vídeos -->
+
 <!-- INICIO - Módulo - Mais Notícias e Sidebar -->
 <div class="container">
 	<?php include(TEMPLATEPATH.'/mod-noticias-teste.php');?>
@@ -89,14 +101,6 @@ get_header(teste);
  	<?php include(TEMPLATEPATH.'/mod-especiais-teste.php');?>
 </div>
 <!-- FIM - Módulo - Especiais -->
-<!-- INICIO - Módulo - Vídeos -->
-<div id="especiais" class="container" style="padding: 0px 10px;">
-  <?php include(TEMPLATEPATH.'/mod-videos2.php');?>
-</div>
-<!-- FIM - Módulo - Vídeos -->
-<!-- INICIO - Módulo - Agenda Cultural -->
-<div id="especiais" class="container no-padding">
-  <?php include(TEMPLATEPATH.'/mod-eventos.php');?>
-</div>
-<!-- FIM - Módulo - Agenda Cultural -->
+
+
 <?php get_footer(); ?>
