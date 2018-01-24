@@ -27,7 +27,7 @@
 
   </div>
   <?php if ( is_dynamic_sidebar('publicidade-teste') ) {
-          if ( $query->current_post == 1 ) {  // first post
+          if ( $query->current_post == 0 ) {  // first post
 
               dynamic_sidebar('publicidade-teste');
 
