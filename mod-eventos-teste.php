@@ -36,7 +36,7 @@ Agenda Cultural</h2>
           </div>
         </div>
 
-<?php endwhile;endif;?>
+<?php endwhile;?>
           </div>
       <div class="clearfix"></div>
 
