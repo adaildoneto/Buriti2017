@@ -16,7 +16,7 @@
 
   <!-- <div id="videos-youtube"></div> -->
 <div class="row">
-  <?php dynamic_sidebar('publicidade-');?>
+  <?php dynamic_sidebar('publicidade-video');?>
 
 </div>
 
