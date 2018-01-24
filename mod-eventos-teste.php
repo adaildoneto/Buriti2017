@@ -12,8 +12,8 @@ Agenda Cultural</h2>
     </div>
     <div class="eventos">
     <?php
-    $args = array( 'post_type' => 'eventos', 'posts_per_page' => 8 );
-    $loop = new WP_Query( $args );
+    $args2 = array( 'post_type' => 'eventos', 'posts_per_page' => 8 );
+    $loop = new WP_Query( $args2 );
 while ( $loop->have_posts() ) : $loop->the_post();?>
       <div class="col s12 l3">
         <div class="card painel-agenda">
