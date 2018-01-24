@@ -218,10 +218,10 @@ function arphabet_widgets_init() {
 		array(
 		'name'          => 'Video',
 		'id'            => 'publicidade-video',
-		'before_widget' => '<div class="col s12 m12 l12"><div class="card">',
+		'before_widget' => '<div class="col s12 m12 l12"><div class="">',
 		'after_widget'  => '</div></div>',
-		'before_title'  => '<p class="rounded white-text">',
-		'after_title'   => '</p>',
+		'before_title'  => '<h3 class="white-text">',
+		'after_title'   => '</h3>',
 	));
 
 	register_sidebar(
