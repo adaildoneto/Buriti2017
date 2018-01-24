@@ -83,8 +83,6 @@ get_header(teste);
 </div>
 
 
-	<?php include(TEMPLATEPATH.'/mod-destaque-noticias2.php');?>
-
 
 
 	<?php include(TEMPLATEPATH.'/mod-especiais-teste.php');?>
