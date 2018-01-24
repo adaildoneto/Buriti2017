@@ -1,8 +1,8 @@
-<div class="row">
+
   <div class="container">
 
   <div class="col s6 no-padding">
-    <h2 class="orange-text darken-4-text"><i class="fa fa-play-circle oranget-text darken-4-text" aria-hidden="true"></i> Especial Semana de Carnaval</h2>
+    <h4 class="orange-text darken-4-text"><i class="fa fa-play-circle oranget-text darken-4-text" aria-hidden="true"></i> Especial Semana de Carnaval</h4>
   </div>
 
   <div class="col s6" style="padding-top: 30px;">
@@ -10,6 +10,7 @@
   </div>
 
 </div>
+<div class="container">
 <div class="col s12 m8 l8">
 
       <div class="card painel-noticias">
