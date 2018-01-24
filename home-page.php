@@ -90,7 +90,7 @@ get_header(teste);
 
 <!-- INICIO - Módulo - Vídeos -->
 <div id="especiais" class="container" style="padding: 0px 10px;">
-  <?php include(TEMPLATEPATH.'/mod-videos2.php');?>
+  <?php include(TEMPLATEPATH.'/mod-videos2-teste.php');?>
 </div>
 <!-- FIM - Módulo - Vídeos -->
 
