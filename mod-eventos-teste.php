@@ -9,9 +9,7 @@ Agenda Cultural</h2>
     <a class="right grey-text text-darken-3" href="http://www.agencia.ac.gov.br/eventos/">Ver todos <i class="fa fa-long-arrow-right" style="font-size: 12px;" aria-hidden="true"></i>
 </a>
     </div>
-</div>
 
-  <div class="container">
     <div class="eventos">
     <?php
     $args = array( 'post_type' => 'eventos', 'posts_per_page' => 8 );

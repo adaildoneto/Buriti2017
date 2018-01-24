@@ -1,5 +1,4 @@
-<div class="container">
-<div class="col s12 m8 l8">
+<div class="row">
   <div class="container">
 
   <div class="col s6 no-padding">
@@ -11,6 +10,8 @@
   </div>
 
 </div>
+<div class="col s12 m8 l8">
+
       <div class="card painel-noticias">
         <?php query_posts('showposts=1&tag=destaque1');?>
         <?php if (have_posts()): while (have_posts()) : the_post();?>
