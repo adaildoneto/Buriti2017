@@ -89,9 +89,9 @@ get_header(teste);
 <!-- FIM - Módulo - Agenda Cultural -->
 
 <!-- INICIO - Módulo - Vídeos -->
-<div id="especiais" class="container" style="padding: 0px 10px;">
+
   <?php include(TEMPLATEPATH.'/mod-videos2-teste.php');?>
-</div>
+
 <!-- FIM - Módulo - Vídeos -->
 
 <!-- INICIO - Módulo - Mais Notícias e Sidebar -->
