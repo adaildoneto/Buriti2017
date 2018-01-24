@@ -1,5 +1,6 @@
 
-  <div class="row grey darken-4">
+<div class="row blue-grey darken-3">
+  <div class="row">
     <div class="col s6">
     <h2><i class="fa fa-calendar-check-o" aria-hidden="true"></i>
 Agenda Cultural</h2>
@@ -10,7 +11,7 @@ Agenda Cultural</h2>
     </div>
 </div>
 
-  <div class="row">
+  <div class="container">
     <div class="eventos">
     <?php
     $args = array( 'post_type' => 'eventos', 'posts_per_page' => 8 );
@@ -44,3 +45,6 @@ while ( $loop->have_posts() ) : $loop->the_post();?>
     </div>
 
     </div>
+
+
+</div>

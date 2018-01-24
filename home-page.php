@@ -78,6 +78,9 @@ get_header(teste);
 <?php include(TEMPLATEPATH.'/mod-bannerfull.php');?>
 
 <!-- FIM - Módulo - Notícias -->
+<div class="container">
+	<?php include(TEMPLATEPATH.'/mod-noticias-teste.php');?>
+</div>
 
 <!-- INICIO - Módulo - Agenda Cultural -->
 
@@ -92,9 +95,7 @@ get_header(teste);
 <!-- FIM - Módulo - Vídeos -->
 
 <!-- INICIO - Módulo - Mais Notícias e Sidebar -->
-<div class="container">
-	<?php include(TEMPLATEPATH.'/mod-noticias-teste.php');?>
-</div>
+
 <!-- FIM - Módulo - Mais Notícias e Sidebar -->
 <!-- INICIO - Módulo - Especiais -->
 <div id="especiais" class="" style="padding: 0px 10px;">
