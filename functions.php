@@ -220,8 +220,8 @@ function arphabet_widgets_init() {
 		'id'            => 'publicidade-video',
 		'before_widget' => '<div class="col s12 m12 l12"><div class="">',
 		'after_widget'  => '</div></div>',
-		'before_title'  => '<h3 class="white-text">',
-		'after_title'   => '</h3>',
+		'before_title'  => '<h5 class="white-text">',
+		'after_title'   => '</h5>',
 	));
 
 	register_sidebar(

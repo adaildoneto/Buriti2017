@@ -7,7 +7,7 @@
   </div>
 
   <div class="col s6" style="padding-top: 30px;">
-  <a class="right grey-text text-darken-3" href="/categoria/videos">Ver todos <i class="fa fa-long-arrow-right" style="font-size: 12px;" aria-hidden="true"></i></a>
+  <a class="right orange-text text-darken-3" href="/categoria/videos">Ver todos <i class="fa fa-long-arrow-right" style="font-size: 12px;" aria-hidden="true"></i></a>
   </div>
 
 </div>
