@@ -1,14 +1,24 @@
 <div class="row blue-grey darken-4">
+
+  <div class="container">
+
   <div class="col s6 no-padding">
-    <h2 class="oranget-text darken-4-text"><i class="fa fa-play-circle oranget-text darken-4-text" aria-hidden="true"></i> Vídeos</h2>
+    <h2 class="orange-text darken-4-text"><i class="fa fa-play-circle oranget-text darken-4-text" aria-hidden="true"></i> Vídeos</h2>
   </div>
+
   <div class="col s6" style="padding-top: 30px;">
   <a class="right grey-text text-darken-3" href="/categoria/videos">Ver todos <i class="fa fa-long-arrow-right" style="font-size: 12px;" aria-hidden="true"></i></a>
   </div>
+
 </div>
-<div class="row">
+
+<div class="container">
 
   <!-- <div id="videos-youtube"></div> -->
+<div class="row">
+  <?php dynamic_sidebar('publicidade-');?>
+
+</div>
 
 <?php query_posts('showposts=3');?>
 <?php if (have_posts()): while (have_posts()) : the_post();?>
@@ -26,18 +36,7 @@
     </a>
 
   </div>
-  <?php if ( is_dynamic_sidebar('publicidade-teste') ) {
-          if ( $query->current_post == 0 ) {  // first post
 
-              dynamic_sidebar('publicidade-teste');
-
-
-                      }
-          }
-
-
-
-  wp_reset_postdata(); ?>
 
 <?php endwhile;endif;?>
 <div class="clearfix"></div>
