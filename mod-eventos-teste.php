@@ -11,7 +11,7 @@ Agenda Cultural</h2>
 </a>
     </div>
 
-    <div class="row">
+
       <div class="eventos">
       <?php
       $args = array( 'post_type' => 'eventos', 'posts_per_page' => 8 );
@@ -44,7 +44,7 @@ Agenda Cultural</h2>
       <!--  <a class="btn red" href="#">Enviar evento</a> -->
       </div>
 
-      </div>
+
 
 
 
