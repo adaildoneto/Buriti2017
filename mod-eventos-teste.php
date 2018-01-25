@@ -15,8 +15,8 @@ Agenda Cultural</h2>
       <div class="eventos">
       <?php
       $args = array( 'post_type' => 'eventos', 'posts_per_page' => 8 );
-      $loop = new WP_Query( $args );
-  while ( $loop->have_posts() ) : $loop->the_post();?>
+      query_posts( $args );
+      if (have_posts()): while (have_posts()) : the_post();?>
         <div class="col s12 l3">
           <div class="card painel-agenda">
               <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'agenda-cultural' ); ?>
@@ -36,7 +36,7 @@ Agenda Cultural</h2>
           </div>
         </div>
 
-<?php endwhile;?>
+<?php endwhile;endif;?>
           </div>
       <div class="clearfix"></div>
 
