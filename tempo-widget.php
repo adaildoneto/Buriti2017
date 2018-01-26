@@ -13,7 +13,7 @@
 
 
         <div class="nocentro">
-          <div id="weather2"></div>
+          <div id="weather2" style="width: 360px;"></div>
         </div>
 
 
