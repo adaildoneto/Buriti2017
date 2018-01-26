@@ -1,7 +1,7 @@
 
 
 
-  <div class="row">
+  <div class="row blue-grey darken-2 no-padding">
 
     <div class="container">
 
