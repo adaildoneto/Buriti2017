@@ -1,5 +1,4 @@
 
-<div class="row">
   <div class="container">
     <div class="col s6">
     <h2 class="orange-text darken-4-text"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>
@@ -9,10 +8,8 @@ Agenda Cultural</h2>
     <a class="right orange-text darken-4-text" href="http://www.agencia.ac.gov.br/eventos/">Ver todos <i class="fa fa-long-arrow-right" style="font-size: 12px;" aria-hidden="true"></i>
 </a>
     </div>
-</div>
-</div>
 
-  <div class="row">
+
     <div class="eventos">
     <?php
     $args = array( 'post_type' => 'eventos', 'posts_per_page' => 8 );
