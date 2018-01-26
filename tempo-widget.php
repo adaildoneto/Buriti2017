@@ -12,7 +12,7 @@
           </div>
 
 
-        <div class="nocentro valign aligncenter">
+        <div class="nocentro center-align">
           <div id="weather2"></div>
         </div>
 
