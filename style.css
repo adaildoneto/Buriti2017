@@ -808,6 +808,7 @@ a.button-collapse{
   height: 220px;
   position: relative;
   font-size: 1.2rem;
+  margin: 10px;
 }
 
 .box-videos i{
