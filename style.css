@@ -1109,13 +1109,13 @@ nav .button-collapse {
 
 
 
-#weather {
+#weather, #weather2 {
   margin: 0px auto;
   text-align: center;
   text-transform: uppercase;
 }
 
-#weather i {
+#weather  i, #weather2 i {
   color: #fff;
   font-family: weather;
   font-size: 90px;
@@ -1174,7 +1174,7 @@ nav .button-collapse {
 .icom-46:before { content: "U"; }
 .icom-47:before { content: "S"; }
 
-#weather h2 {
+#weather h2, #weather2 h2  {
   margin: 0 0 8px;
   color: #fff;
   font-size: 50px;
@@ -1183,12 +1183,12 @@ nav .button-collapse {
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
 }
 
-#weather ul {
+#weather ul, #weather2 ul {
   margin-top: 5px;
   padding: 0;
 }
 
-#weather li {
+#weather li, #weater2 li {
   background: #fff;
   background: rgba(255,255,255,0.80);
   padding: 10px;
@@ -1196,7 +1196,7 @@ nav .button-collapse {
   border-radius: 5px;
 }
 
-#weather .currently {
+#weather .currently, #weather2 .currently  {
   margin: 0 20px;
 }
 
