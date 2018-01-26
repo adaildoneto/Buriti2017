@@ -653,6 +653,10 @@ a.button-collapse{
   position: absolute;
   top: 40%;
 }
+.nocentro {
+  position: absolute;
+  top: 40%;
+}
 .bloco-des-noticias4 a{
   font-size: 1.8em;
   text-align: center;

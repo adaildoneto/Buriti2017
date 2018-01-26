@@ -12,7 +12,7 @@
           </div>
 
 
-        <div class="bloco-des-noticias2 valign aligncenter">
+        <div class="nocentro valign aligncenter">
           <div id="weather2"></div>
         </div>
 
