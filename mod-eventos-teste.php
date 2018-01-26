@@ -4,6 +4,9 @@
   <div class="row">
 
     <div class="container">
+
+    <div class="row">
+
       <div class="col s6">
       <h2 class="orange-text darken-4-text"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>
   Agenda Cultural</h2>
@@ -12,7 +15,10 @@
       <a class="right orange-text darken-4-text" href="http://www.agencia.ac.gov.br/eventos/">Ver todos <i class="fa fa-long-arrow-right" style="font-size: 12px;" aria-hidden="true"></i>
   </a>
       </div>
-  </div>
+
+    </div>
+
+
 
     <div class="eventos">
     <?php
@@ -40,10 +46,7 @@ while ( $loop->have_posts() ) : $loop->the_post();?>
 
     <?php endwhile;?>
         </div>
-    <div class="clearfix"></div>
 
-      <div class="col s12 center">
-    <!--  <a class="btn red" href="#">Enviar evento</a> -->
-    </div>
+  </div>
 
     </div>
