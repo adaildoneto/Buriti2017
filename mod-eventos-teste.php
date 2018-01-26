@@ -10,7 +10,7 @@ Agenda Cultural</h2>
     </div>
 </div>
 
-  <div class="row">
+  <div class="container">
     <div class="eventos">
     <?php
     $args = array( 'post_type' => 'eventos', 'posts_per_page' => 8 );
