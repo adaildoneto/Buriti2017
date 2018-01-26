@@ -85,8 +85,8 @@ get_header(teste);
 
 	<?php include(TEMPLATEPATH.'/mod-especiais-teste.php');?>
 
-  <div id="especiais" class="container no-padding">
-    <?php include(TEMPLATEPATH.'/mod-eventos.php');?>
+  <div id="especiais" class="row blue-grey darken-2 no-padding">
+    <?php include(TEMPLATEPATH.'/mod-eventos-teste.php');?>
   </div>
 
 
