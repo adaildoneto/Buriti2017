@@ -70,6 +70,8 @@ while ( $query->have_posts() ) {
 							dynamic_sidebar('publicidade-teste');
               dynamic_sidebar('publicidade-banner');
 
+            get_template_part('tempo','widget');
+
 
 			 								}
 					}

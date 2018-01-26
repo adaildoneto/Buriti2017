@@ -18,7 +18,7 @@
     <a  href="<?php the_Permalink(); ?>" title="<?php the_title();?>">
 
     <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'slider-noticias' ); ?>
-    <div class="box-videos especiais-img efeito img-slider" style="background: url('<?php echo $image[0]; ?>');border-radius: 2px 0 0 2px;">
+    <div class="box-videos especiais-img efeito img-slider b3" style="background: url('<?php echo $image[0]; ?>');border-radius: 2px 0 0 2px;">
       <i class="material-icons white-text">play_circle_outline</i>
 
       <span class="titulo-especiais white-text"> <?php the_title();?> </span>
