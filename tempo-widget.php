@@ -1,5 +1,6 @@
 <div class="col s12 m4 l4 grid-item grid-width">
       <div class="card painel-noticias">
+        <div id="weather"></div>
         <?php
         $imgID = get_option ('odin_general');
         $imgMENU = wp_get_attachment_image_src( $imgID['imagemmenu'], 'slider-noticias');
@@ -9,7 +10,7 @@
         </div>
 
 
-<div id="weather"></div>
+
 
       </div>
 </div>
