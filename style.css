@@ -1394,6 +1394,7 @@ body.login {
 #quotes span {
   font-size:15px;
   line-height: normal;
+  display: grid;
 }
 #quotes span.title {
   font-size:18px;
