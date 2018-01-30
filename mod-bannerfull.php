@@ -1,6 +1,6 @@
 <div class="row">
   <div class="parallax-container">
-      <div class="parallax"><img src="http://www.agencia.ac.gov.br/wp-content/uploads/2018/01/Rio-Madeira-BR-364-vistoria-5.jpeg"></div>
+      <div class="parallax"><img src="http://www.agencia.ac.gov.br/wp-content/uploads/2018/01/IGM_4774_mini.jpg"></div>
 <div style="margin-top:100px">
   <h1 class="shadowcss grande white-text flow-text center-align">Monitoramento</br>dos Rios 2018</h1>
   <div class="center-align">
