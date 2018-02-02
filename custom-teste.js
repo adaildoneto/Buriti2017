@@ -463,3 +463,7 @@ jQuery(window).load(function() {
   jQuery(document).ready(function($){
       $('.parallax').parallax();
     });
+
+  jQuery(document).ready(function($){
+   $('ul.tabs').tabs();
+ });
