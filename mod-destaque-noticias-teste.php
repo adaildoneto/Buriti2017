@@ -5,7 +5,8 @@
 
        $args = array (
          'pagination'             => false,
-         'showposts'         => 5,
+         'showposts'              => 5,
+         'tag'                    => array ('destaque1, destaque2, destaque3, destaque4, destaque5'),
          'ignore_sticky_posts'    => true,
 
        );
