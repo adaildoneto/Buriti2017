@@ -5,7 +5,7 @@
 
        $args = array (
          'pagination'             => false,
-         'posts_per_page'         => 5,
+         'showposts'         => 5,
          'ignore_sticky_posts'    => true,
 
        );
