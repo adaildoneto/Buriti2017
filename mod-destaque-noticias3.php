@@ -42,17 +42,17 @@
         }
         if ( $query->current_post == 2  ) {  // first post
 
-                   get_template_part ('normal', '');
+                   get_template_part ('destaque', 'colorido');
 
         }
         if ( $query->current_post == 3  ) {  // first post
 
-                   get_template_part ('destaque', 'colorido');
+                   get_template_part ('destaque', 'quadrado');
 
         }
         if ( $query->current_post == 4 ) {  // first post
 
-                   get_template_part ('normal', '');
+                   get_template_part ('destaque', 'colorido');
 
         }
 
@@ -195,7 +195,7 @@
           }
           if ( $query->current_post == 2  ) {  // first post
 
-                     get_template_part ('destaque', 'colorido');
+                     get_template_part ('destaque', 'quadrado');
 
           }
           if ( $query->current_post == 3  ) {  // first post
@@ -205,7 +205,7 @@
           }
           if ( $query->current_post == 4 ) {  // first post
 
-                     get_template_part ('destaque', 'colorido');
+                     get_template_part ('destaque', 'quadrado');
 
           }
 
