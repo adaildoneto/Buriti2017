@@ -27,6 +27,11 @@
                 </a>
             </div>
         </div>
+        <div class="nocanto2">
+          <span class="data-post white-text"> <?php the_time('d.m.Y');?> </span></br>
+          <span class="hora-post white-text"> <?php the_time('G:i');?></span></br>
+
+        </div>
         <div class="nocanto4 tamanho-icones">
             <?php include(TEMPLATEPATH.'/mod-social-white.php');?>
         </div>

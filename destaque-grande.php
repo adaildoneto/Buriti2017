@@ -30,6 +30,11 @@
               </a>
               <span class="destaque-resumo hide-on-med-and-down"><?php $DestaqueChamada = get_post_meta( $post->ID,'chamada-destaque1', true ); echo $DestaqueChamada;?></span>
           </div>
+          <div class="nocanto3">
+            <span class="data-post white-text"> <?php the_time('d.m.Y');?> </span></br>
+            <span class="hora-post white-text"> <?php the_time('G:i');?></span></br>
+
+          </div>
           <div class="nocanto4 tamanho-icones">
             <?php include(TEMPLATEPATH.'/mod-social.php');?>
           </div>
