@@ -3,8 +3,8 @@
 
       <div class="col s12">
      <ul class="tabs">
-       <li class="tab col s3"><a href="#test1">Destaques</a></li>
-       <li class="tab col s3"><a class="active" href="#test2">Carnaval</a></li>
+       <li class="tab col s3"><a class="active" href="#test1">Destaques</a></li>
+       <li class="tab col s3"><a href="#test2">Carnaval</a></li>
        <li class="tab col s3"><a href="#test3">Segurança</a></li>
        <li class="tab col s3"><a href="#test4">Artigos</a></li>
      </ul>
@@ -123,7 +123,7 @@
       $args = array (
         'pagination'             => false,
         'showposts'              => 5,
-        'cat'                    => array ('seguranca'),
+        'cat'                    => array ('17'),
         'ignore_sticky_posts'    => true,
 
       );
@@ -137,17 +137,17 @@
 
           if ( $query->current_post == 0  ) {  // first post
 
-                     get_template_part ('destaque', 'grande');
+                     get_template_part ('destaque', 'quadrado');
 
           }
           if ( $query->current_post == 1  ) {  // first post
 
-                     get_template_part ('destaque', 'quadrado');
+                     get_template_part ('destaque', 'grande');
 
           }
           if ( $query->current_post == 2  ) {  // first post
 
-                     get_template_part ('destaque', 'colorido');
+                     get_template_part ('destaque', 'quadrado');
 
           }
           if ( $query->current_post == 3  ) {  // first post
@@ -171,7 +171,7 @@
       $args = array (
         'pagination'             => false,
         'showposts'              => 5,
-        'cat'                    => array ('artigo'),
+        'cat'                    => array ('69'),
         'ignore_sticky_posts'    => true,
 
       );
