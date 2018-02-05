@@ -1,4 +1,4 @@
-<footer class="page-footer orange">
+<footer class="page-footer gradiente-logo">
     <div class="container">
         <div class="row">
 
