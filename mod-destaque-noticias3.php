@@ -3,10 +3,10 @@
 
       <div class="col s12">
      <ul class="tabs">
-       <li class="tab col s3"><a class="active" href="#test1">Destaques</a></li>
-       <li class="tab col s3"><a href="#test2">Carnaval</a></li>
-       <li class="tab col s3"><a href="#test3">Segurança</a></li>
-       <li class="tab col s3"><a href="#test4">Artigos</a></li>
+       <li class="tab col s3"><a class="active orange-text darken-4-text" href="#test1">Destaques</a></li>
+       <li class="tab col s3"><a class="orange-text darken-4-text" href="#test2">Carnaval</a></li>
+       <li class="tab col s3"><a class="orange-text darken-4-text" href="#test3">Segurança</a></li>
+       <li class="tab col s3"><a class="orange-text darken-4-text" href="#test4">Artigos</a></li>
      </ul>
     </div>
 
