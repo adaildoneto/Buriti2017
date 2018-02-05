@@ -81,6 +81,7 @@ else {
                     </span></br>
                     <span class="data-post"> <?php the_time('d.m.Y');?> </span>
                     <span class="hora-post"> <?php the_time('G:i');?></span>
+                    <span class=""> Atualizado no <i class="data-post"></i><?php the_modified_date('d.m.Y');?> às <i class="data-post"></i><?php the_modified_date('G:i');?> </span>
 
                     	 <div class="clearfix"></div>
                 </div>
