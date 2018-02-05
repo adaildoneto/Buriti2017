@@ -1431,6 +1431,7 @@ height: 120px;
   font-weight: 700;
   font-style: capitalize;
   font-family: Roboto Sans;
+  text-align: center;
 }
 @media (max-width:479px){
   .grande {
