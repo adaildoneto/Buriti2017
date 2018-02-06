@@ -627,6 +627,10 @@ $artigo_metabox->set_fields(
 							 wp_enqueue_script( 'custom', get_template_directory_uri() . '/custom.js');
 							}
 
+							if(is_page('carnaval-2018')) {
+ 							  wp_enqueue_script( 'confetti', get_template_directory_uri() . '/confetti.js');
+ 							}
+
 				}
 				add_action( 'wp_enqueue_scripts', 'add_estilos_e_scripts' );
 
