@@ -452,7 +452,7 @@ jQuery(window).load(function() {
     });
 
 
-     (function () {
+    jQuery(document).ready(function($){
          // globals
          var canvas;
          var ctx;
@@ -508,7 +508,7 @@ jQuery(window).load(function() {
              }
          }
 
-         $(document).ready(function () {
+      jQuery(document).ready(function($){
              SetGlobals();
              InitializeButton();
              InitializeConfetti();
