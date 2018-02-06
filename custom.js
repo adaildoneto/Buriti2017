@@ -462,7 +462,7 @@ jQuery(window).load(function() {
          var particles = [];
          var angle = 0;
          var tiltAngle = 0;
-         var confettiActive = true;
+         var confettiActive = false;
          var animationComplete = true;
          var deactivationTimerHandler;
          var reactivationTimerHandler;
