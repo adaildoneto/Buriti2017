@@ -1,4 +1,4 @@
-(function () {
+function () {
     // globals
     var canvas;
     var ctx;
@@ -206,7 +206,7 @@
 
     }
 
-    window.requestAnimFrame = (function () {
+    window.requestAnimFrame = function () {
         return window.requestAnimationFrame ||
         window.webkitRequestAnimationFrame ||
         window.mozRequestAnimationFrame ||
@@ -215,5 +215,5 @@
         function (callback) {
             return window.setTimeout(callback, 1000 / 60);
         };
-    })();
-})();
+    }();
+}();
