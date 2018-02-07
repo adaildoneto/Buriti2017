@@ -1,4 +1,4 @@
-function () {
+(function () {
     // globals
     var canvas;
     var ctx;
