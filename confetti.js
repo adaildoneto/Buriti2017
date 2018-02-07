@@ -41,7 +41,7 @@
         this.d = (Math.random() * mp) + 10; //density;
         this.color = color;
         this.tilt = Math.floor(Math.random() * 10) - 10;
-        this.tiltAngleIncremental = (Math.random() * 0.07) + .05;
+        this.tiltAngleIncremental = (Math.random() * 0.07) + 0.05;
         this.tiltAngle = 0;
 
         this.draw = function () {
@@ -54,7 +54,7 @@
         }
     }
 
-    $(document).ready(function () {
+    jQuery(document).ready(function () {
         SetGlobals();
         InitializeButton();
         InitializeConfetti();
@@ -69,9 +69,13 @@
     });
 
     function InitializeButton() {
+      jQuery(document).ready(function () {
         $('#stopButton').click(DeactivateConfetti);
         $('#startButton').click(RestartConfetti);
+                });
     }
+
+
 
     function SetGlobals() {
         canvas = document.getElementById("canvas");
@@ -206,7 +210,7 @@
 
     }
 
-    window.requestAnimFrame = function () {
+    window.requestAnimFrame = (function () {
         return window.requestAnimationFrame ||
         window.webkitRequestAnimationFrame ||
         window.mozRequestAnimationFrame ||
@@ -215,5 +219,5 @@
         function (callback) {
             return window.setTimeout(callback, 1000 / 60);
         };
-    }();
-}();
+    })();
+})();
