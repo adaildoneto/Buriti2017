@@ -1,223 +1,243 @@
-(function () {
-    // globals
-    var canvas;
-    var ctx;
-    var W;
-    var H;
-    var mp = 150; //max particles
-    var particles = [];
-    var angle = 0;
-    var tiltAngle = 0;
-    var confettiActive = true;
-    var animationComplete = true;
-    var deactivationTimerHandler;
-    var reactivationTimerHandler;
-    var animationHandler;
+(function ($) {
+	//
+	// Zachary Johnson (@zacharyjohnson, zachstronaut.com)
+	// Forked from: https://www.zachstronaut.com/posts/2009/12/21/happy-xmas-winternet.html
+	//
 
-    // objects
-
-    var particleColors = {
-        colorOptions: ["DodgerBlue", "OliveDrab", "Gold", "pink", "SlateBlue", "lightblue", "Violet", "PaleGreen", "SteelBlue", "SandyBrown", "Chocolate", "Crimson"],
-        colorIndex: 0,
-        colorIncrementer: 0,
-        colorThreshold: 10,
-        getColor: function () {
-            if (this.colorIncrementer >= 10) {
-                this.colorIncrementer = 0;
-                this.colorIndex++;
-                if (this.colorIndex >= this.colorOptions.length) {
-                    this.colorIndex = 0;
-                }
-            }
-            this.colorIncrementer++;
-            return this.colorOptions[this.colorIndex];
-        }
-    }
-
-    function confettiParticle(color) {
-        this.x = Math.random() * W; // x-coordinate
-        this.y = (Math.random() * H) - H; //y-coordinate
-        this.r = RandomFromTo(10, 30); //radius;
-        this.d = (Math.random() * mp) + 10; //density;
-        this.color = color;
-        this.tilt = Math.floor(Math.random() * 10) - 10;
-        this.tiltAngleIncremental = (Math.random() * 0.07) + 0.05;
-        this.tiltAngle = 0;
-
-        this.draw = function () {
-            ctx.beginPath();
-            ctx.lineWidth = this.r / 2;
-            ctx.strokeStyle = this.color;
-            ctx.moveTo(this.x + this.tilt + (this.r / 4), this.y);
-            ctx.lineTo(this.x + this.tilt, this.y + this.tilt + (this.r / 4));
-            return ctx.stroke();
-        }
-    }
-
-    jQuery(document).ready(function () {
-        SetGlobals();
-        InitializeButton();
-        InitializeConfetti();
-
-        $(window).resize(function () {
-            W = window.innerWidth;
-            H = window.innerHeight;
-            canvas.width = W;
-            canvas.height = H;
-        });
-
-    });
-
-    function InitializeButton() {
-      jQuery(document).ready(function () {
-        $('#stopButton').click(DeactivateConfetti);
-        $('#startButton').click(RestartConfetti);
-                });
-    }
+	var ww = 0,
+		wh = 0,
+		maxw = 0,
+		minw = 0,
+		maxh = 0,
+		textShadowSupport = true,
+		xv = 0, // shared wind velocity
+		colors = ['#f33', '#3f3', '#66f', '#3ff', '#f93', '#ff3', '#c3f'],
+		confetti = ["\u2666", "\u2726", "\u25b0"],
+		prevTime,
+		absMax = 200,
+		flakeCount = 0,
+		flakes = [],
+		xs = [],
+		ys = [],
+		vs = [], // falling/y velocities
+		hvs = [];
 
 
+	$(init);
 
-    function SetGlobals() {
-        canvas = document.getElementById("canvas");
-        ctx = canvas.getContext("2d");
-        W = window.innerWidth;
-        H = window.innerHeight;
-        canvas.width = W;
-        canvas.height = H;
-    }
+	function init() {
+		var initialFlakes = 75,
+			detectSize = function () {
+				ww = $(window).width();
+				wh = $(window).height();
 
-    function InitializeConfetti() {
-        particles = [];
-        animationComplete = false;
-        for (var i = 0; i < mp; i++) {
-            var particleColor = particleColors.getColor();
-            particles.push(new confettiParticle(particleColor));
-        }
-        StartConfetti();
-    }
+				maxw = ww + 300;
+				minw = -300;
+				maxh = wh + 300;
+			};
 
-    function Draw() {
-        ctx.clearRect(0, 0, W, H);
-        var results = [];
-        for (var i = 0; i < mp; i++) {
-            (function (j) {
-                results.push(particles[j].draw());
-            })(i);
-        }
-        Update();
+		detectSize();
 
-        return results;
-    }
+		$(window).resize(detectSize);
 
-    function RandomFromTo(from, to) {
-        return Math.floor(Math.random() * (to - from + 1) + from);
-    }
+		// Should return a string for the text-shadow applied to body or 'none'
+		// Otherwise would return null or undefined for browsers that don't support text-shadow
+		if (!$('body').css('textShadow')) {
+			textShadowSupport = false;
+		}
+
+		// FF seems to just be able to handle like 50... 25 with rotation
+		// Safari seems fine with 150+... 75 with rotation
+		while (initialFlakes--) {
+			addFlake(true);
+		}
+
+		prevTime = Date.now();
+		setInterval(move, 50);
+	} // init()
 
 
-    function Update() {
-        var remainingFlakes = 0;
-        var particle;
-        angle += 0.01;
-        tiltAngle += 0.1;
+	function addFlake(initial) {
+		var $flake = $('<span>' + confetti[Math.floor(Math.random() * confetti.length)] + '</span>').css(
+				{
+					display: 'block',
+					position: 'fixed',
+					background: 'transparent',
+					width: 'auto',
+					height: 'auto',
+					margin: '0',
+					padding: '0',
+					textAlign: 'left',
+					zIndex: 9999
+				}
+			);
 
-        for (var i = 0; i < mp; i++) {
-            particle = particles[i];
-            if (animationComplete) return;
+		$('body').append($flake);
 
-            if (!confettiActive && particle.y < -15) {
-                particle.y = H + 100;
-                continue;
-            }
+		flakes.push($flake);
+		xs.push(0);
+		ys.push(0);
+		vs.push(0);
+		hvs.push(0);
 
-            stepParticle(particle, i);
+		flakeCount++;
 
-            if (particle.y <= H) {
-                remainingFlakes++;
-            }
-            CheckForReposition(particle, i);
-        }
+		resetFlake(flakes.length - 1, initial);
+	} // addFlake()
 
-        if (remainingFlakes === 0) {
-            StopConfetti();
-        }
-    }
 
-    function CheckForReposition(particle, index) {
-        if ((particle.x > W + 20 || particle.x < -20 || particle.y > H) && confettiActive) {
-            if (index % 5 > 0 || index % 2 == 0) //66.67% of the flakes
-            {
-                repositionParticle(particle, Math.random() * W, -10, Math.floor(Math.random() * 10) - 20);
-            } else {
-                if (Math.sin(angle) > 0) {
-                    //Enter from the left
-                    repositionParticle(particle, -20, Math.random() * H, Math.floor(Math.random() * 10) - 20);
-                } else {
-                    //Enter from the right
-                    repositionParticle(particle, W + 20, Math.random() * H, Math.floor(Math.random() * 10) - 20);
-                }
-            }
-        }
-    }
-    function stepParticle(particle, particleIndex) {
-        particle.tiltAngle += particle.tiltAngleIncremental;
-        particle.y += (Math.cos(angle + particle.d) + 3 + particle.r / 2) / 2;
-        particle.x += Math.sin(angle);
-        particle.tilt = (Math.sin(particle.tiltAngle - (particleIndex / 3))) * 15;
-    }
+	function removeFlake() {
+		$(flakes[0]).remove();
 
-    function repositionParticle(particle, xCoordinate, yCoordinate, tilt) {
-        particle.x = xCoordinate;
-        particle.y = yCoordinate;
-        particle.tilt = tilt;
-    }
+		flakes.shift();
+		xs.shift();
+		ys.shift();
+		vs.shift();
+		hvs.shift();
 
-    function StartConfetti() {
-        W = window.innerWidth;
-        H = window.innerHeight;
-        canvas.width = W;
-        canvas.height = H;
-        (function animloop() {
-            if (animationComplete) return null;
-            animationHandler = requestAnimFrame(animloop);
-            return Draw();
-        })();
-    }
+		flakeCount--;
+	} // removeFlake()
 
-    function ClearTimers() {
-        clearTimeout(reactivationTimerHandler);
-        clearTimeout(animationHandler);
-    }
 
-    function DeactivateConfetti() {
-        confettiActive = false;
-        ClearTimers();
-    }
+	function resetFlake(i, initial) {
+		var color = colors[Math.floor(Math.random() * colors.length)],
+			sizes = [
+				{
+					r: 1.0, // compared against Math.random()
+					css: {
+						fontSize: 15 + Math.floor(Math.random() * 20) + 'px',
+						textShadow: '9999px 0 6px ' + color
+					},
+					v: 4 + Math.floor(Math.random() * 2) // velocity
+				},
+				{
+					r: 0.6,
+					css: {
+						fontSize: 50 + Math.floor(Math.random() * 20) + 'px',
+						textShadow: '9999px 0 4px ' + color
+					},
+					v: 12 + Math.floor(Math.random() * 6)
+				},
+				{
+					r: 0.2,
+					css: {
+						fontSize: 90 + Math.floor(Math.random() * 30) + 'px',
+						textShadow: '9999px 0 12px ' + color
+					},
+					v: 24 + Math.floor(Math.random() * 12)
+				},
+				{
+					r: 0.1,
+					css: {
+						fontSize: 150 + Math.floor(Math.random() * 50) + 'px',
+						textShadow: '9999px 0 36px ' + color
+					},
+					v: 40 + Math.floor(Math.random() * 20)
+				}
+			],
+			$flake = $(flakes[i]),
+			r = Math.random(),
+			s = sizes.length,
+			v,
+			x = (-300 + Math.floor(Math.random() * (ww + 300))),
+			y = (initial) ? (-300 + Math.floor(Math.random() * (wh + 300))) : -300;
 
-    function StopConfetti() {
-        animationComplete = true;
-        if (ctx == undefined) return;
-        ctx.clearRect(0, 0, W, H);
-    }
+		if (textShadowSupport) {
+			$flake.css('textIndent', '-9999px');
+		}
 
-    function RestartConfetti() {
-        ClearTimers();
-        StopConfetti();
-        reactivationTimerHandler = setTimeout(function () {
-            confettiActive = true;
-            animationComplete = false;
-            InitializeConfetti();
-        }, 100);
+		while (s--) {
+			// Pick which size flake this will be
+			if (r < sizes[s].r) {
+				v = sizes[s].v;
+				$flake.css(sizes[s].css);
+				break;
+			}
+		}
 
-    }
+		$flake.css(
+			{
+				color: color,
+				left: x + 'px',
+				top: y + 'px'
+			}
+		);
 
-    window.requestAnimFrame = (function () {
-        return window.requestAnimationFrame ||
-        window.webkitRequestAnimationFrame ||
-        window.mozRequestAnimationFrame ||
-        window.oRequestAnimationFrame ||
-        window.msRequestAnimationFrame ||
-        function (callback) {
-            return window.setTimeout(callback, 1000 / 60);
-        };
-    })();
-})();
+		$flake.html(confetti[Math.floor(Math.random() * confetti.length)]);
+
+		xs[i] = x;
+		ys[i] = y;
+		vs[i] = v;
+		hvs[i] = Math.round(v * 0.5);
+	} // resetFlake
+
+
+	function move() {
+		var i = flakeCount,
+			x, y, v, half_v,
+			newTime = Date.now(),
+			diffTime = newTime - prevTime;
+
+		// Throttle code
+		if (diffTime < 55 && flakeCount < absMax) {
+			addFlake();
+
+		} else if (diffTime > 150) {
+			removeFlake();
+		}
+
+		prevTime = newTime;
+
+		// Wind changes
+		if (Math.random() > 0.8) {
+			xv += -1 + Math.random() * 2;
+
+			if (Math.abs(xv) > 3) {
+				xv = 3 * (xv / Math.abs(xv));
+			}
+		}
+
+		// Move each flake
+		while (i--) {
+			x = xs[i];
+			y = ys[i];
+			v = vs[i];
+			half_v = hvs[i];
+
+			y += v;
+
+			x += Math.round(xv * v);
+			x += -half_v + Math.round(Math.random() * v);
+
+			// Because flakes are rotating, the origin could be +/- the size of the flake offset
+			if (x > maxw) {
+				x = -300;
+
+			} else if (x < minw) {
+				x = ww;
+			}
+
+			if (y > maxh) {
+				resetFlake(i);
+
+			} else {
+				xs[i] = x;
+				ys[i] = y;
+
+				$(flakes[i]).css(
+					{
+						left: x + 'px',
+						top: y + 'px'
+					}
+				);
+
+				// Only spin biggest three flake sizes
+				// Stupid IE9 can't do CSS3 transitions/animations
+				// Of course it also can't do text-shadow... so maybe my accomodating IE9 here with a JS animation is silly. heh
+				if (v >= 6) {
+					$(flakes[i]).animate({rotate: '+=' + half_v + 'deg'}, 0);
+				}
+			}
+		}
+	} // move()
+}(jQuery));
