@@ -1,6 +1,6 @@
 <div class="row">
   <div class="parallax-container">
-      <div class="parallax"><img src="http://www.agencia.ac.gov.br/wp-content/uploads/2018/02/27908039_1576056919130113_7998319575579597525_o.jpg"></div>
+      <div class="parallax"><img src="http://www.agencia.ac.gov.br/wp-content/uploads/2018/02/DSC_8606-min.jpg"></div>
 <div style="margin-top:100px">
   <h1 class="shadowcss grande white-text flow-text center-align">Monitoramento </br>dos Rios</h1>
   <div class="center-align">
