@@ -49,7 +49,7 @@ function dicas_palavra( $atts ) {
 		$atts
 	));
 return
-'<a class="tooltipped" data-position="top" data-delay="50" data-tooltip="'.$significado.'">'.$palavra.'</a>' ;
+'<a class="tooltipped" data-position="top" data-delay="50" data-tooltip="'.$significado.' ">'.$palavra.'</a>' ;
 
 }
 add_shortcode( 'dicas', 'dicas_palavra' );
