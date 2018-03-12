@@ -37,6 +37,23 @@ return
 }
 add_shortcode( 'compare', 'compare_images' );
 
+// Shortcode Dicas de palavras
+function dicas_palavra( $atts ) {
+	extract(
+	// Attributes
+	shortcode_atts(
+		array(
+			'palavra' => '',
+			'significado' => '',
+		),
+		$atts
+	));
+return
+'<a class="tooltipped" data-position="top" data-delay="50" data-tooltip="'.$significado.'">'.$palavra.'</a>' ;
+
+}
+add_shortcode( 'dicas', 'dicas_palavra' );
+
 //shortcode para aspas
 
 // Add Shortcode

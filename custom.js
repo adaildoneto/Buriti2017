@@ -41,6 +41,10 @@ jQuery(document).ready(function ($) {
 
 });
 
+jQuery(document).ready(function($){
+  $('.tooltipped').tooltip({delay: 50});
+});
+
 jQuery(document).ready(function ($) {
 $('.especiald').slick({
     dots: true,
