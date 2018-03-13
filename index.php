@@ -100,7 +100,7 @@
 <!-- FIM - Módulo - Notícias -->
 
 <!-- Banner full -->
-<?php include(TEMPLATEPATH.'/mod-bannerfull.php');?>
+<!-- php include(TEMPLATEPATH.'/mod-bannerfull.php') -->
 
 <!-- INICIO - Módulo - Mais Notícias e Sidebar -->
 <div class="container">
