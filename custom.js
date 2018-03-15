@@ -466,6 +466,11 @@ jQuery(window).load(function() {
        targ.append(aslice);
      }
      targ.hover(function() {
+       $(this).find('span').each(function() {
+         $(this).css('transform', 'none')
+       });  
+       },
+       function() {
          $('span.outer').each(function() {
            $(this).css({
              'transform': ' translate(' + (Math.random() * 2 - 1) + 'em,' + (Math.random() * 2 - 1) + 'em)'
@@ -475,11 +480,6 @@ jQuery(window).load(function() {
                'transform': 'rotate(' + (Math.random() * 2 - 1) + 'turn)'
              });
            });
-         });
-       },
-       function() {
-         $(this).find('span').each(function() {
-           $(this).css('transform', 'none')
          });
        });
    });
