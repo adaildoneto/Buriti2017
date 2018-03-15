@@ -1,5 +1,5 @@
   <div class="col s12 m4 l4">
-    <div class="sidebar">
+    <div id="sidebar">
     <div class="card painel-noticias" style="margin-bottom: 23px;">
       <?php query_posts('showposts=1&cat=5');?>
       <?php if (have_posts()): while (have_posts()) : the_post();?>
