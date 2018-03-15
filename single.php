@@ -24,7 +24,7 @@ else {
 
     <div class="row no-padding">
             <?php
-                    $imagepost = get_post_meta( $post->ID,'slider-post', true );
+                    $imagepost = get_post_meta( $post->ID,'destaquepost', true );
                     $imageP = wp_get_attachment_image_src( $imagepost, 'slider-post' );
                     $imageD = the_post_thumbnail_url('slider-post' );
                     if(empty($imageP)){
@@ -35,7 +35,7 @@ else {
 
                     ;?>
 		<div class="header-post"></div>
-        <div class="especiais-img img-post autoH-top" style="background: url('<?php echo $image[0]; ?>') no-repeat;">
+        <div class="especiais-img img-post autoH-top" style="background: url('<?php the_post_thumbnail_url('slider-post' ); ?>') no-repeat;">
         </div>
     </div>
     <div class="container testepin">
