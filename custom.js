@@ -454,3 +454,32 @@ jQuery(window).load(function() {
   jQuery(document).ready(function($){
       $('.parallax').parallax();
     });
+
+    jQuery(document).ready(function($) {
+     var targ = $('#queroler');
+     var astring = targ.text();
+     targ.empty();
+     for (var i = 0; i < astring.length; i++) {
+       var aslice = astring.substr(i, 1);
+       if (aslice == ' ') aslice = '&emsp13;';
+       aslice = '<span id="queroler" class="outer"><span id="queroler" class="inner">' + aslice + '</span></span>';
+       targ.append(aslice);
+     }
+     targ.hover(function() {
+         $('span.outer').each(function() {
+           $(this).css({
+             'transform': ' translate(' + (Math.random() * 2 - 1) + 'em,' + (Math.random() * 2 - 1) + 'em)'
+           });
+           $('span.inner').each(function() {
+             $(this).css({
+               'transform': 'rotate(' + (Math.random() * 2 - 1) + 'turn)'
+             });
+           });
+         });
+       },
+       function() {
+         $(this).find('span').each(function() {
+           $(this).css('transform', 'none')
+         });
+       });
+   });
