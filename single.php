@@ -24,7 +24,7 @@ else {
 
     <div class="row no-padding">
             <?php
-                    $imagepost = get_post_meta( $post->ID,'destaquepost', true );
+                    $imagepost = get_post_meta( $post->ID,'slider-post', true );
                     $imageP = wp_get_attachment_image_src( $imagepost, 'slider-post' );
                     $imageD = the_post_thumbnail_url('slider-post' );
                     if(empty($imageP)){
