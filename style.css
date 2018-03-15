@@ -1479,3 +1479,7 @@ height: 120px;
   transition:all 0.5s;
   transition-timing:cubic-bezier(0,1,0,1);
 }
+
+.parallax-container {
+   height: 720px;
+ }
