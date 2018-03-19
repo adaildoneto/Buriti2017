@@ -54,6 +54,34 @@ return
 }
 add_shortcode( 'dicas', 'dicas_palavra' );
 
+// Shortcode Dicas de palavras
+function exibir_pdf( $atts ) {
+	extract(
+	// Attributes
+	shortcode_atts(
+		array(
+			'chamada' => '',
+			'arquivo' => '',
+		),
+		$atts
+	));
+return
+'<a class="waves-effect waves-light btn modal-trigger" href="#modal1">'.$chamada'</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4>'.$chamada'</h4>
+      <embed src=”'.$arquivo'” width=”400px” height="auto">
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Fechar</a>
+    </div>
+  </div>' ;
+
+}
+add_shortcode( 'exibirpdf', 'exibir_pdf' );
+
 //shortcode para aspas
 
 // Add Shortcode
