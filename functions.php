@@ -70,14 +70,14 @@ function exibir_modal( $atts ) {
 return
 '
 
- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">'.$nomedoarquivo.'</a>
+ <a class="modal-trigger" href="#modal1">'.$nomedoarquivo.'</a>
  <div id="modal1" class="modal">
-	 <div class="modal-content">
+	 <div class="modal-content white">
 		 <h4>'.$nomedoarquivo.'</h4>
 		 <embed src="'.$arquivo.'" type="application/pdf" width="100%" height="600px">
 	 </div>
 	 <div class="modal-footer">
-		 <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+		 <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Fechar</a>
 	 </div>
  </div>
 				'
