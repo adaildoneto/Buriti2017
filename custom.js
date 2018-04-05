@@ -488,3 +488,7 @@ jQuery(window).load(function() {
      $('#slick').slick({
      });
    });
+   jQuery(document).ready(function ($) {
+     $('#slick2').slick({
+     });
+   });
