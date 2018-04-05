@@ -468,7 +468,7 @@ jQuery(window).load(function() {
      targ.hover(function() {
        $(this).find('span').each(function() {
          $(this).css('transform', 'none')
-       });  
+       });
        },
        function() {
          $('span.outer').each(function() {
@@ -482,4 +482,9 @@ jQuery(window).load(function() {
            });
          });
        });
+   });
+
+   jQuery(document).ready(function ($) {
+     $('#slick').slick({
+     });
    });
