@@ -491,7 +491,7 @@ jQuery(window).load(function() {
     for (var i = 0; i < astring.length; i++) {
       var aslice = astring.substr(i, 1);
       if (aslice == ' ') aslice = '&emsp13;';
-      aslice = '<span id="queroler" class="outer"><span id="queroler" class="inner">' + aslice + '</span></span>';
+      aslice = '<span id="queroler2" class="outer"><span id="queroler2" class="inner">' + aslice + '</span></span>';
       targ.append(aslice);
     }
     targ.hover(function() {

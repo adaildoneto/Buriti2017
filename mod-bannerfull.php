@@ -4,7 +4,7 @@
 <div class="container" style="margin-top:200px">
   <div id="queroler" class="shadowcss grande white-text flow-text center-align">Assim é o mundo para
   </div></br>
-    <div id="queroler" class="shadowcss grande white-text flow-text center-align">quem sabe ler
+    <div id="queroler2" class="shadowcss grande white-text flow-text center-align">quem sabe ler
       </div>
   <div class="center-align">
     <h4 class="white-text shadowcss">Conheça o programa que vai </br>erradicar o analfabetismo no Acre.</h4>
