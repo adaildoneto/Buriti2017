@@ -57,7 +57,7 @@ add_shortcode( 'dicas', 'dicas_palavra' );
 
 //shortcode para aspas
 // Add Shortcode
-function exibir_modal( $atts ) {
+function mostrar_modal( $atts ) {
 	extract(
 	// Attributes
 	shortcode_atts(
@@ -84,7 +84,37 @@ return
  ;
 
 }
-add_shortcode( 'mostrarpdf', 'exibir_modal' );
+add_shortcode( 'exibirpdf', 'mostrar_modal' );
+
+function exibir_modal( $atts ) {
+	extract(
+	// Attributes
+	shortcode_atts(
+		array(
+			'titulo' => '',
+			'texto' => '',
+		),
+		$atts
+	));
+return
+'
+
+ <a class="waves-effect waves-light btn modal-trigger" href="#modal1">'.$titulo.'</a>
+ <div id="modal1" class="modal">
+	 <div class="modal-content white" style="padding: 20px;">
+		 <h4>'.$titulo.'</h4>
+		 <div class="modal-content">'.$texto.'</div>
+	 </div>
+	 <div class="modal-footer">
+		 <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Fechar</a>
+	 </div>
+ </div>
+				'
+ ;
+
+}
+add_shortcode( 'mostrarmodal', 'exibir_modal' );
+
 
 // Add Shortcode
 function aspas_images( $atts ) {

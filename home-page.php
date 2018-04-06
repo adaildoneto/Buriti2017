@@ -7,7 +7,7 @@ Template Name: Teste novaHome
 
 <?php
 
-get_header(teste);
+get_header('teste');
 
 ?>
 

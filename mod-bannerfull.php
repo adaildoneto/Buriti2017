@@ -1,4 +1,4 @@
-<div class="row show-on-large">
+w<div class="row show-on-large">
   <div class="parallax-container">
       <div class="parallax"><img src="http://www.agencia.ac.gov.br/wp-content/uploads/2016/11/quero_ler_Secom_Acre_SV_10-11-2016-11.jpg"></div>
 <div class="container" style="margin-top:200px">
