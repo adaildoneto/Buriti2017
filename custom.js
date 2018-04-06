@@ -460,7 +460,7 @@ jQuery(window).load(function() {
      var astring = targ.text();
      targ.empty();
      for (var i = 0; i < astring.length; i++) {
-       var aslice = astring.substr(i, 3);
+       var aslice = astring.substr(i, 1);
        if (aslice == ' ') aslice = '&emsp13;';
        aslice = '<span id="queroler" class="outer"><span id="queroler" class="inner">' + aslice + '</span></span>';
        targ.append(aslice);
