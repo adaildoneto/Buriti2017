@@ -99,7 +99,7 @@ function exibir_modal( $atts ) {
 return
 '
 
- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">'.$titulo.'</a>
+ <a class="waves-effect waves-light btn modal-trigger center-align" href="#modal1">'.$titulo.'</a>
  <div id="modal1" class="modal">
 	 <div class="modal-content white" style="padding: 20px;">
 		 <h4>'.$titulo.'</h4>
