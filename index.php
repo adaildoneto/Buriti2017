@@ -30,7 +30,18 @@
 
       <div class="slider-noticias img-slider" style="background: url('<?php the_post_thumbnail_url('slider-noticias');; ?>');">
         <div class="bloco-slider-noticias">
-          <h2><span class="line-text orange darken-2"></span><?php the_title();?></h2>
+          <h2><span class="line-text orange darken-2"></span>
+            <?php
+            $tituloPost = get_the_title();
+            $tituloCapa = get_post_meta( $post->ID,'titulo-capa', true );
+            if(empty($tituloCapa)){
+               $titulo = $tituloPost;
+            }else{
+              $titulo = $tituloCapa;
+            }
+            echo $titulo;
+            ?>
+          </h2>
         </div>
       </div>
 	</a>
@@ -44,7 +55,19 @@
 
       <div class="slider-noticias img-slider" style="background: url('<?php the_post_thumbnail_url('slider-noticias');; ?>');">
         <div class="bloco-slider-noticias">
-          <h2><span class="line-text orange darken-2"></span><?php the_title();?></h2>
+          <h2><span class="line-text orange darken-2"></span>
+            <?php
+            $tituloPost = get_the_title();
+            $tituloCapa = get_post_meta( $post->ID,'titulo-capa', true );
+            if(empty($tituloCapa)){
+               $titulo = $tituloPost;
+            }else{
+              $titulo = $tituloCapa;
+            }
+            echo $titulo;
+            ?>
+
+          </h2>
         </div>
       </div>
 	</a>
@@ -58,7 +81,18 @@
 
       <div class="slider-noticias img-slider" style="background: url('<?php the_post_thumbnail_url('slider-noticias');; ?>');">
         <div class="bloco-slider-noticias">
-          <h2><span class="line-text orange darken-2"></span><?php the_title();?></h2>
+          <h2><span class="line-text orange darken-2"></span>
+            <?php
+            $tituloPost = get_the_title();
+            $tituloCapa = get_post_meta( $post->ID,'titulo-capa', true );
+            if(empty($tituloCapa)){
+               $titulo = $tituloPost;
+            }else{
+              $titulo = $tituloCapa;
+            }
+            echo $titulo;
+            ?>
+          </h2>
         </div>
       </div>
 	</a>
@@ -72,7 +106,18 @@
 
       <div class="slider-noticias img-slider" style="background: url('<?php the_post_thumbnail_url('slider-noticias');; ?>');">
         <div class="bloco-slider-noticias">
-          <h2><span class="line-text orange darken-2"></span><?php the_title();?></h2>
+          <h2><span class="line-text orange darken-2"></span>
+            <?php
+            $tituloPost = get_the_title();
+            $tituloCapa = get_post_meta( $post->ID,'titulo-capa', true );
+            if(empty($tituloCapa)){
+               $titulo = $tituloPost;
+            }else{
+              $titulo = $tituloCapa;
+            }
+            echo $titulo;
+            ?>
+          </h2>
         </div>
       </div>
 	</a>
