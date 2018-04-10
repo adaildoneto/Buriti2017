@@ -1,4 +1,38 @@
   <div class="col s12 m4 l4">
+   <h5 class="orange-text text-darken-4"><i class="icon-logo-agencia2017-01"></i> Mais Notícias</h5>
+    <?php
+      $args = array (
+      'pagination'             => true,
+      'posts_per_page'         => '3',
+      'cat'                    => array (),
+      'tag'                    => array( 21301,),
+      'ignore_sticky_posts'    => true,
+      'order'                  => 'DESC',
+      'orderby'                => 'date',
+    );
+
+    // The Query
+    $query = new WP_Query( $args );
+
+    // The Loop
+    while( $query->have_posts() ) {
+
+       $query->the_post();
+        {
+          echo '<div class="card">';
+        	get_template_part( 'outrasnoticias' );
+          echo '</div>';
+       }
+
+       wp_reset_postdata();
+
+    }
+    ?>
+    <div class="">
+    <a href="http://www.agencia.ac.gov.br/categoria/noticias/" class="btn orange btn-mais">Veja mais notícias</a>
+  </div>
+
+
     <div id="sidebar">
     <div class="card painel-noticias" style="margin-bottom: 23px;">
       <?php query_posts('showposts=1&cat=5');?>

@@ -926,7 +926,7 @@ a.button-collapse{
 
 .data-post
 {
-    font-size: 13pt;
+    font-size: 10pt;
 }
 
 .data-post:after
@@ -942,7 +942,7 @@ a.button-collapse{
 
 .hora-post
 {
-    font-size: 13pt;
+    font-size: 10pt;
 }
 
 .hora-post:before
@@ -1478,5 +1478,20 @@ height: 120px;
 }
 
 .parallax-container {
-   height: 720px;
+    height: 720px;
+ }
+
+ .thumbnews {
+    width: 120px!important;
+
+ }
+
+ .bloco-thumbnews a,
+  {
+   font-size: 1.1rem !important;
+   line-height: 1.1rem !important ;
+ }
+ .bloco-thumbnews {
+   width: 100%;
+   padding: 5px;
  }
