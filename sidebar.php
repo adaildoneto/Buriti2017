@@ -5,7 +5,7 @@
       'pagination'             => true,
       'posts_per_page'         => '3',
       'cat'                    => array (),
-      'tag'                    => array( 21301,),
+      'tag'                    => array ( 'off',),
       'ignore_sticky_posts'    => true,
       'order'                  => 'DESC',
       'orderby'                => 'date',
