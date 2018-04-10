@@ -9,7 +9,17 @@
       </div>
       <div class="card-stacked">
         <div class="bloco-thumbnews">
-        <a href="<?php the_Permalink()?>" title="<?php the_title();?>" class="destaque-fonte orange-text darken-2"><?php the_title();?>
+        <a href="<?php the_Permalink()?>" title="<?php the_title();?>" class="destaque-fonte orange-text darken-2">
+          <?php
+          $tituloPost = get_the_title();
+          $tituloCapa = get_post_meta( $post->ID,'titulo-capa', true );
+          if(empty($tituloCapa)){
+             $titulo = $tituloPost;
+          }else{
+            $titulo = $tituloCapa;
+          }
+          echo $titulo;
+          ?>
 </a>
         </div>
         <div class="bloco-thumbnews">
