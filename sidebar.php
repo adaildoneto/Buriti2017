@@ -29,7 +29,7 @@
     }
     ?>
     <div class="">
-    <a href="http://www.agencia.ac.gov.br/categoria/noticias/" class="btn orange btn-mais">Veja mais notícias</a>
+    <a href="http://www.agencia.ac.gov.br/categoria/noticias/" class="btn orange btn-mais">Veja mais</a>
   </div>
 
 
