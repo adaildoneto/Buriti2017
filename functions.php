@@ -54,6 +54,21 @@ return
 }
 add_shortcode( 'dicas', 'dicas_palavra' );
 
+function card_box( $atts, $content = null ) {
+	extract(
+	// Attributes
+	shortcode_atts(
+		array(
+			'cor' => 'yellow',
+		),
+		$atts
+	));
+return
+'<div class="card '.$cor. ' lighten-5">'.$content.'</div>' ;
+
+}
+add_shortcode( 'box', 'card_box' );
+
 
 //shortcode para aspas
 // Add Shortcode
