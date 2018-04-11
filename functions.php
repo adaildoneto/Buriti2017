@@ -64,7 +64,7 @@ function card_box( $atts, $content = null ) {
 		$atts
 	));
 return
-'<div class="card '.$cor. ' lighten-5">'.$content.'</div>' ;
+'<div class="card '.$cor.' lighten-5"><div class="card-content">'.$content.'</div></div>' ;
 
 }
 add_shortcode( 'box', 'card_box' );
