@@ -1,4 +1,4 @@
-w<div class="row show-on-large">
+<div class="row show-on-large">
   <div class="parallax-container">
       <div class="parallax"><img src="http://www.agencia.ac.gov.br/wp-content/uploads/2018/04/fotos-indio.jpg"></div>
 <div class="container" style="margin-top:200px">
