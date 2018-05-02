@@ -104,7 +104,7 @@
     </div>
 
     <div>
-  <img src="http://www.agencia.ac.gov.br/wp-content/uploads/2018/04/banner-maio-amarelo.png">
+  <img class="responsive-img" src="http://www.agencia.ac.gov.br/wp-content/uploads/2018/04/banner-maio-amarelo.png">
     </div>
   </div>
 </div>
