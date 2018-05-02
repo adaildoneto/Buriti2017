@@ -98,7 +98,7 @@
 
 <!--  chamando widget publicidade lateral -->
 <div >
-  <div id="slick" data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "dots":true, "arrows":false, "autoplay":true}'>
+  <div id="slick" data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "dots":true, "arrows":false, "autoplay":true, "autoplaySpeed": 2000}'>
     <div>
   <?php dynamic_sidebar( 'publicidade-lateral' ); ?>
     </div>
