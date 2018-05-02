@@ -54,6 +54,30 @@
       <div class="clearfix"></div>
     </div> <!-- Fim do Vídeo Giro de Notícias -->
 
+    <div class="nogabinetes">
+      <?php query_posts('showposts=1&cat=69');?>
+      <?php if (have_posts()): while (have_posts()) : the_post();?>
+        <div>
+          <div class="card painel-artigo orange">
+        <a href="<?php the_Permalink()?>" title="<?php the_title();?>">
+            <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'artigo' ); ?>
+          <div class="bloco-img-noticias3 especiais-img" style="background: url('<?php echo $image[0]; ?>');">
+              <span class="chip z-depth-1-half nocanto1 espaco1"><span class="chip left  orange" style=" position: absolute;  left: 0px; "><i class="fa white-text fa-file-text" aria-hidden="true"></i></span>Artigo</span>
+          </div></a>
+
+          <div class="bloco-des-artigo">
+              <a class="white-text" href="<?php the_Permalink()?>" title="<?php the_title();?>"><?php the_title();?></a>
+          </div>
+          <div class="nocanto4 tamanho-icones">
+                <?php include(TEMPLATEPATH.'/mod-social-white.php');?>
+          </div>
+        <?php endwhile;endif;?>
+        <div class="clearfix"></div>
+      </div>
+    <!-- Fim div Artigo -->
+    </div>
+      </div> <!-- Fim div Sidebar -->
+
     <div class="card painel-noticias2" style="margin-bottom: 23px;">
       <?php query_posts('showposts=1&cat=61');?>
       <?php if (have_posts()): while (have_posts()) : the_post();?>
@@ -74,34 +98,19 @@
 
 <!--  chamando widget publicidade lateral -->
 <div >
+  <div id="slick" data-slick='{"slidesToShow": 4, "slidesToScroll": 4, "dots":true, "arrows":false}'>
+    <div>
   <?php dynamic_sidebar( 'publicidade-lateral' ); ?>
+    </div>
 
+    <div>
+  <img src="http://www.agencia.ac.gov.br/wp-content/uploads/2018/04/banner-maio-amarelo.png">
+    </div>
+  </div>
 </div>
 
 <!-- Artigo -->
-<div class="nogabinetes">
-  <?php query_posts('showposts=1&cat=69');?>
-  <?php if (have_posts()): while (have_posts()) : the_post();?>
-    <div>
-      <div class="card painel-artigo orange">
-    <a href="<?php the_Permalink()?>" title="<?php the_title();?>">
-        <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'artigo' ); ?>
-      <div class="bloco-img-noticias3 especiais-img" style="background: url('<?php echo $image[0]; ?>');">
-          <span class="chip z-depth-1-half nocanto1 espaco1"><span class="chip left  orange" style=" position: absolute;  left: 0px; "><i class="fa white-text fa-file-text" aria-hidden="true"></i></span>Artigo</span>
-      </div></a>
 
-      <div class="bloco-des-artigo">
-          <a class="white-text" href="<?php the_Permalink()?>" title="<?php the_title();?>"><?php the_title();?></a>
-      </div>
-      <div class="nocanto4 tamanho-icones">
-            <?php include(TEMPLATEPATH.'/mod-social-white.php');?>
-      </div>
-    <?php endwhile;endif;?>
-    <div class="clearfix"></div>
-  </div>
-<!-- Fim div Artigo -->
-</div>
-  </div> <!-- Fim div Sidebar -->
   </div>
 </div>
 
