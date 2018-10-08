@@ -1,5 +1,5 @@
   <div class="col s12 m4 l4">
-   <h5 class="orange-text text-darken-4"><i class="icon-logo-agencia2017-01"></i> Mais Notícias</h5>
+  <!--  <h5 class="orange-text text-darken-4"><i class="icon-logo-agencia2017-01"></i> Mais Notícias</h5>
     <?php
       $args = array (
       'pagination'             => true,
@@ -31,7 +31,7 @@
     <div class="">
     <a href="http://www.agencia.ac.gov.br/categoria/noticias/" class="btn orange btn-mais">Veja mais</a>
   </div>
-
+-->
 
     <div id="sidebar">
     <div class="card painel-noticias" style="margin-bottom: 23px;">
