@@ -96,18 +96,20 @@
       <div class="clearfix"></div>
     </div> <!-- Fim do No Gabinete -->
 
-<!--  chamando widget publicidade lateral -->
-<div >
-  <div id="slick" data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "dots":true, "arrows":false, "autoplay":true, "autoplaySpeed": 2000}'>
     <div>
   <?php dynamic_sidebar( 'publicidade-lateral' ); ?>
     </div>
+
+<!--  chamando widget publicidade lateral
+<div >
+  <div id="slick" data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "dots":true, "arrows":false, "autoplay":true, "autoplaySpeed": 2000}'>
+
 
     <div>
   <img class="responsive-img" src="http://www.agencia.ac.gov.br/wp-content/uploads/2018/04/banner-maio-amarelo.png">
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- Artigo -->
 
