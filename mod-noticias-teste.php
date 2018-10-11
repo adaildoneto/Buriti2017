@@ -37,7 +37,7 @@ while ( $query->have_posts() ) {
      else if ( in_category( 'governo' ) ) {  // Destaque GRande
 
 
-          get_template_part( 'destaque', 'grande' );
+          get_template_part( 'destaque', 'quadrado' );
 
         }
         else if ( in_category( 'seguranca' ) ) {  // Destaque GRande
