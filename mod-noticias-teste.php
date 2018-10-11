@@ -65,7 +65,7 @@ while ( $query->have_posts() ) {
   }
 
   if ( is_dynamic_sidebar('publicidade-teste') ) {
-					if ( $query->current_post == 6 ) {  // first post
+					if ( $query->current_post == 3 ) {  // first post
 
 							dynamic_sidebar('publicidade-teste');
               dynamic_sidebar('publicidade-banner');
