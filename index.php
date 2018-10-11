@@ -1,129 +1,60 @@
-<?php get_header(); ?>
+<?php
+/*
+Template Name: Teste novaHome
+*/
+?>
 
-<!-- pop up que abre uma vez por dia
 
-<div id="modal1" class="modal">
-    <div class="modal-content">
-      <a href="http://www.agencia.ac.gov.br/resultados-2017/">  <img src="http://www.agencia.ac.gov.br/wp-content/uploads/2017/12/banner-resultados2017.png" class="responsive-img sem-margem"></a>
+<?php
 
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Fechar</a>
-    </div>
-  </div>
+get_header('teste');
 
-   fim do pop up -->
+?>
+
+
 
 <div class="container header">
 <!-- INICIO - Módulo - Chips -->
   <div class="row"  style="padding: 0 10px;">
-     <?php include(TEMPLATEPATH.'/menu-integracao.php');?>
+     <?php include(TEMPLATEPATH.'/menu-integracao-teste.php');?>
   </div>
 <!-- FIM - Módulo - Chips -->
 <!-- INICIO - Módulo - Slider -->
   <div class="row">
    <div class="slider-noticias-container">
-    <div class="col s12 m12 l6">
-    <?php query_posts('showposts=1&tag=slider');?>
-    <?php if (have_posts()): while (have_posts()) : the_post();?>
-	<a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
+     <?php
 
-      <div class="slider-noticias img-slider" style="background: url('<?php the_post_thumbnail_url('slider-noticias');; ?>');">
-        <div class="bloco-slider-noticias">
-          <h2><span class="line-text orange darken-2"></span>
-            <?php
-            $tituloPost = get_the_title();
-            $tituloCapa = get_post_meta( $post->ID,'titulo-capa', true );
-            if(empty($tituloCapa)){
-               $titulo = $tituloPost;
-            }else{
-              $titulo = $tituloCapa;
-            }
-            echo $titulo;
-            ?>
-          </h2>
-        </div>
-      </div>
-	</a>
-<?php endwhile;endif;?>
-<div class="clearfix"></div>
-    </div>
-    <div class="col s12 m12 l6">
-    <?php query_posts('showposts=1&tag=slider&offset=1');?>
-    <?php if (have_posts()): while (have_posts()) : the_post();?>
-	<a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
+ 			$args = array (
+ 			  'pagination'             => true,
+ 				'tag'										 => array ('slider'),
+ 			  'posts_per_page'         => 4,
+ 			  'ignore_sticky_posts'    => true,
 
-      <div class="slider-noticias img-slider" style="background: url('<?php the_post_thumbnail_url('slider-noticias');; ?>');">
-        <div class="bloco-slider-noticias">
-          <h2><span class="line-text orange darken-2"></span>
-            <?php
-            $tituloPost = get_the_title();
-            $tituloCapa = get_post_meta( $post->ID,'titulo-capa', true );
-            if(empty($tituloCapa)){
-               $titulo = $tituloPost;
-            }else{
-              $titulo = $tituloCapa;
-            }
-            echo $titulo;
-            ?>
+ 			);
+ 			// The Query
+ 			$query = new WP_Query( $args );
 
-          </h2>
-        </div>
-      </div>
-	</a>
-<?php endwhile;endif;?>
-<div class="clearfix"></div>
-    </div>
-    <div class="col s12 m12 l6">
-    <?php query_posts('showposts=1&tag=slider&offset=2');?>
-    <?php if (have_posts()): while (have_posts()) : the_post();?>
-	<a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
+ 			// The Loop
+ 			while ( $query->have_posts() ) {
 
-      <div class="slider-noticias img-slider" style="background: url('<?php the_post_thumbnail_url('slider-noticias');; ?>');">
-        <div class="bloco-slider-noticias">
-          <h2><span class="line-text orange darken-2"></span>
-            <?php
-            $tituloPost = get_the_title();
-            $tituloCapa = get_post_meta( $post->ID,'titulo-capa', true );
-            if(empty($tituloCapa)){
-               $titulo = $tituloPost;
-            }else{
-              $titulo = $tituloCapa;
-            }
-            echo $titulo;
-            ?>
-          </h2>
-        </div>
-      </div>
-	</a>
-<?php endwhile;endif;?>
-<div class="clearfix"></div>
-    </div>
-    <div class="col s12 m12 l6">
-    <?php query_posts('showposts=1&tag=slider&offset=3');?>
-    <?php if (have_posts()): while (have_posts()) : the_post();?>
-	<a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
+ 		      $query->the_post();
 
-      <div class="slider-noticias img-slider" style="background: url('<?php the_post_thumbnail_url('slider-noticias');; ?>');">
-        <div class="bloco-slider-noticias">
-          <h2><span class="line-text orange darken-2"></span>
-            <?php
-            $tituloPost = get_the_title();
-            $tituloCapa = get_post_meta( $post->ID,'titulo-capa', true );
-            if(empty($tituloCapa)){
-               $titulo = $tituloPost;
-            }else{
-              $titulo = $tituloCapa;
-            }
-            echo $titulo;
-            ?>
-          </h2>
-        </div>
-      </div>
-	</a>
-<?php endwhile;endif;?>
-<div class="clearfix"></div>
-    </div>
+          if ( in_category( 'esp' ) ) {  // destaque foto
+
+        		 						 get_template_part( 'slider', 'grande' );
+
+
+        			 } else {
+
+        					get_template_part( 'slider', '' );
+        				}
+
+        		    wp_reset_postdata();
+
+        }
+ 			?>
+
+
   </div>
   </div>
   <!-- FIM - Módulo - Slider -->
@@ -135,36 +66,40 @@
   <?php dynamic_sidebar( 'publicidade-topo' ); ?>
 
 </div>
+
 </div>
 <!-- FIM - Módulo - Notícias -->
 
 <!-- INICIO - Módulo - Notícias -->
 <div class="container">
-	<?php include(TEMPLATEPATH.'/mod-destaque-noticias.php');?>
+	<?php include(TEMPLATEPATH.'/mod-destaque-noticias3.php');?>
 </div>
+
+<?php include(TEMPLATEPATH.'/mod-bannerfull.php');?>
+
 <!-- FIM - Módulo - Notícias -->
-
-<!-- Banner full -->
-<?php include(TEMPLATEPATH.'/mod-bannerfull.php'); ?>
-
-<!-- INICIO - Módulo - Mais Notícias e Sidebar -->
 <div class="container">
-	<?php include(TEMPLATEPATH.'/mod-noticias.php');?>
+	<?php include(TEMPLATEPATH.'/mod-noticias-teste.php');?>
 </div>
-<!-- FIM - Módulo - Mais Notícias e Sidebar -->
-<!-- INICIO - Módulo - Especiais -->
-<div id="especiais" class="container" style="padding: 0px 10px;">
- 	<?php include(TEMPLATEPATH.'/mod-especiais.php');?>
+
+
+<div class="container">
+  <?php include(TEMPLATEPATH.'/mod-especiais.php');?>
+
 </div>
-<!-- FIM - Módulo - Especiais -->
-<!-- INICIO - Módulo - Vídeos -->
-<div id="especiais" class="container" style="padding: 0px 10px;">
-  <?php include(TEMPLATEPATH.'/mod-videos.php');?>
-</div>
-<!-- FIM - Módulo - Vídeos -->
-<!-- INICIO - Módulo - Agenda Cultural -->
-<div id="especiais" class="container no-padding">
+
+<div class="container">
   <?php include(TEMPLATEPATH.'/mod-eventos.php');?>
+
 </div>
-<!-- FIM - Módulo - Agenda Cultural -->
+
+<div class="container">
+  <?php include(TEMPLATEPATH.'/mod-videos2.php');?>
+</div>
+
+
+
+
+
+
 <?php get_footer(); ?>
