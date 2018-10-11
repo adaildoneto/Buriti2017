@@ -4,15 +4,15 @@
       <div class="col s12">
      <ul class="tabs">
        <li class="tab col s3"><a class="active orange-text darken-4-text" href="#test1">Destaques</a></li>
-       <li class="tab col s3"><a class="orange-text darken-4-text" href="#test2">Carnaval</a></li>
-       <li class="tab col s3"><a class="orange-text darken-4-text" href="#test3">Segurança</a></li>
-       <li class="tab col s3"><a class="orange-text darken-4-text" href="#test4">Artigos</a></li>
+       <li class="tab col s3"><a class="orange-text darken-4-text" href="#test2">Segurança</a></li>
+       <li class="tab col s3"><a class="orange-text darken-4-text" href="#test3">Saúde</a></li>
+       <li class="tab col s3"><a class="orange-text darken-4-text" href="#test4">Governo</a></li>
      </ul>
     </div>
 
    <div id="test1" class="col s12">
 
-     <?php
+      <?php
 
 
     $args = array (
@@ -70,7 +70,7 @@
       $args = array (
         'pagination'             => false,
         'showposts'              => 5,
-        'tag'                    => array ('carnaval'),
+        'cat'                    => array ('17'),
         'ignore_sticky_posts'    => true,
 
       );
@@ -123,7 +123,7 @@
       $args = array (
         'pagination'             => false,
         'showposts'              => 5,
-        'cat'                    => array ('17'),
+        'cat'                    => array ('18'),
         'ignore_sticky_posts'    => true,
 
       );
@@ -171,7 +171,7 @@
       $args = array (
         'pagination'             => false,
         'showposts'              => 5,
-        'cat'                    => array ('69'),
+        'cat'                    => array ('11'),
         'ignore_sticky_posts'    => true,
 
       );
