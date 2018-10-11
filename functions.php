@@ -713,11 +713,9 @@ $artigo_metabox->set_fields(
 					 wp_enqueue_script( 'simpleWeather', get_template_directory_uri() . '/tempo3/jquery.simpleWeather.js');
 					  wp_enqueue_script( 'tempo', get_template_directory_uri() . '/tempo3/tempo-ok.js');
 
-						 if(is_page_template('index.php')) {
+				
 							  wp_enqueue_script( 'custom-teste', get_template_directory_uri() . '/custom-teste.js');
-							} else {
-							 wp_enqueue_script( 'custom', get_template_directory_uri() . '/custom.js');
-							}
+
 
 							if(is_page('carnaval-2018')) {
  							  wp_enqueue_script( 'confetti', get_template_directory_uri() . '/confetti.js');
