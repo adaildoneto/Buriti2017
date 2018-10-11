@@ -83,14 +83,21 @@ get_header('teste');
 </div>
 
 
-	<?php include(TEMPLATEPATH.'/mod-especiais.php');?>
+<div class="container">
+  <?php include(TEMPLATEPATH.'/mod-especiais.php');?>
 
+</div>
 
-    <?php include(TEMPLATEPATH.'/mod-eventos.php');?>
+<div class="container">
+  <?php include(TEMPLATEPATH.'/mod-eventos.php');?>
 
+</div>
 
-
+<div class="container">
   <?php include(TEMPLATEPATH.'/mod-videos2.php');?>
+</div>
+
+
 
 
 
