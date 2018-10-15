@@ -22,7 +22,7 @@ while ( $query->have_posts() ) {
    if  ( has_tag( 'especial' ) ) {  // Destaque Retangular
 
 
-      get_template_part( 'destaque', 'quadrado' );
+      get_template_part( 'destaque', 'grande' );
 
   }
 
