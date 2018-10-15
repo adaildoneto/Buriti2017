@@ -9,7 +9,7 @@
 
 <?php $args = array(
   'showposts' => 14,
-  'cat' => array (-20452,-15968,-15966,-167,-61,-38,-9,-178,-5,-1,-35),
+  'cat' => array (-20452,-15968,-15966,-167,-38,-9,-178,-5,-1,-35),
   'tag__not_in'  => array(18910,18911,18912,18913,18918,18907,19572,20142,20949,21042,21301),
 );
 $query = new WP_Query( $args );
@@ -19,7 +19,7 @@ while ( $query->have_posts() ) {
 
     $query->the_post();
 
-   if  ( has_tag( 'rios2018' ) ) {  // Destaque Retangular
+   if  ( has_tag( 'especial' ) ) {  // Destaque Retangular
 
 
       get_template_part( 'destaque', 'quadrado' );
@@ -38,10 +38,10 @@ while ( $query->have_posts() ) {
              get_template_part( 'destaque', 'colorido' );
 
            }
-           else if ( in_category( '55' ) ) {  // Destaque GRande
+           else if ( in_category( '61' ) ) {  // Destaque GRande
 
 
-                get_template_part( 'destaque', 'colorido' );
+                get_template_part( 'destaque', 'quadrado' );
 
               }
 
