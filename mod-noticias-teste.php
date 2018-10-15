@@ -41,7 +41,7 @@ while ( $query->have_posts() ) {
            else if ( in_category( '61' ) ) {  // Destaque GRande
 
 
-                get_template_part( 'destaque', 'quadrado' );
+                get_template_part( 'destaque', 'gabinete' );
 
               }
 
