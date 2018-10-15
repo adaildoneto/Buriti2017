@@ -8,7 +8,7 @@
 
 
 <?php $args = array(
-  'showposts' => 15,
+  'showposts' => 14,
   'cat' => array (-20452,-15968,-15966,-167,-61,-38,-9,-178,-5,-1,-35),
   'tag__not_in'  => array(18910,18911,18912,18913,18918,18907,19572,20142,20949,21042,21301),
 );
@@ -26,14 +26,6 @@ while ( $query->have_posts() ) {
 
   }
 
-
-  else if (  has_tag( 'destaque2' ) ) {  // Destaque GRande
-
-
-       get_template_part( 'destaque', 'quadrado' );
-
-     }
-
      else if ( in_category( 'governo' ) ) {  // Destaque GRande
 
 
@@ -43,7 +35,7 @@ while ( $query->have_posts() ) {
         else if ( in_category( 'seguranca' ) ) {  // Destaque GRande
 
 
-             get_template_part( 'destaque', 'quadrado' );
+             get_template_part( 'destaque', 'colorido' );
 
            }
            else if ( in_category( '55' ) ) {  // Destaque GRande
