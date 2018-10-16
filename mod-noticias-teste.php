@@ -45,12 +45,8 @@ while ( $query->have_posts() ) {
               }
 
 
-  else if (  in_category( '61' ) ) {  // destaque foto
 
-           get_template_part( 'destaque', 'gabinete' );
-
-
- } else {
+  else {
 
     get_template_part( 'normal', '' );
   }
