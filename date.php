@@ -1,5 +1,5 @@
 
-<?php get_header(); ?>
+<?php get_header(teste); ?>
 
 <div class="container header">
 <!-- INICIO - Módulo - Chips -->

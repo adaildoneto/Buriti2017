@@ -1,4 +1,4 @@
-<?php get_header(single);?>
+<?php get_header(teste);?>
 
 <div class="container">
 
