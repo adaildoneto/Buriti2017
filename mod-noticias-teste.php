@@ -7,7 +7,7 @@
 
 <?php $args = array(
   'showposts' => 15,
-  'cat' => array (-20452,-15968,-15966,-167,-38,-9,-178,-5,-1,-35,-18910,-18911,-18912,-18913,-18918,-18907),
+  'cat' => array (-20452,-15968,-15966,-167,-38,-9,-178,-5,-61,-1,-35,-18910,-18911,-18912,-18913,-18918,-18907),
   'tag__not_in'  => array(18910,18911,18912,18913,18918,18907,19572,20142,20949,21042,21301),
 );
 $query = new WP_Query( $args );
@@ -59,10 +59,12 @@ while ( $query->have_posts() ) {
 					if ( $query->current_post == 3 ) {  // first post
 
 							dynamic_sidebar('publicidade-teste');
+
               dynamic_sidebar('publicidade-banner');
 
-            get_template_part('tempo','widget');
+              get_template_part('tempo','widget');
 
+              get_template_part('gabinete','widget');
 
 			 								}
 					}
