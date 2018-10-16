@@ -1,15 +1,13 @@
 <div class="row">
   <div id="grid" class="container">
-<div class="grid-sizer col s12 m6 l4">
 
-</div>
 <!-- Noticias 1 // Inicio do Loop -->
 
 
 
 <?php $args = array(
   'showposts' => 15,
-  'cat' => array (-20452,-15968,-15966,-167,-61,-38,-9,-178,-5,-1,-35),
+  'cat' => array (-20452,-15968,-15966,-167,-38,-9,-178,-5,-1,-35),
   'tag__not_in'  => array(19572,20142,20949,),
 );
 $query = new WP_Query( $args );
@@ -54,9 +52,9 @@ while ( $query->have_posts() ) {
               }
 
 
-  else if (  has_tag( 'destaque4' ) ) {  // destaque foto
+  else if (  in_category( '61' ) ) {  // destaque foto
 
-           get_template_part( 'destaque', 'colorido' );
+           get_template_part( 'destaque', 'gabinete' );
 
 
  } else {
