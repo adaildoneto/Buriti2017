@@ -1,4 +1,3 @@
-<div class="col s12 m6 l4 grid-item">
   <?php
 $args = array (
   'pagination'             => false,
@@ -23,4 +22,3 @@ while ( $query->have_posts() ) {
 
   }
 ?>
-</div>
