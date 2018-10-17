@@ -7,7 +7,7 @@
 
 <?php $args = array(
   'showposts' => 15,
-  'cat' => array (-20452,-15968,-15966,-167,-38,-9,-178,-5,-1,-35,-18910,-18911,-18912,-18913,-18918,-18907),
+  'cat' => array (-20452,-15968,-15966,-167,-38,-9,-178,-5,-1,-61,-35,-18910,-18911,-18912,-18913,-18918,-18907),
   'tag__not_in'  => array(18910,18911,18912,18913,18918,18907,19572,20142,20949,21042,21301),
 );
 $query = new WP_Query( $args );
@@ -57,14 +57,6 @@ while ( $query->have_posts() ) {
 			 								}
 					}
 
-    if  ( in_category( 'no-gabinete' ) ) {  // Destaque Retangular
-            if ( $query->current_post == 5 ) {  // first post
-
-
-             get_template_part( 'destaque', 'gabinete' );
-
-         }
-       }
 
 
 
