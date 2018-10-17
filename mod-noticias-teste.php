@@ -57,11 +57,11 @@ while ( $query->have_posts() ) {
 			 								}
 					}
 
-    if  ( in_category( '61' ) ) {  // Destaque Retangular
+    if  ( in_category( 'no-gabinete' ) ) {  // Destaque Retangular
             if ( $query->current_post == 5 ) {  // first post
 
 
-             get_template_part( 'gabinete', 'widget' );
+             get_template_part( 'destaque', 'gabinete' );
 
          }
        }
