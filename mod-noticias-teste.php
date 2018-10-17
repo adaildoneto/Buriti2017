@@ -17,17 +17,8 @@ while ( $query->have_posts() ) {
 
     $query->the_post();
 
-   if  ( in_category( '61' ) ) {  // Destaque Retangular
-     if ( $query->current_post == 5 ) {  // first post
 
-
-      get_template_part( 'destaque', 'gabinete' );
-
-  }
-}
-
-
-     else if ( in_category( 'governo' ) ) {  // Destaque GRande
+    if ( in_category( 'governo' ) ) {  // Destaque GRande
 
 
           get_template_part( 'destaque', 'grande' );
@@ -65,6 +56,16 @@ while ( $query->have_posts() ) {
 
 			 								}
 					}
+
+    if  ( in_category( '61' ) ) {  // Destaque Retangular
+            if ( $query->current_post == 5 ) {  // first post
+
+
+             get_template_part( 'gabinete', 'widget' );
+
+         }
+       }
+
 
 
 
