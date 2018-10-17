@@ -11,9 +11,9 @@ get_header('teste');
 
 ?>
 
+<?php include(TEMPLATEPATH.'/mod-bannerfull.php');?>
 
-
-<div class="container header">
+<div class="container">
 <!-- INICIO - Módulo - Chips -->
   <div class="row"  style="padding: 0 10px;">
      <?php include(TEMPLATEPATH.'/menu-integracao-teste.php');?>
@@ -74,8 +74,6 @@ get_header('teste');
 <div class="container">
 	<?php include(TEMPLATEPATH.'/mod-destaque-noticias3.php');?>
 </div>
-
-<?php include(TEMPLATEPATH.'/mod-bannerfull.php');?>
 
 <!-- FIM - Módulo - Notícias -->
 <div class="container">
