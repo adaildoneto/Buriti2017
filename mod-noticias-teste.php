@@ -17,12 +17,14 @@ while ( $query->have_posts() ) {
 
     $query->the_post();
 
-   if  ( has_tag( 'especial' ) ) {  // Destaque Retangular
+   if  ( in_category( '61' ) ) {  // Destaque Retangular
+     if ( $query->current_post == 5 ) {  // first post
 
 
-      get_template_part( 'destaque', 'grande' );
+      get_template_part( 'destaque', 'gabinete' );
 
   }
+}
 
 
      else if ( in_category( 'governo' ) ) {  // Destaque GRande
@@ -60,12 +62,6 @@ while ( $query->have_posts() ) {
 
               get_template_part('tempo','widget');
 
-              if ( in_category( '61' ) ) {  // Destaque GRande
-
-
-                   get_template_part( 'destaque', 'gabinete' );
-
-                 }
 
 			 								}
 					}
