@@ -15,20 +15,20 @@
  <div class="container" >
    <?php
 
-    $args = array (
+    $myargs = array (
       'pagination'             => true,
-      'category'							 => array ('61'),
+      'cat'							       => array ('61'),
       'posts_per_page'         => 3,
       'ignore_sticky_posts'    => true,
 
     );
     // The Query
-    $query = new WP_Query( $args );
+    $myquery = new WP_Query( $myargs );
 
     // The Loop
-    while ( $query->have_posts() ) {
+    while ( $myquery->have_posts() ) {
 
-        $query->the_post();
+        $myquery->the_post();
 
 
 
