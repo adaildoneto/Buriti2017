@@ -80,6 +80,10 @@ get_header('teste');
 	<?php include(TEMPLATEPATH.'/mod-noticias-teste.php');?>
 </div>
 
+<div class="row">
+  <?php include(TEMPLATEPATH.'/mod-nogabinete.php');?>
+
+</div>
 
 <div class="container">
   <?php include(TEMPLATEPATH.'/mod-especiais.php');?>

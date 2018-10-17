@@ -1,4 +1,4 @@
-<div class="col s12 m6 l4 grid-item">
+<div class="col s12 m6 l4">
     <div class="card painel-noticias">
             <a href="<?php the_Permalink()?>" title="<?php the_title();?>">
 
@@ -13,7 +13,7 @@
         </div>
         <div class="bloco-des-noticias2">
             <div class="card-content">
-                
+
             </div>
         </div>
         <div class="nocanto2">
