@@ -1425,9 +1425,9 @@ height: 120px;
 
 .grande {
   font-size: 80px;
-  font-weight: 700;
+  font-weight: 200;
   font-style: capitalize;
-  font-family: Roboto Sans;
+  font-family: Arial;
   text-align: center;
 }
 @media (max-width:479px){
