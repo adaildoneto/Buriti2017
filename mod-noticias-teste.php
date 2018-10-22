@@ -6,13 +6,8 @@
 
 
 <?php $args = array(
-<<<<<<< HEAD
-  'showposts' => 16,
-  'cat' => array (-20452,-15968,-15966,-167,-38,-9,-178,-5,-1,-35),
-=======
   'showposts' => 15,
   'cat' => array (-20452,-15968,-15966,-167,-38,-9,-178,-5,-1,-61,-35,-18910,-18911,-18912,-18913,-18918,-18907),
->>>>>>> 7df3416ae716cc300f2bd644366617020245211b
   'tag__not_in'  => array(18910,18911,18912,18913,18918,18907,19572,20142,20949,21042,21301),
 );
 $query = new WP_Query( $args );
@@ -22,7 +17,6 @@ while ( $query->have_posts() ) {
 
     $query->the_post();
 
-<<<<<<< HEAD
    if  ( has_tag( 'especial' ) ) {  // Destaque Retangular
 
 
@@ -31,10 +25,6 @@ while ( $query->have_posts() ) {
   }
 
      else if ( in_category( 'governo' ) ) {  // Destaque GRande
-=======
-
-    if ( in_category( 'governo' ) ) {  // Destaque GRande
->>>>>>> 7df3416ae716cc300f2bd644366617020245211b
 
 
           get_template_part( 'destaque', 'grande' );
@@ -43,19 +33,11 @@ while ( $query->have_posts() ) {
         else if ( in_category( 'seguranca' ) ) {  // Destaque GRande
 
 
-             get_template_part( 'destaque', 'colorido' );
+             get_template_part( 'destaque', 'quadrado' );
 
            }
-           else if ( in_category( '61' ) ) {  // Destaque GRande
 
-
-                get_template_part( 'destaque', 'gabinete' );
-
-              }
-
-
-
-  else {
+           else {
 
     get_template_part( 'normal', '' );
   }
