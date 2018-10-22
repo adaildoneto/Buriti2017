@@ -14,7 +14,7 @@
 
    </div>
 
-   <?php query_posts('showposts=2&cat=22');?>
+   <?php query_posts('showposts=2&cat=22&tag__not_in=21807');?>
    <?php if (have_posts()): while (have_posts()) : the_post();?>
      <a href="<?php the_Permalink()?>" title="<?php the_title();?>">
 
@@ -27,7 +27,7 @@
     <?php endwhile;endif;?>
     <div class="clearfix"></div>
 
-    <?php query_posts('showposts=3&cat=22&offset=2');?>
+    <?php query_posts('showposts=3&cat=22&offset=2&tag__not_in=21807');?>
     <?php if (have_posts()): while (have_posts()) : the_post();?>
       <a href="<?php the_Permalink()?>" title="<?php the_title();?>">
 
