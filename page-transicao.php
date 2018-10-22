@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Página Especial 2018
+Template Name: Transição 2018
 */
 ?>
 <?php get_header(teste);?>
