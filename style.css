@@ -662,19 +662,11 @@ a.button-collapse{
 }
 
 .bloco-des-noticias2 a{
-<<<<<<< HEAD
-  font-size: 1.4em;
-  font-weight: bolder;
-  text-align: center;
-  display: block;
-  line-height: 1em;
-=======
   font-size: 1.6em;
   font-weight: bolder;
   text-align: center;
   display: block;
   line-height: 1.1em;
->>>>>>> 7df3416ae716cc300f2bd644366617020245211b
   text-shadow: 0 1px 3px rgba(0,0,0,.8);
 }
 .bloco-des-noticias3, .bloco-des-nogabinete{
