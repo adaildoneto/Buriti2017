@@ -109,7 +109,8 @@ else {
 
   <?php $args = array(
     'showposts' => 15,
-    'tag' => 21807,
+    'cat'     => 22,
+    'has_tag' => 21807,
     );
   $query = new WP_Query( $args );
 
