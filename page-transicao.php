@@ -105,11 +105,10 @@ else {
 
 <!-- INICIO - Módulo - Mais Notícias e Sidebar -->
 
-<div class="container">
+<div id="grid" class="container">
 
   <?php $args = array(
     'showposts' => 15,
-    'cat'     => 22,
     'has_tag' => 21807,
     );
   $query = new WP_Query( $args );
