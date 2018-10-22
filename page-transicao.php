@@ -111,7 +111,7 @@ else {
 
   <?php $args = array(
     'showposts' => 15,
-    'tag' => array (especial2018),
+    'cat' => 21807,
     );
   $query = new WP_Query( $args );
 
