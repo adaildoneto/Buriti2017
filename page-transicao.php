@@ -104,12 +104,14 @@ else {
 </div>
 
 <!-- INICIO - Módulo - Mais Notícias e Sidebar -->
+<div class="row">
+
 
 <div id="grid" class="container">
 
   <?php $args = array(
     'showposts' => 15,
-    'has_tag' => 21807,
+    'tag' => array (especial2018),
     );
   $query = new WP_Query( $args );
 
@@ -149,6 +151,7 @@ else {
   <div class="grid-sizer col s12 m6 l4">
 
   </div>
+</div>
 </div>
 <!-- FIM - Módulo - Mais Notícias e Sidebar -->
 
