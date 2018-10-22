@@ -111,7 +111,7 @@ else {
 
   <?php $args = array(
     'showposts' => 15,
-    'cat' => 21807,
+    'cat' =>  array ('21810',
     );
   $query = new WP_Query( $args );
 
