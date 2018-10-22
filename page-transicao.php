@@ -94,7 +94,7 @@ else {
         </div>
     </div>
 
-  <?php endwhile;?>
+
 </div>
 
 
@@ -141,7 +141,10 @@ else {
     wp_reset_postdata();
 
   }
+
   ?>
+
+    <?php endwhile;?>
 
   <div class="grid-sizer col s12 m6 l4">
 
