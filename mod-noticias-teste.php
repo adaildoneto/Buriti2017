@@ -1,15 +1,18 @@
 <div class="row">
   <div id="grid" class="container">
-<div class="grid-sizer col s12 m6 l4">
 
-</div>
 <!-- Noticias 1 // Inicio do Loop -->
 
 
 
 <?php $args = array(
+<<<<<<< HEAD
   'showposts' => 16,
   'cat' => array (-20452,-15968,-15966,-167,-38,-9,-178,-5,-1,-35),
+=======
+  'showposts' => 15,
+  'cat' => array (-20452,-15968,-15966,-167,-38,-9,-178,-5,-1,-61,-35,-18910,-18911,-18912,-18913,-18918,-18907),
+>>>>>>> 7df3416ae716cc300f2bd644366617020245211b
   'tag__not_in'  => array(18910,18911,18912,18913,18918,18907,19572,20142,20949,21042,21301),
 );
 $query = new WP_Query( $args );
@@ -19,6 +22,7 @@ while ( $query->have_posts() ) {
 
     $query->the_post();
 
+<<<<<<< HEAD
    if  ( has_tag( 'especial' ) ) {  // Destaque Retangular
 
 
@@ -27,6 +31,10 @@ while ( $query->have_posts() ) {
   }
 
      else if ( in_category( 'governo' ) ) {  // Destaque GRande
+=======
+
+    if ( in_category( 'governo' ) ) {  // Destaque GRande
+>>>>>>> 7df3416ae716cc300f2bd644366617020245211b
 
 
           get_template_part( 'destaque', 'grande' );
@@ -46,12 +54,8 @@ while ( $query->have_posts() ) {
               }
 
 
-  else if (  has_tag( 'destaque4' ) ) {  // destaque foto
 
-           get_template_part( 'destaque', 'colorido' );
-
-
- } else {
+  else {
 
     get_template_part( 'normal', '' );
   }
@@ -60,13 +64,16 @@ while ( $query->have_posts() ) {
 					if ( $query->current_post == 3 ) {  // first post
 
 							dynamic_sidebar('publicidade-teste');
+
               dynamic_sidebar('publicidade-banner');
 
-            get_template_part('tempo','widget');
+              get_template_part('tempo','widget');
 
 
 			 								}
 					}
+
+
 
 
 
@@ -79,7 +86,9 @@ while ( $query->have_posts() ) {
 
 <!-- BoTão de mais notícias -->
 
+<div class="grid-sizer col s12 m6 l4">
 
+</div>
 </div>
 <div class="col s12">
 <a href="http://www.agencia.ac.gov.br/categoria/noticias/" class="btn orange btn-mais">Mais notícias</a>

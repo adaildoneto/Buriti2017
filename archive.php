@@ -2,7 +2,7 @@
 /*
 Template Name: Archives
 */
-get_header(); ?>
+get_header(teste); ?>
 
 <div class="container">
 	<div class="row">

@@ -1,39 +1,46 @@
-<div class="row testesidebar">
-  <div class="col s12 m12 l12 no-padding">
+<div class="container">
+  <div class="col s12 no-padding">
 
-<!-- Noticias 1 // Inicio do Loop -->
-<?php query_posts('showposts=9&cat=61');?>
-<?php if (have_posts()): while (have_posts()) : the_post();?>
+         <div class="col s6">
 
-
-<!-- Noticias 2 -->
-    <div class="col s12 m4 l4">
-      <div class="card painel-noticias2" style="margin-bottom: 23px;">
-        <a href="<?php the_Permalink()?>" title="<?php the_title();?>">
-
-            <div class="bloco-img-noticias3 especiais-img linha-nogabinete" style="background: url('<?php the_post_thumbnail_url( 'thumbnews' ); ?>');">
-              <span class="chip z-depth-1-half nocanto1 espaco1"><span class="chip green darken-4 left " style=" position: absolute;  left: 0px; "><i class="fa fa-camera-retro white-text" aria-hidden="true"></i></span><?php the_time('d.m.Y');?></span>
-          </div></a>
-          <div class="bloco-des-nogabinete">
-
-          </div>
-          <div class="nocanto4 tamanho-icones">
-              <?php include(TEMPLATEPATH.'/mod-social-white.php');?>
-          </div>
-
-        <div class="clearfix"></div>
-      </div>
-    </div>
+        <h4><i class="icon-logo-agencia2017-01"></i> No Gabinete</h4>
+         </div>
+         <div class="col s6" style="padding-top: 30px;">
+         <a class="right grey-text text-darken-3" href="http://www.agencia.ac.gov.br/categoria/no-gabinete/">Ver todos <i class="fa fa-long-arrow-right" style="font-size: 12px;" aria-hidden="true"></i>
+     </a>
+         </div>
 
 
-<?php endwhile;endif;?>
-<div class="clearfix"></div>
-
-<!-- BoTão de mais notícias -->
-    <div class="col s12">
-    <a href="http://www.agencia.ac.gov.br/categoria/no-gabinete/" class="btn green darken-4 btn-mais"><i class="fa fa-camera-retro white-text" aria-hidden="true"></i> Mais No Gabinete</a>
   </div>
+ <div class="container" >
+   <?php
+
+    $myargs = array (
+      'pagination'             => true,
+      'cat'							       => array ('61'),
+      'posts_per_page'         => 3,
+      'ignore_sticky_posts'    => true,
+
+    );
+    // The Query
+    $myquery = new WP_Query( $myargs );
+
+    // The Loop
+    while ( $myquery->have_posts() ) {
+
+        $myquery->the_post();
+
+
+
+        get_template_part( 'destaque', 'gabinete' );
+
+
+              wp_reset_postdata();
+
+      }
+
+    ?>
+
 
 </div>
-
 </div>

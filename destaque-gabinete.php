@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <div class="col s12 m6 l4 grid-item">
+=======
+<div class="col s12 m6 l4">
+>>>>>>> 7df3416ae716cc300f2bd644366617020245211b
     <div class="card painel-noticias">
             <a href="<?php the_Permalink()?>" title="<?php the_title();?>">
 
@@ -13,7 +17,11 @@
         </div>
         <div class="bloco-des-noticias2">
             <div class="card-content">
+<<<<<<< HEAD
                 
+=======
+
+>>>>>>> 7df3416ae716cc300f2bd644366617020245211b
             </div>
         </div>
         <div class="nocanto2">
