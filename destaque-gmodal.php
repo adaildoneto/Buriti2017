@@ -48,8 +48,8 @@
 
 <!-- Modal Structure -->
 <div id="<?php $post_id = get_the_ID(); echo $post_id; ?>" class="modal">
-<div class="container">
-  <div class="modal-content">
+<div class="row">
+  <div class="">
     <?php  if (has_excerpt() ) { ?>
     <h2><?php the_excerpt(); ?></h2>
     <?php } ?>
