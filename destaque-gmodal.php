@@ -48,6 +48,7 @@
 
 <!-- Modal Structure -->
 <div id="<?php $post_id = get_the_ID(); echo $post_id; ?>" class="modal">
+<div class="container">
   <div class="modal-content">
     <?php  if (has_excerpt() ) { ?>
     <h2><?php the_excerpt(); ?></h2>
@@ -55,6 +56,9 @@
           <p><?php the_content(__('Leia mais'));?></p>
 
   </div>
+
+</div>
+
   <div class="modal-footer">
     <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
   </div>
