@@ -111,7 +111,7 @@ else {
 
   <?php $args = array(
     'showposts' => 15,
-    'cat' =>  array ('21810'), 
+    'cat' =>  array ('21810'),
     );
   $query = new WP_Query( $args );
 
@@ -123,20 +123,20 @@ else {
      if  ( has_tag( 'grande' ) ) {  // Destaque Retangular
 
 
-        get_template_part( 'destaque', 'grande' );
+        get_template_part( 'destaque', 'gmodal' );
 
     }
 
        else if ( has_tag( 'quadrado' ) ) {  // Destaque GRande
 
 
-            get_template_part( 'destaque', 'quadrado' );
+            get_template_part( 'destaque', 'qmodal' );
 
           }
 
          else {
 
-      get_template_part( 'normal', '' );
+      get_template_part( 'nmodal', '' );
     }
 
 
