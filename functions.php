@@ -358,7 +358,7 @@ function arphabet_widgets_init() {
 
 }
 add_action( 'widgets_init', 'arphabet_widgets_init' );
-
+add_filter( 'widgets_init', 'do_shortcode' );
 
 
 //Iniciando as orações para Odin
@@ -713,7 +713,7 @@ $artigo_metabox->set_fields(
 					 wp_enqueue_script( 'simpleWeather', get_template_directory_uri() . '/tempo3/jquery.simpleWeather.js');
 					  wp_enqueue_script( 'tempo', get_template_directory_uri() . '/tempo3/tempo-ok.js');
 
-				
+
 							  wp_enqueue_script( 'custom-teste', get_template_directory_uri() . '/custom-teste.js');
 
 
