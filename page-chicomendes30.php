@@ -8,7 +8,7 @@ Template Name: Chico Mendes
   <div class="container"  style="padding: 0 10px; margin-top: 20px;">
 
         <div class="col s8 no-padding valign-wrapper center-align">
-              <a href="#" class="white-text"><img src="http://www.agencia.ac.gov.br/wp-content/uploads/2017/10/LOGO-OFICIAL-ENCONTRO-GOV-local.png" class="responsive-img"> <!--- <span class="titulo-floresta flow-text"> Narcotráfico, uma emergência nacional</span>--></a>
+              <a href="#" class="white-text"><img src="http://www.agencia.ac.gov.br/wp-content/uploads/2018/10/chico30.png" class="responsive-img"> <!--- <span class="titulo-floresta flow-text"> Narcotráfico, uma emergência nacional</span>--></a>
             </div>
      <div class="col s2 no-padding hide-on-med-and-down">
          <a href="http://www.ac.gov.br/" class="white-text"><span class="icon-aldeia-04 right" style="font-size:25px;padding-top:20px;height:60px;"></span></a>
