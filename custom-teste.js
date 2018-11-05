@@ -6,6 +6,7 @@ jQuery(document).ready(function ($) {
   slidesToScroll: 1,
   speed: 1800,
   autoplay: true,
+  draggable: false,
   autoplaySpeed: 10000,
   responsive: [
   {
@@ -64,6 +65,7 @@ jQuery(document).ready(function ($) {
   slidesToScroll: 1,
   arrows: false,
   autoplay: true,
+  draggable: false,
   autoplaySpeed: 1000,
   variableWidth: true,
   responsive: [
