@@ -28,7 +28,7 @@
                 echo $titulo;
                 ?>
               </a>
-              <span class="destaque-resumo hide-on-med-and-down"><?php $DestaqueChamada = get_post_meta( $post->ID,'chamada-destaque1', true ); echo $DestaqueChamada;?></span>
+              <span class="destaque-resumo hide-on-med-and-down"><?php $DestaqueChamada = get_post_meta( $post->ID,'chamada-destaque1', true ); echo limita_caracteres($DestaqueChamada, 120);?></span>
           </div>
           <div class="nocanto3">
             <span class="data-post white-text"> <?php the_time('d.m.Y');?> </span></br>
