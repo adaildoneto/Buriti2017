@@ -5,7 +5,7 @@
   <div class="shadowcss grande white-text flow-text center-align">Conheça o Parque Nacional</BR> da Serra do Divisor
       </div>
   <div class="center-align">
-    <a class="waves-effect waves-light btn orange darken-5 " href="http://www.agencia.ac.gov.br/conheca-o-parque-nacional-da-serra-do-divisor-verdadeiro-santuario-ecologico"><i class="material-icons left">arrow_drop_down_circle</i>Em breve...</a>
+    <a class="waves-effect waves-light btn orange darken-5 " href="http://www.agencia.ac.gov.br/conheca-o-parque-nacional-da-serra-do-divisor-verdadeiro-santuario-ecologico"><i class="material-icons left">arrow_drop_down_circle</i>Acesse aqui!</a>
 
   </div>
 </div>
