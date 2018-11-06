@@ -6,7 +6,7 @@
        <li class="tab col s3"><a class="active orange-text darken-4-text" href="#test1">Destaques</a></li>
        <li class="tab col s3"><a class="orange-text darken-4-text" href="#test2">Segurança</a></li>
        <li class="tab col s3"><a class="orange-text darken-4-text" href="#test3">Saúde</a></li>
-       <li class="tab col s3"><a class="orange-text darken-4-text" href="#test4">Governo</a></li>
+       <li class="tab col s3"><a class="orange-text darken-4-text" href="#test4">Transição</a></li>
      </ul>
     </div>
 
@@ -129,7 +129,7 @@ while ( $query->have_posts() ) {
   $query->the_post();
 
   if ( $query->current_post == 0  ) {  // first post
-             get_template_part ('destaque', 'colorido');  
+             get_template_part ('destaque', 'colorido');
   }
 
   wp_reset_postdata();
@@ -247,7 +247,7 @@ while ( $query->have_posts() ) {
       $args = array (
         'pagination'             => false,
         'showposts'              => 5,
-        'cat'                    => array ('11'),
+        'tag'                    => array ('transicao'),
         'ignore_sticky_posts'    => true,
 
       );
