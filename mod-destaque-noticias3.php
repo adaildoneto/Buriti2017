@@ -202,7 +202,7 @@ while ( $query->have_posts() ) {
 
          $query->the_post();
 
-         get_template_part ('destaque', 'colprido');
+         get_template_part ('destaque', 'colorido');
 
 
          wp_reset_postdata();
