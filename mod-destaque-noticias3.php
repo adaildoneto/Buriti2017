@@ -208,7 +208,7 @@ while ( $query->have_posts() ) {
          wp_reset_postdata();
 
        }
-
+?>
    </div>
 
    <div id="test3" class="col s12">
