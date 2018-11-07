@@ -145,7 +145,7 @@ while ( $query->have_posts() ) {
 
       $args = array (
         'pagination'             => false,
-        'showposts'              => 5,
+        'showposts'              => 4,
         'cat'                    => array ('17'),
         'ignore_sticky_posts'    => true,
 
@@ -164,9 +164,8 @@ while ( $query->have_posts() ) {
 
           }
           if ( $query->current_post == 1  ) {  // first post
-                 if  ( has_tag( 'boletimseguranca' ) ) {
                      get_template_part ('destaque', 'quadrado');
-                   }
+
           }
           if ( $query->current_post == 2  ) {  // first post
 
@@ -178,16 +177,37 @@ while ( $query->have_posts() ) {
                      get_template_part ('destaque', 'quadrado');
 
           }
-          if ( $query->current_post == 4 ) {  // first post
 
-                     get_template_part ('destaque', 'colorido');
-
-          }
 
           wp_reset_postdata();
 
         }
       ?>
+
+      <?php
+
+
+       $args = array (
+         'pagination'             => false,
+         'showposts'              => 4,
+         'tag'                    => array ('21042'),
+         'ignore_sticky_posts'    => true,
+
+       );
+       // The Query
+       $query = new WP_Query( $args );
+
+       // The Loop
+       while ( $query->have_posts() ) {
+
+         $query->the_post();
+
+         get_template_part ('destaque', 'colprido');
+
+
+         wp_reset_postdata();
+
+       }
 
    </div>
 
