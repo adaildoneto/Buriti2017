@@ -164,9 +164,9 @@ while ( $query->have_posts() ) {
 
           }
           if ( $query->current_post == 1  ) {  // first post
-
+                 if  ( has_tag( 'boletimseguranca' ) ) {
                      get_template_part ('destaque', 'quadrado');
-
+                   }
           }
           if ( $query->current_post == 2  ) {  // first post
 
