@@ -174,7 +174,8 @@ while ( $query->have_posts() ) {
       $args = array (
         'pagination'             => false,
         'showposts'              => 4,
-        'cat'                    => array ('17,-21042'),
+        'cat'                    => array ('17'),
+        'tag__not_in'            => array(20142),
         'ignore_sticky_posts'    => true,
 
       );
