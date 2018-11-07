@@ -189,8 +189,8 @@ while ( $query->have_posts() ) {
 
        $args = array (
          'pagination'             => false,
-         'showposts'              => 4,
-         'tag'                    => array ('21042'),
+         'showposts'              => 1,
+         'tag'                    => array ('boletimseguranca'),
          'ignore_sticky_posts'    => true,
 
        );
