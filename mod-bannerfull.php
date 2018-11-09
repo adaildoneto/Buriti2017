@@ -74,7 +74,7 @@
 
          <div class="col s6"> </div>
          <div class="col s6" style="padding-top: -20px;">
-         <a class="right white-text" href="http://www.agencia.ac.gov.br/categoria/no-gabinete/">Ver todos <i class="fa fa-long-arrow-right" style="font-size: 12px;" aria-hidden="true"></i>
+         <a class="right white-text" href="http://www.agencia.ac.gov.br/tag/prontoparaofuturo/">Ver todos <i class="fa fa-long-arrow-right" style="font-size: 12px;" aria-hidden="true"></i>
      </a>
          </div>
 
