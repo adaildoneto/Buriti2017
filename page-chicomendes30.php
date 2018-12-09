@@ -20,11 +20,11 @@ Template Name: Chico Mendes
          <div class="btn-aldeia">
 					<div class="col s12 m3 l3"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdWm8ay2H3-u8wBj-XqE5AA1LMitVgqe-jT35GscsKMf79ShA/viewform?vc=0&c=0&w=1" class="waves-effect waves-teal btn-flat lighten-1 white-text" style="">
                  <span class="fa fa-check-square-o"></span> Credenciamento</a></div>
-					<div class="col s12 m3 l3"> <a href="#modal4" class="waves-effect waves-teal btn-flat lighten-1 white-text modal-trigger">
+					<div class="col s12 m3 l3"> <a href="http://www.agencia.ac.gov.br/wp-content/uploads/2018/12/1544317239346-min.pdf" class="waves-effect waves-teal btn-flat lighten-1 white-text">
                  <span class="fa fa-file"></span> Programação</a></div>
-					<div class="col s12 m3 l3"><a href='#' data-activates='encontro' class="dropdown-button waves-effect waves-teal btn-flat lighten-1 white-text">
+					<div class="col s12 m3 l3"><a href='#' data-activates='' class="dropdown-button waves-effect waves-teal btn-flat lighten-1 white-text">
                  <span class="fa fa-plus-square"></span> Mais informações</a></div>
-            		<div class="col s12 m3 l3"><a href="#!" data-activates='imprensa' class="dropdown-button waves-effect waves-teal btn-flat lighten-1 white-text">
+            		<div class="col s12 m3 l3"><a href="#!" data-activates='' class="dropdown-button waves-effect waves-teal btn-flat lighten-1 white-text">
                  <span class="fa fa-newspaper-o"></span> Imprensa</a></div>
 
          </div>
