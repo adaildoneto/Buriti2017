@@ -38,7 +38,10 @@ Template Name: Chico Mendes
 
 <div id="modal4" class="modal" style="width: 400px;">
    <div class="modal-content orange darken-4">
-    <img src="http://www.agencia.ac.gov.br/wp-content/uploads/2017/10/22690395_1688953817801587_1713758859_o-1.jpg" class="responsive-img">
+     <object data="http://www.agencia.ac.gov.br/wp-content/uploads/2018/12/1544317239346-min.pdf" type="application/pdf">
+    <p>Seu navegador não tem um plugin pra PDF</p>
+</object>
+
    </div>
    <div class="modal-footer">
      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Fechar</a>
