@@ -1,6 +1,6 @@
 
   <div class="parallax-container">
-      <div class="parallax"><img src="http://www.agencia.ac.gov.br/wp-content/uploads/2018/12/IMG_0856-1.jpg"></div>
+      <div class="parallax"><img src="http://www.agencia.ac.gov.br/wp-content/uploads/2018/12/arison.jpg"></div>
 <div class="container" style="margin-top:60px">
 
   <div class="shadowcss grande white-text flow-text center-align"><img class="responsive-img" src="http://www.agencia.ac.gov.br/wp-content/uploads/2018/11/PRONTOPARAOFUTURO.png" alt="Pronto para o futuro">
