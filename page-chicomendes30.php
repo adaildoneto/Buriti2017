@@ -24,7 +24,7 @@ Template Name: Chico Mendes
                  <span class="fa fa-file"></span> Programação</a></div>
 					<div class="col s12 m3 l3"><a href='#' data-activates='' class="dropdown-button waves-effect waves-teal btn-flat lighten-1 white-text">
                  <span class="fa fa-plus-square"></span> Mais informações</a></div>
-            		<div class="col s12 m3 l3"><a href="#!" data-activates='' class="dropdown-button waves-effect waves-teal btn-flat lighten-1 white-text">
+            		<div class="col s12 m3 l3"><a href="mailto:chicomendesheroidobrasil@gmail.com" class="waves-effect waves-teal btn-flat lighten-1 white-text">
                  <span class="fa fa-newspaper-o"></span> Imprensa</a></div>
 
          </div>
