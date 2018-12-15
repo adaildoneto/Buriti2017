@@ -61,14 +61,6 @@ get_header('teste');
 </div>
 
 <!-- INICIO - Módulo - Notícias -->
-
-<!-- FIM - Módulo - Notícias -->
-
-<!-- INICIO - Módulo - Notícias -->
-<div class="container">
-	<?php include(TEMPLATEPATH.'/mod-destaque-noticias3.php');?>
-</div>
-
 <div class="row">
 <div class="container">
   <?php dynamic_sidebar( 'publicidade-topo' ); ?>
@@ -76,6 +68,14 @@ get_header('teste');
 </div>
 
 </div>
+<!-- FIM - Módulo - Notícias -->
+
+<!-- INICIO - Módulo - Notícias -->
+<div class="container">
+	<?php include(TEMPLATEPATH.'/mod-destaque-noticias3.php');?>
+</div>
+
+
 
 <!-- FIM - Módulo - Notícias -->
 <div class="container">

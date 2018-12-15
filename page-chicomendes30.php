@@ -18,7 +18,7 @@ Template Name: Chico Mendes
 
      <div id="RedeAldeia" class="col s12  redealdeia no-padding">
          <div class="btn-aldeia">
-					<div class="col s12 m3 l3"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdWm8ay2H3-u8wBj-XqE5AA1LMitVgqe-jT35GscsKMf79ShA/viewform?vc=0&c=0&w=1" class="waves-effect waves-teal btn-flat lighten-1 white-text" style="">
+					<div class="col s12 m3 l3"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfDV-19Q37lftqIzZrx6j2lBHT-v0S_2aHC8AzQ2rV8kI-YcA/viewform?vc=0&c=0&w=1" class="waves-effect waves-teal btn-flat lighten-1 white-text" style="">
                  <span class="fa fa-check-square-o"></span> Credenciamento</a></div>
 					<div class="col s12 m3 l3"> <a href="http://www.agencia.ac.gov.br/wp-content/uploads/2018/12/1544317239346-min.pdf" class="waves-effect waves-teal btn-flat lighten-1 white-text">
                  <span class="fa fa-file"></span> Programação</a></div>
