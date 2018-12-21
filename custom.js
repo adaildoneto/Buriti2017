@@ -326,39 +326,22 @@ function drags(dragElement, resizeElement, container) {
   });
   });
 };
+
 jQuery(document).ready(function ($) {
 $('.wp_pagination').find('ul').addClass('pagination');
-});
-jQuery(document).ready(function ($) {
 $('.pagination').find('li').addClass('waves-effect');
-});
-jQuery(document).ready(function ($) {
 $('.current').addClass('btn-flat orange white-text');
-});
-jQuery(document).ready(function ($) {
 $('.calendar_wrap').addClass('white-text');
-});
-jQuery(document).ready(function ($) {
 $('#wp-calendar').addClass('centered');
-});
-jQuery(document).ready(function ($) {
 $('#wp-calendar').find('a').addClass('chip orange lighten-4 red-text darken-text-3');
-});
-jQuery(document).ready(function ($) {
 $('#post').find('img').addClass('responsive-img aligncenter');
-});
-jQuery(document).ready(function ($) {
 $('#no-responsive').removeClass('responsive-img aligncenter');
-});
-jQuery(document).ready(function ($) {
 $('.wp-caption').width('auto').height('auto');
-});
-jQuery(document).ready(function ($) {
 $('.wp-caption-text').width('auto').height('auto');
-});
-jQuery(document).ready(function ($) {
 $('wp-caption aligncenter').addClass('alignleft');
+$('iframe[src*="youtube"]').parent().fitVids();
 });
+
 (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;

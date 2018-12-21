@@ -707,6 +707,7 @@ $artigo_metabox->set_fields(
 					 wp_enqueue_script( 'materialize-script', get_template_directory_uri() . '/materialize/js/materialize.min.js');
 					 wp_enqueue_script( 'slick-script', get_template_directory_uri() . '/assets/slick/slick.min.js');
 					 wp_enqueue_script( 'YT', get_template_directory_uri() . '/assets/js/scriptyt.js');
+					 wp_enqueue_script( 'FitVids', get_template_directory_uri() . '/js/jquery.fitvids.js');
 
 					 wp_enqueue_script( 'search', get_template_directory_uri() . '/assets/js/search.js');
 					 wp_enqueue_script( 'classie', get_template_directory_uri() . '/assets/js/classie.js');
