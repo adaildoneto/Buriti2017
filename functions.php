@@ -279,6 +279,16 @@ function arphabet_widgets_init() {
 
 	register_sidebar(
 		array(
+		'name'          => 'Noticias Topo',
+		'id'            => 'noticias-topo',
+		'before_widget' => '<div class="container">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<p class="rounded white-text">',
+		'after_title'   => '</p>',
+	));
+
+	register_sidebar(
+		array(
 		'name'          => 'Publicidade Topo',
 		'id'            => 'publicidade-topo',
 		'before_widget' => '<div class="col s12 center-align">',
@@ -918,5 +928,3 @@ function limita_caracteres($texto, $limite, $quebra = true){
    }
    return $novo_texto; // Retorna o valor formatado
 }
-
-?>

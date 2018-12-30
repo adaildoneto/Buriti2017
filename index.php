@@ -11,7 +11,7 @@ get_header('teste');
 
 ?>
 
-<?php include(TEMPLATEPATH.'/mod-bannerfull.php');?>
+  <?php dynamic_sidebar( 'noticias-topo' ); ?>
 
 <div class="container">
 <!-- INICIO - Módulo - Chips -->
