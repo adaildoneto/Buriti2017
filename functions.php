@@ -281,7 +281,7 @@ function arphabet_widgets_init() {
 		array(
 		'name'          => 'Noticias Topo',
 		'id'            => 'noticias-topo',
-		'before_widget' => '<div class="container">',
+		'before_widget' => '<div class="row">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<p class="rounded white-text">',
 		'after_title'   => '</p>',
