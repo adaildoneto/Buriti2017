@@ -3,7 +3,7 @@
     </div>
 
     <div class="col s2 no-padding hide-on-med-and-down">
-        <a href="#" class="grey-text"><span class="icon-aldeia-04 right  deep-orange-text accent-4-text" style="font-size:25px;padding-top:20px;height:60px;"></span></a>
+      
     </div>
 
     <div class="divider col s12 hide-on-med-and-down gradiente-logo"></div>
