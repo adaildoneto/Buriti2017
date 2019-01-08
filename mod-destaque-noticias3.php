@@ -6,7 +6,7 @@
        <li class="tab col s3"><a class="active orange-text darken-4-text" href="#test1">Destaques</a></li>
        <li class="tab col s3"><a class="orange-text darken-4-text" href="#test2">Segurança</a></li>
        <li class="tab col s3"><a class="orange-text darken-4-text" href="#test3">Saúde</a></li>
-       <li class="tab col s3"><a class="orange-text darken-4-text" href="#test4">Transição</a></li>
+       <li class="tab col s3"><a class="orange-text darken-4-text" href="#test4">Educação</a></li>
      </ul>
     </div>
 
@@ -272,7 +272,7 @@ while ( $query->have_posts() ) {
       $args = array (
         'pagination'             => false,
         'showposts'              => 5,
-        'tag'                    => array ('transicao'),
+        'cat'                    => array ('19'),
         'ignore_sticky_posts'    => true,
 
       );

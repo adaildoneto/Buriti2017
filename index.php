@@ -82,15 +82,9 @@ get_header('teste');
 	<?php include(TEMPLATEPATH.'/mod-noticias-teste.php');?>
 </div>
 
-<div class="row">
-  <?php include(TEMPLATEPATH.'/mod-nogabinete.php');?>
+<!-- <div class="row">< include(TEMPLATEPATH.'/mod-nogabinete.php');></div> -->
 
-</div>
-
-<div class="container">
-  <?php include(TEMPLATEPATH.'/mod-especiais.php');?>
-
-</div>
+<!-- <div class="container">< include(TEMPLATEPATHs.'/mod-especiais.php');></div> -->
 
 <div class="container">
   <?php include(TEMPLATEPATH.'/mod-eventos.php');?>
